@@ -25,4 +25,10 @@ namespace Smallib
         public int pk_id_idioma { get; set; }
         public string nome_idioma { get; set; }
     }
+
+    public class Cadastro_Nacionalidade
+    {
+        public int pk_id_nacionalidade { get; set; }
+        public string nome_nacionalidade { get; set; }
+    }
 }

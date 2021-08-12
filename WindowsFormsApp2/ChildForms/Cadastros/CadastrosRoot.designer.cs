@@ -50,7 +50,7 @@ namespace Smallib.ChildForms
             this.button6 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
+            this.btnNacionalidade = new System.Windows.Forms.Button();
             this.btnIdioma = new System.Windows.Forms.Button();
             this.btnUsuario = new System.Windows.Forms.Button();
             this.btnGenero = new System.Windows.Forms.Button();
@@ -86,7 +86,7 @@ namespace Smallib.ChildForms
             this.panel5.Controls.Add(this.button6);
             this.panel5.Controls.Add(this.button1);
             this.panel5.Controls.Add(this.button2);
-            this.panel5.Controls.Add(this.button3);
+            this.panel5.Controls.Add(this.btnNacionalidade);
             this.panel5.Controls.Add(this.btnIdioma);
             this.panel5.Controls.Add(this.btnUsuario);
             this.panel5.Controls.Add(this.btnGenero);
@@ -402,19 +402,20 @@ namespace Smallib.ChildForms
             this.button2.Text = "Tipo de usuário";
             this.button2.UseVisualStyleBackColor = true;
             // 
-            // button3
+            // btnNacionalidade
             // 
-            this.button3.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button3.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(241)))), ((int)(((byte)(244)))));
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Font = new System.Drawing.Font("Roboto", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(81)))), ((int)(((byte)(116)))));
-            this.button3.Location = new System.Drawing.Point(51, 640);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(237, 44);
-            this.button3.TabIndex = 35;
-            this.button3.Text = "Nacionalidade";
-            this.button3.UseVisualStyleBackColor = true;
+            this.btnNacionalidade.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnNacionalidade.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(241)))), ((int)(((byte)(244)))));
+            this.btnNacionalidade.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnNacionalidade.Font = new System.Drawing.Font("Roboto", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnNacionalidade.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(81)))), ((int)(((byte)(116)))));
+            this.btnNacionalidade.Location = new System.Drawing.Point(51, 640);
+            this.btnNacionalidade.Name = "btnNacionalidade";
+            this.btnNacionalidade.Size = new System.Drawing.Size(237, 44);
+            this.btnNacionalidade.TabIndex = 35;
+            this.btnNacionalidade.Text = "Nacionalidade";
+            this.btnNacionalidade.UseVisualStyleBackColor = true;
+            this.btnNacionalidade.Click += new System.EventHandler(this.btnNacionalidade_Click);
             // 
             // btnIdioma
             // 
@@ -529,7 +530,7 @@ namespace Smallib.ChildForms
         private System.Windows.Forms.Button button6;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button btnNacionalidade;
         private System.Windows.Forms.Button btnIdioma;
         private System.Windows.Forms.Button btnUsuario;
         private System.Windows.Forms.Button btnGenero;

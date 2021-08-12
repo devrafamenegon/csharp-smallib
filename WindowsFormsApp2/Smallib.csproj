@@ -127,6 +127,36 @@
     <Compile Include="ChildForms\Cadastros\Idioma\IdiomaNovo.Designer.cs">
       <DependentUpon>IdiomaNovo.cs</DependentUpon>
     </Compile>
+    <Compile Include="ChildForms\Cadastros\Nacionalidade\NacionalidadeConsultar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChildForms\Cadastros\Nacionalidade\NacionalidadeConsultar.Designer.cs">
+      <DependentUpon>NacionalidadeConsultar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChildForms\Cadastros\Nacionalidade\NacionalidadeEditar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChildForms\Cadastros\Nacionalidade\NacionalidadeEditar.Designer.cs">
+      <DependentUpon>NacionalidadeEditar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChildForms\Cadastros\Nacionalidade\NacionalidadeExcluir.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChildForms\Cadastros\Nacionalidade\NacionalidadeExcluir.Designer.cs">
+      <DependentUpon>NacionalidadeExcluir.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChildForms\Cadastros\Nacionalidade\NacionalidadeMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChildForms\Cadastros\Nacionalidade\NacionalidadeMenu.Designer.cs">
+      <DependentUpon>NacionalidadeMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChildForms\Cadastros\Nacionalidade\NacionalidadeNovo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChildForms\Cadastros\Nacionalidade\NacionalidadeNovo.Designer.cs">
+      <DependentUpon>NacionalidadeNovo.cs</DependentUpon>
+    </Compile>
     <Compile Include="ChildForms\Configuracoes\Backup.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -300,6 +330,21 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ChildForms\Cadastros\Idioma\IdiomaNovo.resx">
       <DependentUpon>IdiomaNovo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChildForms\Cadastros\Nacionalidade\NacionalidadeConsultar.resx">
+      <DependentUpon>NacionalidadeConsultar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChildForms\Cadastros\Nacionalidade\NacionalidadeEditar.resx">
+      <DependentUpon>NacionalidadeEditar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChildForms\Cadastros\Nacionalidade\NacionalidadeExcluir.resx">
+      <DependentUpon>NacionalidadeExcluir.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChildForms\Cadastros\Nacionalidade\NacionalidadeMenu.resx">
+      <DependentUpon>NacionalidadeMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChildForms\Cadastros\Nacionalidade\NacionalidadeNovo.resx">
+      <DependentUpon>NacionalidadeNovo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ChildForms\Configuracoes\Backup.resx">
       <DependentUpon>Backup.cs</DependentUpon>
