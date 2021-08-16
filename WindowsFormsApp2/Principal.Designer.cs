@@ -34,6 +34,9 @@ namespace Smallib
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
             this.panelMenu = new System.Windows.Forms.Panel();
+            this.panelMenuTop = new System.Windows.Forms.Panel();
+            this.labelNameUser = new System.Windows.Forms.Label();
+            this.panelPrincipal = new System.Windows.Forms.Panel();
             this.btnConfiguracoes = new FontAwesome.Sharp.IconButton();
             this.btnLogout = new FontAwesome.Sharp.IconButton();
             this.btnRelatorios = new FontAwesome.Sharp.IconButton();
@@ -41,10 +44,7 @@ namespace Smallib
             this.btnDevolucao = new FontAwesome.Sharp.IconButton();
             this.btnEmprestimo = new FontAwesome.Sharp.IconButton();
             this.btnHome = new FontAwesome.Sharp.IconButton();
-            this.panelMenuTop = new System.Windows.Forms.Panel();
-            this.labelNameUser = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.panelPrincipal = new System.Windows.Forms.Panel();
             this.panelMenu.SuspendLayout();
             this.panelMenuTop.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -103,6 +103,36 @@ namespace Smallib
             this.panelMenu.Size = new System.Drawing.Size(220, 681);
             this.panelMenu.TabIndex = 25;
             // 
+            // panelMenuTop
+            // 
+            this.panelMenuTop.Controls.Add(this.labelNameUser);
+            this.panelMenuTop.Controls.Add(this.pictureBox1);
+            this.panelMenuTop.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelMenuTop.Location = new System.Drawing.Point(0, 0);
+            this.panelMenuTop.Name = "panelMenuTop";
+            this.panelMenuTop.Size = new System.Drawing.Size(220, 125);
+            this.panelMenuTop.TabIndex = 0;
+            // 
+            // labelNameUser
+            // 
+            this.labelNameUser.AutoSize = true;
+            this.labelNameUser.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(253)))), ((int)(((byte)(253)))));
+            this.labelNameUser.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelNameUser.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(82)))), ((int)(((byte)(112)))));
+            this.labelNameUser.Location = new System.Drawing.Point(16, 91);
+            this.labelNameUser.Name = "labelNameUser";
+            this.labelNameUser.Size = new System.Drawing.Size(0, 20);
+            this.labelNameUser.TabIndex = 1;
+            // 
+            // panelPrincipal
+            // 
+            this.panelPrincipal.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(241)))), ((int)(((byte)(244)))));
+            this.panelPrincipal.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelPrincipal.Location = new System.Drawing.Point(240, 25);
+            this.panelPrincipal.Name = "panelPrincipal";
+            this.panelPrincipal.Size = new System.Drawing.Size(1004, 631);
+            this.panelPrincipal.TabIndex = 31;
+            // 
             // btnConfiguracoes
             // 
             this.btnConfiguracoes.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -111,7 +141,7 @@ namespace Smallib
             this.btnConfiguracoes.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.btnConfiguracoes.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.btnConfiguracoes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnConfiguracoes.Font = new System.Drawing.Font("Roboto", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnConfiguracoes.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnConfiguracoes.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(197)))), ((int)(((byte)(197)))), ((int)(((byte)(197)))));
             this.btnConfiguracoes.IconChar = FontAwesome.Sharp.IconChar.Cog;
             this.btnConfiguracoes.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(122)))), ((int)(((byte)(201)))), ((int)(((byte)(245)))));
@@ -137,7 +167,7 @@ namespace Smallib
             this.btnLogout.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.btnLogout.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.btnLogout.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnLogout.Font = new System.Drawing.Font("Roboto", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLogout.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLogout.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(197)))), ((int)(((byte)(197)))), ((int)(((byte)(197)))));
             this.btnLogout.IconChar = FontAwesome.Sharp.IconChar.SignOutAlt;
             this.btnLogout.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(131)))), ((int)(((byte)(58)))));
@@ -163,7 +193,7 @@ namespace Smallib
             this.btnRelatorios.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.btnRelatorios.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.btnRelatorios.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnRelatorios.Font = new System.Drawing.Font("Roboto", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRelatorios.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnRelatorios.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(197)))), ((int)(((byte)(197)))), ((int)(((byte)(197)))));
             this.btnRelatorios.IconChar = FontAwesome.Sharp.IconChar.FileAlt;
             this.btnRelatorios.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(122)))), ((int)(((byte)(201)))), ((int)(((byte)(245)))));
@@ -189,7 +219,7 @@ namespace Smallib
             this.btnCadastros.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.btnCadastros.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.btnCadastros.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCadastros.Font = new System.Drawing.Font("Roboto", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCadastros.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCadastros.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(197)))), ((int)(((byte)(197)))), ((int)(((byte)(197)))));
             this.btnCadastros.IconChar = FontAwesome.Sharp.IconChar.Clipboard;
             this.btnCadastros.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(122)))), ((int)(((byte)(201)))), ((int)(((byte)(245)))));
@@ -215,7 +245,7 @@ namespace Smallib
             this.btnDevolucao.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.btnDevolucao.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.btnDevolucao.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnDevolucao.Font = new System.Drawing.Font("Roboto", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDevolucao.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDevolucao.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(197)))), ((int)(((byte)(197)))), ((int)(((byte)(197)))));
             this.btnDevolucao.IconChar = FontAwesome.Sharp.IconChar.Bookmark;
             this.btnDevolucao.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(122)))), ((int)(((byte)(201)))), ((int)(((byte)(245)))));
@@ -241,7 +271,7 @@ namespace Smallib
             this.btnEmprestimo.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.btnEmprestimo.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.btnEmprestimo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnEmprestimo.Font = new System.Drawing.Font("Roboto", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEmprestimo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEmprestimo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(197)))), ((int)(((byte)(197)))), ((int)(((byte)(197)))));
             this.btnEmprestimo.IconChar = FontAwesome.Sharp.IconChar.AddressBook;
             this.btnEmprestimo.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(122)))), ((int)(((byte)(201)))), ((int)(((byte)(245)))));
@@ -267,7 +297,7 @@ namespace Smallib
             this.btnHome.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.btnHome.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.btnHome.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnHome.Font = new System.Drawing.Font("Roboto", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnHome.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnHome.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(197)))), ((int)(((byte)(197)))), ((int)(((byte)(197)))));
             this.btnHome.IconChar = FontAwesome.Sharp.IconChar.Tv;
             this.btnHome.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(122)))), ((int)(((byte)(201)))), ((int)(((byte)(245)))));
@@ -285,27 +315,6 @@ namespace Smallib
             this.btnHome.UseVisualStyleBackColor = true;
             this.btnHome.Click += new System.EventHandler(this.btnInicio_Click);
             // 
-            // panelMenuTop
-            // 
-            this.panelMenuTop.Controls.Add(this.labelNameUser);
-            this.panelMenuTop.Controls.Add(this.pictureBox1);
-            this.panelMenuTop.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelMenuTop.Location = new System.Drawing.Point(0, 0);
-            this.panelMenuTop.Name = "panelMenuTop";
-            this.panelMenuTop.Size = new System.Drawing.Size(220, 125);
-            this.panelMenuTop.TabIndex = 0;
-            // 
-            // labelNameUser
-            // 
-            this.labelNameUser.AutoSize = true;
-            this.labelNameUser.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(253)))), ((int)(((byte)(253)))));
-            this.labelNameUser.Font = new System.Drawing.Font("Roboto", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelNameUser.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(82)))), ((int)(((byte)(112)))));
-            this.labelNameUser.Location = new System.Drawing.Point(16, 91);
-            this.labelNameUser.Name = "labelNameUser";
-            this.labelNameUser.Size = new System.Drawing.Size(0, 19);
-            this.labelNameUser.TabIndex = 1;
-            // 
             // pictureBox1
             // 
             this.pictureBox1.BackgroundImage = global::Smallib.Properties.Resources.Smalllib;
@@ -316,15 +325,6 @@ namespace Smallib
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
-            // 
-            // panelPrincipal
-            // 
-            this.panelPrincipal.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(241)))), ((int)(((byte)(244)))));
-            this.panelPrincipal.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelPrincipal.Location = new System.Drawing.Point(240, 25);
-            this.panelPrincipal.Name = "panelPrincipal";
-            this.panelPrincipal.Size = new System.Drawing.Size(1004, 631);
-            this.panelPrincipal.TabIndex = 31;
             // 
             // Principal
             // 

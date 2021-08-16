@@ -1,7 +1,6 @@
-﻿
-namespace Smallib.ChildForms.Cadastros.Genero
+﻿namespace Smallib.ChildForms.Cadastros.Tipo_do_Leitor
 {
-    partial class GeneroConsultar
+    partial class TipoEditar
     {
         /// <summary>
         /// Required designer variable.
@@ -33,14 +32,15 @@ namespace Smallib.ChildForms.Cadastros.Genero
             this.label4 = new System.Windows.Forms.Label();
             this.panel7 = new System.Windows.Forms.Panel();
             this.label5 = new System.Windows.Forms.Label();
-            this.txtBoxNomeGenero = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.txtBoxIdGenero = new System.Windows.Forms.TextBox();
-            this.btnVoltar = new System.Windows.Forms.Button();
+            this.txtBoxIdTipo = new System.Windows.Forms.TextBox();
             this.MainTopPanel = new System.Windows.Forms.Panel();
             this.MainTopLabel = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel5 = new System.Windows.Forms.Panel();
+            this.textBoxNomeEditora = new System.Windows.Forms.TextBox();
+            this.btnVoltar = new System.Windows.Forms.Button();
+            this.btnSalvar = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.MainTopPanel.SuspendLayout();
             this.panel5.SuspendLayout();
@@ -49,17 +49,18 @@ namespace Smallib.ChildForms.Cadastros.Genero
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(253)))), ((int)(((byte)(253)))));
+            this.panel1.Controls.Add(this.btnVoltar);
+            this.panel1.Controls.Add(this.btnSalvar);
+            this.panel1.Controls.Add(this.textBoxNomeEditora);
             this.panel1.Controls.Add(this.label4);
             this.panel1.Controls.Add(this.panel7);
             this.panel1.Controls.Add(this.label5);
-            this.panel1.Controls.Add(this.txtBoxNomeGenero);
             this.panel1.Controls.Add(this.label6);
-            this.panel1.Controls.Add(this.txtBoxIdGenero);
-            this.panel1.Controls.Add(this.btnVoltar);
+            this.panel1.Controls.Add(this.txtBoxIdTipo);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(0, 52);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1004, 579);
+            this.panel1.Size = new System.Drawing.Size(1004, 527);
             this.panel1.TabIndex = 34;
             // 
             // label4
@@ -69,9 +70,9 @@ namespace Smallib.ChildForms.Cadastros.Genero
             this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(81)))), ((int)(((byte)(116)))));
             this.label4.Location = new System.Drawing.Point(102, 61);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(177, 25);
+            this.label4.Size = new System.Drawing.Size(109, 25);
             this.label4.TabIndex = 66;
-            this.label4.Text = "Consultar gênero";
+            this.label4.Text = "Editar tipo";
             // 
             // panel7
             // 
@@ -88,21 +89,9 @@ namespace Smallib.ChildForms.Cadastros.Genero
             this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(197)))), ((int)(((byte)(197)))), ((int)(((byte)(197)))));
             this.label5.Location = new System.Drawing.Point(105, 190);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(171, 25);
+            this.label5.Size = new System.Drawing.Size(137, 25);
             this.label5.TabIndex = 64;
-            this.label5.Text = "Nome do gênero";
-            // 
-            // txtBoxNomeGenero
-            // 
-            this.txtBoxNomeGenero.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(229)))), ((int)(((byte)(229)))));
-            this.txtBoxNomeGenero.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtBoxNomeGenero.Enabled = false;
-            this.txtBoxNomeGenero.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtBoxNomeGenero.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(197)))), ((int)(((byte)(197)))), ((int)(((byte)(197)))));
-            this.txtBoxNomeGenero.Location = new System.Drawing.Point(102, 218);
-            this.txtBoxNomeGenero.Name = "txtBoxNomeGenero";
-            this.txtBoxNomeGenero.Size = new System.Drawing.Size(399, 31);
-            this.txtBoxNomeGenero.TabIndex = 63;
+            this.label5.Text = "Tipo do leitor";
             // 
             // label6
             // 
@@ -115,32 +104,17 @@ namespace Smallib.ChildForms.Cadastros.Genero
             this.label6.TabIndex = 62;
             this.label6.Text = "ID";
             // 
-            // txtBoxIdGenero
+            // txtBoxIdTipo
             // 
-            this.txtBoxIdGenero.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(229)))), ((int)(((byte)(229)))));
-            this.txtBoxIdGenero.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtBoxIdGenero.Enabled = false;
-            this.txtBoxIdGenero.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtBoxIdGenero.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(197)))), ((int)(((byte)(197)))), ((int)(((byte)(197)))));
-            this.txtBoxIdGenero.Location = new System.Drawing.Point(102, 135);
-            this.txtBoxIdGenero.Name = "txtBoxIdGenero";
-            this.txtBoxIdGenero.Size = new System.Drawing.Size(71, 31);
-            this.txtBoxIdGenero.TabIndex = 59;
-            // 
-            // btnVoltar
-            // 
-            this.btnVoltar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(136)))), ((int)(((byte)(217)))));
-            this.btnVoltar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnVoltar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnVoltar.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnVoltar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(253)))), ((int)(((byte)(253)))));
-            this.btnVoltar.Location = new System.Drawing.Point(102, 308);
-            this.btnVoltar.Name = "btnVoltar";
-            this.btnVoltar.Size = new System.Drawing.Size(110, 40);
-            this.btnVoltar.TabIndex = 61;
-            this.btnVoltar.Text = "Voltar";
-            this.btnVoltar.UseVisualStyleBackColor = false;
-            this.btnVoltar.Click += new System.EventHandler(this.btnVoltar_Click);
+            this.txtBoxIdTipo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(229)))), ((int)(((byte)(229)))));
+            this.txtBoxIdTipo.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtBoxIdTipo.Enabled = false;
+            this.txtBoxIdTipo.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtBoxIdTipo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(197)))), ((int)(((byte)(197)))), ((int)(((byte)(197)))));
+            this.txtBoxIdTipo.Location = new System.Drawing.Point(102, 135);
+            this.txtBoxIdTipo.Name = "txtBoxIdTipo";
+            this.txtBoxIdTipo.Size = new System.Drawing.Size(71, 31);
+            this.txtBoxIdTipo.TabIndex = 59;
             // 
             // MainTopPanel
             // 
@@ -159,9 +133,9 @@ namespace Smallib.ChildForms.Cadastros.Genero
             this.MainTopLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(81)))), ((int)(((byte)(116)))));
             this.MainTopLabel.Location = new System.Drawing.Point(46, 12);
             this.MainTopLabel.Name = "MainTopLabel";
-            this.MainTopLabel.Size = new System.Drawing.Size(231, 29);
+            this.MainTopLabel.Size = new System.Drawing.Size(200, 29);
             this.MainTopLabel.TabIndex = 75;
-            this.MainTopLabel.Text = "Cadastro de Gênero";
+            this.MainTopLabel.Text = "Cadastro de Tipo";
             // 
             // panel2
             // 
@@ -179,20 +153,56 @@ namespace Smallib.ChildForms.Cadastros.Genero
             this.panel5.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel5.Location = new System.Drawing.Point(0, 0);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(1004, 631);
-            this.panel5.TabIndex = 21;
+            this.panel5.Size = new System.Drawing.Size(1004, 579);
+            this.panel5.TabIndex = 22;
             // 
-            // GeneroConsultar
+            // textBoxNomeEditora
+            // 
+            this.textBoxNomeEditora.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textBoxNomeEditora.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxNomeEditora.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(81)))), ((int)(((byte)(116)))));
+            this.textBoxNomeEditora.Location = new System.Drawing.Point(102, 218);
+            this.textBoxNomeEditora.Name = "textBoxNomeEditora";
+            this.textBoxNomeEditora.Size = new System.Drawing.Size(400, 31);
+            this.textBoxNomeEditora.TabIndex = 85;
+            // 
+            // btnVoltar
+            // 
+            this.btnVoltar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(136)))), ((int)(((byte)(217)))));
+            this.btnVoltar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnVoltar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnVoltar.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnVoltar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(253)))), ((int)(((byte)(253)))));
+            this.btnVoltar.Location = new System.Drawing.Point(254, 306);
+            this.btnVoltar.Name = "btnVoltar";
+            this.btnVoltar.Size = new System.Drawing.Size(110, 40);
+            this.btnVoltar.TabIndex = 87;
+            this.btnVoltar.Text = "Voltar";
+            this.btnVoltar.UseVisualStyleBackColor = false;
+            // 
+            // btnSalvar
+            // 
+            this.btnSalvar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(174)))), ((int)(((byte)(159)))));
+            this.btnSalvar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnSalvar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSalvar.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSalvar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(253)))), ((int)(((byte)(253)))));
+            this.btnSalvar.Location = new System.Drawing.Point(102, 306);
+            this.btnSalvar.Name = "btnSalvar";
+            this.btnSalvar.Size = new System.Drawing.Size(110, 40);
+            this.btnSalvar.TabIndex = 86;
+            this.btnSalvar.Text = "Salvar";
+            this.btnSalvar.UseVisualStyleBackColor = false;
+            // 
+            // TipoEditar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(253)))), ((int)(((byte)(253)))));
-            this.ClientSize = new System.Drawing.Size(1004, 631);
+            this.ClientSize = new System.Drawing.Size(1004, 579);
             this.Controls.Add(this.panel5);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "GeneroConsultar";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
-            this.Text = "GeneroConsultar";
+            this.Name = "TipoEditar";
+            this.Text = "TipoEditar";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.MainTopPanel.ResumeLayout(false);
@@ -208,13 +218,14 @@ namespace Smallib.ChildForms.Cadastros.Genero
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Panel panel7;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox txtBoxNomeGenero;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox txtBoxIdGenero;
-        private System.Windows.Forms.Button btnVoltar;
+        private System.Windows.Forms.TextBox txtBoxIdTipo;
         private System.Windows.Forms.Panel MainTopPanel;
         private System.Windows.Forms.Label MainTopLabel;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel5;
+        private System.Windows.Forms.TextBox textBoxNomeEditora;
+        private System.Windows.Forms.Button btnVoltar;
+        private System.Windows.Forms.Button btnSalvar;
     }
 }

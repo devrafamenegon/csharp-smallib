@@ -1,7 +1,7 @@
 ﻿
-namespace Smallib.ChildForms.Cadastros.Genero
+namespace Smallib.ChildForms.Cadastros.Curso
 {
-    partial class GeneroNovo
+    partial class CursoEditar
     {
         /// <summary>
         /// Required designer variable.
@@ -29,33 +29,21 @@ namespace Smallib.ChildForms.Cadastros.Genero
         /// </summary>
         private void InitializeComponent()
         {
-            this.MainTopPanel = new System.Windows.Forms.Panel();
             this.MainTopLabel = new System.Windows.Forms.Label();
-            this.panel2 = new System.Windows.Forms.Panel();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.btnVoltar = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
             this.panel7 = new System.Windows.Forms.Panel();
             this.label5 = new System.Windows.Forms.Label();
-            this.txtBoxNomeGenero = new System.Windows.Forms.TextBox();
+            this.txtBoxNomeCurso = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.btnSalvar = new System.Windows.Forms.Button();
-            this.txtBoxIdGenero = new System.Windows.Forms.TextBox();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.panel5 = new System.Windows.Forms.Panel();
-            this.MainTopPanel.SuspendLayout();
+            this.txtBoxIdCurso = new System.Windows.Forms.TextBox();
+            this.MainTopPanel = new System.Windows.Forms.Panel();
+            this.panel2 = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
-            this.panel5.SuspendLayout();
+            this.MainTopPanel.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // MainTopPanel
-            // 
-            this.MainTopPanel.Controls.Add(this.MainTopLabel);
-            this.MainTopPanel.Controls.Add(this.panel2);
-            this.MainTopPanel.Dock = System.Windows.Forms.DockStyle.Top;
-            this.MainTopPanel.Location = new System.Drawing.Point(0, 0);
-            this.MainTopPanel.Name = "MainTopPanel";
-            this.MainTopPanel.Size = new System.Drawing.Size(1004, 52);
-            this.MainTopPanel.TabIndex = 33;
             // 
             // MainTopLabel
             // 
@@ -64,17 +52,26 @@ namespace Smallib.ChildForms.Cadastros.Genero
             this.MainTopLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(81)))), ((int)(((byte)(116)))));
             this.MainTopLabel.Location = new System.Drawing.Point(46, 12);
             this.MainTopLabel.Name = "MainTopLabel";
-            this.MainTopLabel.Size = new System.Drawing.Size(231, 29);
+            this.MainTopLabel.Size = new System.Drawing.Size(214, 29);
             this.MainTopLabel.TabIndex = 75;
-            this.MainTopLabel.Text = "Cadastro de Gênero";
+            this.MainTopLabel.Text = "Cadastro de Curso";
             // 
-            // panel2
+            // panel1
             // 
-            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(229)))), ((int)(((byte)(229)))));
-            this.panel2.Location = new System.Drawing.Point(0, 50);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1004, 2);
-            this.panel2.TabIndex = 25;
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(253)))), ((int)(((byte)(253)))));
+            this.panel1.Controls.Add(this.btnVoltar);
+            this.panel1.Controls.Add(this.label4);
+            this.panel1.Controls.Add(this.panel7);
+            this.panel1.Controls.Add(this.label5);
+            this.panel1.Controls.Add(this.txtBoxNomeCurso);
+            this.panel1.Controls.Add(this.label6);
+            this.panel1.Controls.Add(this.btnSalvar);
+            this.panel1.Controls.Add(this.txtBoxIdCurso);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel1.Location = new System.Drawing.Point(0, 52);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(988, 540);
+            this.panel1.TabIndex = 36;
             // 
             // btnVoltar
             // 
@@ -98,9 +95,9 @@ namespace Smallib.ChildForms.Cadastros.Genero
             this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(81)))), ((int)(((byte)(116)))));
             this.label4.Location = new System.Drawing.Point(102, 61);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(184, 25);
+            this.label4.Size = new System.Drawing.Size(127, 25);
             this.label4.TabIndex = 66;
-            this.label4.Text = "Criar novo gênero";
+            this.label4.Text = "Editar curso";
             // 
             // panel7
             // 
@@ -117,19 +114,19 @@ namespace Smallib.ChildForms.Cadastros.Genero
             this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(197)))), ((int)(((byte)(197)))), ((int)(((byte)(197)))));
             this.label5.Location = new System.Drawing.Point(105, 190);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(171, 25);
+            this.label5.Size = new System.Drawing.Size(157, 25);
             this.label5.TabIndex = 64;
-            this.label5.Text = "Nome do gênero";
+            this.label5.Text = "Nome do curso";
             // 
-            // txtBoxNomeGenero
+            // txtBoxNomeCurso
             // 
-            this.txtBoxNomeGenero.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtBoxNomeGenero.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtBoxNomeGenero.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(81)))), ((int)(((byte)(116)))));
-            this.txtBoxNomeGenero.Location = new System.Drawing.Point(102, 218);
-            this.txtBoxNomeGenero.Name = "txtBoxNomeGenero";
-            this.txtBoxNomeGenero.Size = new System.Drawing.Size(399, 31);
-            this.txtBoxNomeGenero.TabIndex = 63;
+            this.txtBoxNomeCurso.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtBoxNomeCurso.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtBoxNomeCurso.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(81)))), ((int)(((byte)(116)))));
+            this.txtBoxNomeCurso.Location = new System.Drawing.Point(102, 218);
+            this.txtBoxNomeCurso.Name = "txtBoxNomeCurso";
+            this.txtBoxNomeCurso.Size = new System.Drawing.Size(399, 31);
+            this.txtBoxNomeCurso.TabIndex = 63;
             // 
             // label6
             // 
@@ -157,80 +154,69 @@ namespace Smallib.ChildForms.Cadastros.Genero
             this.btnSalvar.UseVisualStyleBackColor = false;
             this.btnSalvar.Click += new System.EventHandler(this.btnSalvar_Click);
             // 
-            // txtBoxIdGenero
+            // txtBoxIdCurso
             // 
-            this.txtBoxIdGenero.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(229)))), ((int)(((byte)(229)))));
-            this.txtBoxIdGenero.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtBoxIdGenero.Enabled = false;
-            this.txtBoxIdGenero.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtBoxIdGenero.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(197)))), ((int)(((byte)(197)))), ((int)(((byte)(197)))));
-            this.txtBoxIdGenero.Location = new System.Drawing.Point(102, 135);
-            this.txtBoxIdGenero.Name = "txtBoxIdGenero";
-            this.txtBoxIdGenero.Size = new System.Drawing.Size(71, 31);
-            this.txtBoxIdGenero.TabIndex = 59;
+            this.txtBoxIdCurso.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(229)))), ((int)(((byte)(229)))));
+            this.txtBoxIdCurso.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtBoxIdCurso.Enabled = false;
+            this.txtBoxIdCurso.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtBoxIdCurso.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(197)))), ((int)(((byte)(197)))), ((int)(((byte)(197)))));
+            this.txtBoxIdCurso.Location = new System.Drawing.Point(102, 135);
+            this.txtBoxIdCurso.Name = "txtBoxIdCurso";
+            this.txtBoxIdCurso.Size = new System.Drawing.Size(71, 31);
+            this.txtBoxIdCurso.TabIndex = 59;
             // 
-            // panel1
+            // MainTopPanel
             // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(253)))), ((int)(((byte)(253)))));
-            this.panel1.Controls.Add(this.btnVoltar);
-            this.panel1.Controls.Add(this.label4);
-            this.panel1.Controls.Add(this.panel7);
-            this.panel1.Controls.Add(this.label5);
-            this.panel1.Controls.Add(this.txtBoxNomeGenero);
-            this.panel1.Controls.Add(this.label6);
-            this.panel1.Controls.Add(this.btnSalvar);
-            this.panel1.Controls.Add(this.txtBoxIdGenero);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel1.Location = new System.Drawing.Point(0, 52);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1004, 579);
-            this.panel1.TabIndex = 34;
+            this.MainTopPanel.Controls.Add(this.MainTopLabel);
+            this.MainTopPanel.Controls.Add(this.panel2);
+            this.MainTopPanel.Dock = System.Windows.Forms.DockStyle.Top;
+            this.MainTopPanel.Location = new System.Drawing.Point(0, 0);
+            this.MainTopPanel.Name = "MainTopPanel";
+            this.MainTopPanel.Size = new System.Drawing.Size(988, 52);
+            this.MainTopPanel.TabIndex = 35;
             // 
-            // panel5
+            // panel2
             // 
-            this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(253)))), ((int)(((byte)(253)))));
-            this.panel5.Controls.Add(this.panel1);
-            this.panel5.Controls.Add(this.MainTopPanel);
-            this.panel5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel5.Location = new System.Drawing.Point(0, 0);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(1004, 631);
-            this.panel5.TabIndex = 19;
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(229)))), ((int)(((byte)(229)))));
+            this.panel2.Location = new System.Drawing.Point(0, 50);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(1004, 2);
+            this.panel2.TabIndex = 25;
             // 
-            // GeneroNovo
+            // CursoEditar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(253)))), ((int)(((byte)(253)))));
-            this.ClientSize = new System.Drawing.Size(1004, 631);
-            this.Controls.Add(this.panel5);
+            this.ClientSize = new System.Drawing.Size(988, 592);
+            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.MainTopPanel);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "GeneroNovo";
+            this.Name = "CursoEditar";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
-            this.Text = "GeneroNovo";
-            this.MainTopPanel.ResumeLayout(false);
-            this.MainTopPanel.PerformLayout();
+            this.Text = "CursoEditar";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            this.panel5.ResumeLayout(false);
+            this.MainTopPanel.ResumeLayout(false);
+            this.MainTopPanel.PerformLayout();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.Panel MainTopPanel;
         private System.Windows.Forms.Label MainTopLabel;
-        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button btnVoltar;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Panel panel7;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox txtBoxNomeGenero;
+        private System.Windows.Forms.TextBox txtBoxNomeCurso;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Button btnSalvar;
-        private System.Windows.Forms.TextBox txtBoxIdGenero;
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Panel panel5;
+        private System.Windows.Forms.TextBox txtBoxIdCurso;
+        private System.Windows.Forms.Panel MainTopPanel;
+        private System.Windows.Forms.Panel panel2;
     }
 }

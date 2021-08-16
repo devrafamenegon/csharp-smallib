@@ -1,4 +1,5 @@
-﻿using Smallib.ChildForms.Cadastros.Genero;
+﻿using Smallib.ChildForms.Cadastros.Curso;
+using Smallib.ChildForms.Cadastros.Genero;
 using Smallib.ChildForms.Cadastros.Idioma;
 using Smallib.ChildForms.Cadastros.Nacionalidade;
 using System;
@@ -41,6 +42,11 @@ namespace Smallib.ChildForms
         private void btnNacionalidade_Click(object sender, EventArgs e)
         {
             _principal.OpenChildForm(new NacionalidadeMenu(_principal));
+        }
+
+        private void btnCurso_Click(object sender, EventArgs e)
+        {
+            _principal.OpenChildForm(new CursoMenu(_principal));
         }
     }
 }

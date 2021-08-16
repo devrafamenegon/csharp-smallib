@@ -67,6 +67,96 @@
     <Compile Include="ChildForms\Cadastros\CadastrosRoot.designer.cs">
       <DependentUpon>CadastrosRoot.cs</DependentUpon>
     </Compile>
+    <Compile Include="ChildForms\Cadastros\Cidade\CidadeConsultar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChildForms\Cadastros\Cidade\CidadeConsultar.Designer.cs">
+      <DependentUpon>CidadeConsultar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChildForms\Cadastros\Cidade\CidadeEditar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChildForms\Cadastros\Cidade\CidadeEditar.Designer.cs">
+      <DependentUpon>CidadeEditar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChildForms\Cadastros\Cidade\CidadeExcluir.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChildForms\Cadastros\Cidade\CidadeExcluir.Designer.cs">
+      <DependentUpon>CidadeExcluir.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChildForms\Cadastros\Cidade\CidadeMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChildForms\Cadastros\Cidade\CidadeMenu.Designer.cs">
+      <DependentUpon>CidadeMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChildForms\Cadastros\Cidade\CidadeNovo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChildForms\Cadastros\Cidade\CidadeNovo.Designer.cs">
+      <DependentUpon>CidadeNovo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChildForms\Cadastros\Curso\CursoConsultar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChildForms\Cadastros\Curso\CursoConsultar.Designer.cs">
+      <DependentUpon>CursoConsultar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChildForms\Cadastros\Curso\CursoEditar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChildForms\Cadastros\Curso\CursoEditar.Designer.cs">
+      <DependentUpon>CursoEditar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChildForms\Cadastros\Curso\CursoExcluir.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChildForms\Cadastros\Curso\CursoExcluir.Designer.cs">
+      <DependentUpon>CursoExcluir.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChildForms\Cadastros\Curso\CursoMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChildForms\Cadastros\Curso\CursoMenu.Designer.cs">
+      <DependentUpon>CursoMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChildForms\Cadastros\Curso\CursoNovo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChildForms\Cadastros\Curso\CursoNovo.Designer.cs">
+      <DependentUpon>CursoNovo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChildForms\Cadastros\Editora\EditoraConsultar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChildForms\Cadastros\Editora\EditoraConsultar.Designer.cs">
+      <DependentUpon>EditoraConsultar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChildForms\Cadastros\Editora\EditoraEditar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChildForms\Cadastros\Editora\EditoraEditar.Designer.cs">
+      <DependentUpon>EditoraEditar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChildForms\Cadastros\Editora\EditoraExcluir.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChildForms\Cadastros\Editora\EditoraExcluir.Designer.cs">
+      <DependentUpon>EditoraExcluir.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChildForms\Cadastros\Editora\EditoraMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChildForms\Cadastros\Editora\EditoraMenu.Designer.cs">
+      <DependentUpon>EditoraMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChildForms\Cadastros\Editora\EditoraNovo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChildForms\Cadastros\Editora\EditoraNovo.Designer.cs">
+      <DependentUpon>EditoraNovo.cs</DependentUpon>
+    </Compile>
     <Compile Include="ChildForms\Cadastros\Genero\GeneroConsultar.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -156,6 +246,36 @@
     </Compile>
     <Compile Include="ChildForms\Cadastros\Nacionalidade\NacionalidadeNovo.Designer.cs">
       <DependentUpon>NacionalidadeNovo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChildForms\Cadastros\Tipo do Leitor\TipoConsultar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChildForms\Cadastros\Tipo do Leitor\TipoConsultar.Designer.cs">
+      <DependentUpon>TipoConsultar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChildForms\Cadastros\Tipo do Leitor\TipoEditar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChildForms\Cadastros\Tipo do Leitor\TipoEditar.Designer.cs">
+      <DependentUpon>TipoEditar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChildForms\Cadastros\Tipo do Leitor\TipoExcluir.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChildForms\Cadastros\Tipo do Leitor\TipoExcluir.Designer.cs">
+      <DependentUpon>TipoExcluir.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChildForms\Cadastros\Tipo do Leitor\TipoMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChildForms\Cadastros\Tipo do Leitor\TipoMenu.Designer.cs">
+      <DependentUpon>TipoMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChildForms\Cadastros\Tipo do Leitor\TipoNovo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChildForms\Cadastros\Tipo do Leitor\TipoNovo.Designer.cs">
+      <DependentUpon>TipoNovo.cs</DependentUpon>
     </Compile>
     <Compile Include="ChildForms\Configuracoes\Backup.cs">
       <SubType>Form</SubType>
@@ -301,6 +421,51 @@
     <EmbeddedResource Include="ChildForms\Cadastros\CadastrosRoot.resx">
       <DependentUpon>CadastrosRoot.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ChildForms\Cadastros\Cidade\CidadeConsultar.resx">
+      <DependentUpon>CidadeConsultar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChildForms\Cadastros\Cidade\CidadeEditar.resx">
+      <DependentUpon>CidadeEditar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChildForms\Cadastros\Cidade\CidadeExcluir.resx">
+      <DependentUpon>CidadeExcluir.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChildForms\Cadastros\Cidade\CidadeMenu.resx">
+      <DependentUpon>CidadeMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChildForms\Cadastros\Cidade\CidadeNovo.resx">
+      <DependentUpon>CidadeNovo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChildForms\Cadastros\Curso\CursoConsultar.resx">
+      <DependentUpon>CursoConsultar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChildForms\Cadastros\Curso\CursoEditar.resx">
+      <DependentUpon>CursoEditar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChildForms\Cadastros\Curso\CursoExcluir.resx">
+      <DependentUpon>CursoExcluir.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChildForms\Cadastros\Curso\CursoMenu.resx">
+      <DependentUpon>CursoMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChildForms\Cadastros\Curso\CursoNovo.resx">
+      <DependentUpon>CursoNovo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChildForms\Cadastros\Editora\EditoraConsultar.resx">
+      <DependentUpon>EditoraConsultar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChildForms\Cadastros\Editora\EditoraEditar.resx">
+      <DependentUpon>EditoraEditar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChildForms\Cadastros\Editora\EditoraExcluir.resx">
+      <DependentUpon>EditoraExcluir.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChildForms\Cadastros\Editora\EditoraMenu.resx">
+      <DependentUpon>EditoraMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChildForms\Cadastros\Editora\EditoraNovo.resx">
+      <DependentUpon>EditoraNovo.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ChildForms\Cadastros\Genero\GeneroConsultar.resx">
       <DependentUpon>GeneroConsultar.cs</DependentUpon>
     </EmbeddedResource>
@@ -345,6 +510,21 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ChildForms\Cadastros\Nacionalidade\NacionalidadeNovo.resx">
       <DependentUpon>NacionalidadeNovo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChildForms\Cadastros\Tipo do Leitor\TipoConsultar.resx">
+      <DependentUpon>TipoConsultar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChildForms\Cadastros\Tipo do Leitor\TipoEditar.resx">
+      <DependentUpon>TipoEditar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChildForms\Cadastros\Tipo do Leitor\TipoExcluir.resx">
+      <DependentUpon>TipoExcluir.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChildForms\Cadastros\Tipo do Leitor\TipoMenu.resx">
+      <DependentUpon>TipoMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChildForms\Cadastros\Tipo do Leitor\TipoNovo.resx">
+      <DependentUpon>TipoNovo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ChildForms\Configuracoes\Backup.resx">
       <DependentUpon>Backup.cs</DependentUpon>
