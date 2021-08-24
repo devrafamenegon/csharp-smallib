@@ -548,10 +548,10 @@
     <Compile Include="LogForms\AlterarSenha.Designer.cs">
       <DependentUpon>AlterarSenha.cs</DependentUpon>
     </Compile>
-    <Compile Include="PrimeiraEntrada.cs">
+    <Compile Include="LogForms\PrimeiraEntrada.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="PrimeiraEntrada.Designer.cs">
+    <Compile Include="LogForms\PrimeiraEntrada.Designer.cs">
       <DependentUpon>PrimeiraEntrada.cs</DependentUpon>
     </Compile>
     <Compile Include="Principal.cs">
@@ -805,7 +805,7 @@
     <EmbeddedResource Include="LogForms\AlterarSenha.resx">
       <DependentUpon>AlterarSenha.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="PrimeiraEntrada.resx">
+    <EmbeddedResource Include="LogForms\PrimeiraEntrada.resx">
       <DependentUpon>PrimeiraEntrada.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Principal.resx">
