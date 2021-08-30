@@ -33,11 +33,6 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.labelDgv = new System.Windows.Forms.Label();
             this.dgvLeitor = new System.Windows.Forms.DataGridView();
-            this.id_usuario = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.nome_editora = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.telefone_leitor = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.tipo_leitor = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.status_leitor = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.btnConsultar = new System.Windows.Forms.Button();
             this.btnExcluir = new System.Windows.Forms.Button();
             this.btnEditar = new System.Windows.Forms.Button();
@@ -50,8 +45,24 @@
             this.MainTopPanel = new System.Windows.Forms.Panel();
             this.MainTopLabel = new System.Windows.Forms.Label();
             this.panel5 = new System.Windows.Forms.Panel();
-            this.metroTxtBoxPesquisar = new MetroFramework.Controls.MetroTextBox();
+            this.btnRelatorio = new System.Windows.Forms.Button();
+            this.radioStatusLeitor = new System.Windows.Forms.RadioButton();
             this.radioTipoLeitor = new System.Windows.Forms.RadioButton();
+            this.metroTxtBoxPesquisar = new MetroFramework.Controls.MetroTextBox();
+            this.radioCidadeLeitor = new System.Windows.Forms.RadioButton();
+            this.pk_id_leitor = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.nome_leitor = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.email_leitor = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tel_cel_leitor = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.rg_leitor = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dtnasc_leitor = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dtcad_leitor = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.nome_cidade = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.estado_cidade = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.nome_tipo = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.nome_curso = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.classe_leitor = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.status_leitor = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dgvLeitor)).BeginInit();
             this.MainTopPanel.SuspendLayout();
             this.panel5.SuspendLayout();
@@ -84,10 +95,18 @@
             this.dgvLeitor.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dgvLeitor.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvLeitor.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.id_usuario,
-            this.nome_editora,
-            this.telefone_leitor,
-            this.tipo_leitor,
+            this.pk_id_leitor,
+            this.nome_leitor,
+            this.email_leitor,
+            this.tel_cel_leitor,
+            this.rg_leitor,
+            this.dtnasc_leitor,
+            this.dtcad_leitor,
+            this.nome_cidade,
+            this.estado_cidade,
+            this.nome_tipo,
+            this.nome_curso,
+            this.classe_leitor,
             this.status_leitor});
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
@@ -117,40 +136,6 @@
             this.dgvLeitor.Size = new System.Drawing.Size(883, 353);
             this.dgvLeitor.TabIndex = 26;
             // 
-            // id_usuario
-            // 
-            this.id_usuario.DataPropertyName = "pk_id_editora";
-            this.id_usuario.FillWeight = 30.92407F;
-            this.id_usuario.HeaderText = "ID ";
-            this.id_usuario.Name = "id_usuario";
-            this.id_usuario.ReadOnly = true;
-            // 
-            // nome_editora
-            // 
-            this.nome_editora.DataPropertyName = "nome_editora";
-            this.nome_editora.FillWeight = 100.0759F;
-            this.nome_editora.HeaderText = "Nome ";
-            this.nome_editora.Name = "nome_editora";
-            this.nome_editora.ReadOnly = true;
-            // 
-            // telefone_leitor
-            // 
-            this.telefone_leitor.HeaderText = "Telefone";
-            this.telefone_leitor.Name = "telefone_leitor";
-            this.telefone_leitor.ReadOnly = true;
-            // 
-            // tipo_leitor
-            // 
-            this.tipo_leitor.HeaderText = "Tipo";
-            this.tipo_leitor.Name = "tipo_leitor";
-            this.tipo_leitor.ReadOnly = true;
-            // 
-            // status_leitor
-            // 
-            this.status_leitor.HeaderText = "Status";
-            this.status_leitor.Name = "status_leitor";
-            this.status_leitor.ReadOnly = true;
-            // 
             // btnConsultar
             // 
             this.btnConsultar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(131)))), ((int)(((byte)(58)))));
@@ -165,6 +150,7 @@
             this.btnConsultar.TabIndex = 25;
             this.btnConsultar.Text = "Consultar";
             this.btnConsultar.UseVisualStyleBackColor = false;
+            this.btnConsultar.Click += new System.EventHandler(this.btnConsultar_Click);
             // 
             // btnExcluir
             // 
@@ -180,6 +166,7 @@
             this.btnExcluir.TabIndex = 24;
             this.btnExcluir.Text = "Excluir";
             this.btnExcluir.UseVisualStyleBackColor = false;
+            this.btnExcluir.Click += new System.EventHandler(this.btnExcluir_Click);
             // 
             // btnEditar
             // 
@@ -195,6 +182,7 @@
             this.btnEditar.TabIndex = 23;
             this.btnEditar.Text = "Editar";
             this.btnEditar.UseVisualStyleBackColor = false;
+            this.btnEditar.Click += new System.EventHandler(this.btnEditar_Click);
             // 
             // btnNovo
             // 
@@ -210,6 +198,7 @@
             this.btnNovo.TabIndex = 22;
             this.btnNovo.Text = "Novo";
             this.btnNovo.UseVisualStyleBackColor = false;
+            this.btnNovo.Click += new System.EventHandler(this.btnNovo_Click);
             // 
             // btnAtualizar
             // 
@@ -227,6 +216,7 @@
             this.btnAtualizar.Size = new System.Drawing.Size(30, 30);
             this.btnAtualizar.TabIndex = 21;
             this.btnAtualizar.UseVisualStyleBackColor = false;
+            this.btnAtualizar.Click += new System.EventHandler(this.btnAtualizar_Click);
             // 
             // btnPesquisar
             // 
@@ -244,6 +234,7 @@
             this.btnPesquisar.Size = new System.Drawing.Size(30, 30);
             this.btnPesquisar.TabIndex = 20;
             this.btnPesquisar.UseVisualStyleBackColor = false;
+            this.btnPesquisar.Click += new System.EventHandler(this.btnPesquisar_Click);
             // 
             // radioNomeLeitor
             // 
@@ -257,13 +248,14 @@
             this.radioNomeLeitor.Name = "radioNomeLeitor";
             this.radioNomeLeitor.Size = new System.Drawing.Size(68, 24);
             this.radioNomeLeitor.TabIndex = 19;
-            this.radioNomeLeitor.TabStop = true;
             this.radioNomeLeitor.Text = "Nome";
             this.radioNomeLeitor.UseVisualStyleBackColor = true;
+            this.radioNomeLeitor.CheckedChanged += new System.EventHandler(this.radioNomeLeitor_CheckedChanged);
             // 
             // radioIdLeitor
             // 
             this.radioIdLeitor.AutoSize = true;
+            this.radioIdLeitor.Checked = true;
             this.radioIdLeitor.Cursor = System.Windows.Forms.Cursors.Hand;
             this.radioIdLeitor.FlatAppearance.BorderSize = 2;
             this.radioIdLeitor.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -276,6 +268,7 @@
             this.radioIdLeitor.TabStop = true;
             this.radioIdLeitor.Text = "ID";
             this.radioIdLeitor.UseVisualStyleBackColor = true;
+            this.radioIdLeitor.CheckedChanged += new System.EventHandler(this.radioIdLeitor_CheckedChanged);
             // 
             // panel7
             // 
@@ -309,8 +302,11 @@
             // panel5
             // 
             this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(253)))), ((int)(((byte)(253)))));
-            this.panel5.Controls.Add(this.metroTxtBoxPesquisar);
+            this.panel5.Controls.Add(this.btnRelatorio);
+            this.panel5.Controls.Add(this.radioStatusLeitor);
             this.panel5.Controls.Add(this.radioTipoLeitor);
+            this.panel5.Controls.Add(this.metroTxtBoxPesquisar);
+            this.panel5.Controls.Add(this.radioCidadeLeitor);
             this.panel5.Controls.Add(this.labelDgv);
             this.panel5.Controls.Add(this.dgvLeitor);
             this.panel5.Controls.Add(this.btnConsultar);
@@ -329,6 +325,54 @@
             this.panel5.Size = new System.Drawing.Size(1004, 631);
             this.panel5.TabIndex = 19;
             // 
+            // btnRelatorio
+            // 
+            this.btnRelatorio.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(122)))), ((int)(((byte)(129)))), ((int)(((byte)(233)))));
+            this.btnRelatorio.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnRelatorio.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnRelatorio.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnRelatorio.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRelatorio.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(253)))), ((int)(((byte)(253)))));
+            this.btnRelatorio.Location = new System.Drawing.Point(833, 552);
+            this.btnRelatorio.Name = "btnRelatorio";
+            this.btnRelatorio.Size = new System.Drawing.Size(110, 40);
+            this.btnRelatorio.TabIndex = 47;
+            this.btnRelatorio.Text = "Relatório";
+            this.btnRelatorio.UseVisualStyleBackColor = false;
+            this.btnRelatorio.Click += new System.EventHandler(this.btnRelatorio_Click);
+            // 
+            // radioStatusLeitor
+            // 
+            this.radioStatusLeitor.AutoSize = true;
+            this.radioStatusLeitor.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.radioStatusLeitor.FlatAppearance.BorderSize = 2;
+            this.radioStatusLeitor.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.radioStatusLeitor.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.5F);
+            this.radioStatusLeitor.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(81)))), ((int)(((byte)(116)))));
+            this.radioStatusLeitor.Location = new System.Drawing.Point(394, 131);
+            this.radioStatusLeitor.Name = "radioStatusLeitor";
+            this.radioStatusLeitor.Size = new System.Drawing.Size(73, 24);
+            this.radioStatusLeitor.TabIndex = 32;
+            this.radioStatusLeitor.Text = "Status";
+            this.radioStatusLeitor.UseVisualStyleBackColor = true;
+            this.radioStatusLeitor.CheckedChanged += new System.EventHandler(this.radioStatusLeitor_CheckedChanged);
+            // 
+            // radioTipoLeitor
+            // 
+            this.radioTipoLeitor.AutoSize = true;
+            this.radioTipoLeitor.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.radioTipoLeitor.FlatAppearance.BorderSize = 2;
+            this.radioTipoLeitor.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.radioTipoLeitor.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.5F);
+            this.radioTipoLeitor.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(81)))), ((int)(((byte)(116)))));
+            this.radioTipoLeitor.Location = new System.Drawing.Point(314, 131);
+            this.radioTipoLeitor.Name = "radioTipoLeitor";
+            this.radioTipoLeitor.Size = new System.Drawing.Size(56, 24);
+            this.radioTipoLeitor.TabIndex = 31;
+            this.radioTipoLeitor.Text = "Tipo";
+            this.radioTipoLeitor.UseVisualStyleBackColor = true;
+            this.radioTipoLeitor.CheckedChanged += new System.EventHandler(this.radioTipoLeitor_CheckedChanged);
+            // 
             // metroTxtBoxPesquisar
             // 
             this.metroTxtBoxPesquisar.BackColor = System.Drawing.SystemColors.Window;
@@ -344,7 +388,6 @@
             this.metroTxtBoxPesquisar.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
             this.metroTxtBoxPesquisar.CustomButton.UseSelectable = true;
             this.metroTxtBoxPesquisar.CustomButton.Visible = false;
-            this.metroTxtBoxPesquisar.Enabled = false;
             this.metroTxtBoxPesquisar.FontSize = MetroFramework.MetroTextBoxSize.Tall;
             this.metroTxtBoxPesquisar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(81)))), ((int)(((byte)(116)))));
             this.metroTxtBoxPesquisar.Lines = new string[0];
@@ -365,21 +408,124 @@
             this.metroTxtBoxPesquisar.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(197)))), ((int)(((byte)(197)))), ((int)(((byte)(197)))));
             this.metroTxtBoxPesquisar.WaterMarkFont = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             // 
-            // radioTipoLeitor
+            // radioCidadeLeitor
             // 
-            this.radioTipoLeitor.AutoSize = true;
-            this.radioTipoLeitor.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.radioTipoLeitor.FlatAppearance.BorderSize = 2;
-            this.radioTipoLeitor.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.radioTipoLeitor.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.5F);
-            this.radioTipoLeitor.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(81)))), ((int)(((byte)(116)))));
-            this.radioTipoLeitor.Location = new System.Drawing.Point(216, 131);
-            this.radioTipoLeitor.Name = "radioTipoLeitor";
-            this.radioTipoLeitor.Size = new System.Drawing.Size(56, 24);
-            this.radioTipoLeitor.TabIndex = 29;
-            this.radioTipoLeitor.TabStop = true;
-            this.radioTipoLeitor.Text = "Tipo";
-            this.radioTipoLeitor.UseVisualStyleBackColor = true;
+            this.radioCidadeLeitor.AutoSize = true;
+            this.radioCidadeLeitor.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.radioCidadeLeitor.FlatAppearance.BorderSize = 2;
+            this.radioCidadeLeitor.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.radioCidadeLeitor.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.5F);
+            this.radioCidadeLeitor.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(81)))), ((int)(((byte)(116)))));
+            this.radioCidadeLeitor.Location = new System.Drawing.Point(216, 131);
+            this.radioCidadeLeitor.Name = "radioCidadeLeitor";
+            this.radioCidadeLeitor.Size = new System.Drawing.Size(76, 24);
+            this.radioCidadeLeitor.TabIndex = 29;
+            this.radioCidadeLeitor.Text = "Cidade";
+            this.radioCidadeLeitor.UseVisualStyleBackColor = true;
+            this.radioCidadeLeitor.CheckedChanged += new System.EventHandler(this.radioCidadeLeitor_CheckedChanged);
+            // 
+            // pk_id_leitor
+            // 
+            this.pk_id_leitor.DataPropertyName = "pk_id_leitor";
+            this.pk_id_leitor.FillWeight = 20.92407F;
+            this.pk_id_leitor.HeaderText = "ID ";
+            this.pk_id_leitor.Name = "pk_id_leitor";
+            this.pk_id_leitor.ReadOnly = true;
+            // 
+            // nome_leitor
+            // 
+            this.nome_leitor.DataPropertyName = "nome_leitor";
+            this.nome_leitor.HeaderText = "Nome";
+            this.nome_leitor.Name = "nome_leitor";
+            this.nome_leitor.ReadOnly = true;
+            // 
+            // email_leitor
+            // 
+            this.email_leitor.DataPropertyName = "email_leitor";
+            this.email_leitor.HeaderText = "Email";
+            this.email_leitor.Name = "email_leitor";
+            this.email_leitor.ReadOnly = true;
+            this.email_leitor.Visible = false;
+            // 
+            // tel_cel_leitor
+            // 
+            this.tel_cel_leitor.DataPropertyName = "tel_cel_leitor";
+            this.tel_cel_leitor.HeaderText = "Tel. Celular";
+            this.tel_cel_leitor.Name = "tel_cel_leitor";
+            this.tel_cel_leitor.ReadOnly = true;
+            this.tel_cel_leitor.Visible = false;
+            // 
+            // rg_leitor
+            // 
+            this.rg_leitor.DataPropertyName = "rg_leitor";
+            this.rg_leitor.HeaderText = "RG";
+            this.rg_leitor.Name = "rg_leitor";
+            this.rg_leitor.ReadOnly = true;
+            this.rg_leitor.Visible = false;
+            // 
+            // dtnasc_leitor
+            // 
+            this.dtnasc_leitor.DataPropertyName = "dtnasc_leitor";
+            this.dtnasc_leitor.HeaderText = "Data de Nascimento";
+            this.dtnasc_leitor.Name = "dtnasc_leitor";
+            this.dtnasc_leitor.ReadOnly = true;
+            this.dtnasc_leitor.Visible = false;
+            // 
+            // dtcad_leitor
+            // 
+            this.dtcad_leitor.DataPropertyName = "dtcad_leitor";
+            this.dtcad_leitor.HeaderText = "Data de Atualização";
+            this.dtcad_leitor.Name = "dtcad_leitor";
+            this.dtcad_leitor.ReadOnly = true;
+            this.dtcad_leitor.Visible = false;
+            // 
+            // nome_cidade
+            // 
+            this.nome_cidade.DataPropertyName = "nome_cidade";
+            this.nome_cidade.FillWeight = 60F;
+            this.nome_cidade.HeaderText = "Cidade";
+            this.nome_cidade.Name = "nome_cidade";
+            this.nome_cidade.ReadOnly = true;
+            // 
+            // estado_cidade
+            // 
+            this.estado_cidade.DataPropertyName = "estado_cidade";
+            this.estado_cidade.HeaderText = "Estado";
+            this.estado_cidade.Name = "estado_cidade";
+            this.estado_cidade.ReadOnly = true;
+            this.estado_cidade.Visible = false;
+            // 
+            // nome_tipo
+            // 
+            this.nome_tipo.DataPropertyName = "nome_tipo";
+            this.nome_tipo.FillWeight = 50F;
+            this.nome_tipo.HeaderText = "Tipo";
+            this.nome_tipo.Name = "nome_tipo";
+            this.nome_tipo.ReadOnly = true;
+            // 
+            // nome_curso
+            // 
+            this.nome_curso.DataPropertyName = "nome_curso";
+            this.nome_curso.HeaderText = "Curso";
+            this.nome_curso.Name = "nome_curso";
+            this.nome_curso.ReadOnly = true;
+            this.nome_curso.Visible = false;
+            // 
+            // classe_leitor
+            // 
+            this.classe_leitor.DataPropertyName = "classe_leitor";
+            this.classe_leitor.HeaderText = "Classe";
+            this.classe_leitor.Name = "classe_leitor";
+            this.classe_leitor.ReadOnly = true;
+            this.classe_leitor.Visible = false;
+            // 
+            // status_leitor
+            // 
+            this.status_leitor.DataPropertyName = "status_leitor";
+            this.status_leitor.FillWeight = 40F;
+            this.status_leitor.HeaderText = "Status";
+            this.status_leitor.Name = "status_leitor";
+            this.status_leitor.ReadOnly = true;
             // 
             // LeitorMenu
             // 
@@ -415,12 +561,23 @@
         private System.Windows.Forms.Panel MainTopPanel;
         private System.Windows.Forms.Label MainTopLabel;
         private System.Windows.Forms.Panel panel5;
-        private System.Windows.Forms.RadioButton radioTipoLeitor;
-        private System.Windows.Forms.DataGridViewTextBoxColumn id_usuario;
-        private System.Windows.Forms.DataGridViewTextBoxColumn nome_editora;
-        private System.Windows.Forms.DataGridViewTextBoxColumn telefone_leitor;
-        private System.Windows.Forms.DataGridViewTextBoxColumn tipo_leitor;
-        private System.Windows.Forms.DataGridViewTextBoxColumn status_leitor;
+        private System.Windows.Forms.RadioButton radioCidadeLeitor;
         private MetroFramework.Controls.MetroTextBox metroTxtBoxPesquisar;
+        private System.Windows.Forms.RadioButton radioTipoLeitor;
+        private System.Windows.Forms.RadioButton radioStatusLeitor;
+        private System.Windows.Forms.Button btnRelatorio;
+        private System.Windows.Forms.DataGridViewTextBoxColumn pk_id_leitor;
+        private System.Windows.Forms.DataGridViewTextBoxColumn nome_leitor;
+        private System.Windows.Forms.DataGridViewTextBoxColumn email_leitor;
+        private System.Windows.Forms.DataGridViewTextBoxColumn tel_cel_leitor;
+        private System.Windows.Forms.DataGridViewTextBoxColumn rg_leitor;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dtnasc_leitor;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dtcad_leitor;
+        private System.Windows.Forms.DataGridViewTextBoxColumn nome_cidade;
+        private System.Windows.Forms.DataGridViewTextBoxColumn estado_cidade;
+        private System.Windows.Forms.DataGridViewTextBoxColumn nome_tipo;
+        private System.Windows.Forms.DataGridViewTextBoxColumn nome_curso;
+        private System.Windows.Forms.DataGridViewTextBoxColumn classe_leitor;
+        private System.Windows.Forms.DataGridViewTextBoxColumn status_leitor;
     }
 }

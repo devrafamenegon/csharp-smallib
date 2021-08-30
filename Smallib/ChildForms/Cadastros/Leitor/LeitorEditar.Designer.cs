@@ -28,10 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.textBoxStatusLeitor = new System.Windows.Forms.TextBox();
-            this.textBoxClasseLeitor = new System.Windows.Forms.TextBox();
-            this.textBoxCursoLeitor = new System.Windows.Forms.TextBox();
-            this.textBoxRGLeitor = new System.Windows.Forms.TextBox();
+            this.txtBoxStatusLeitor = new System.Windows.Forms.TextBox();
+            this.txtBoxRgLeitor = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
@@ -39,10 +37,8 @@
             this.label10 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
-            this.textBoxTipoLeitor = new System.Windows.Forms.TextBox();
-            this.textBoxCidadeLeitor = new System.Windows.Forms.TextBox();
-            this.textBoxEmailLeitor = new System.Windows.Forms.TextBox();
-            this.textBoxNomeLeitor = new System.Windows.Forms.TextBox();
+            this.txtBoxEmailLeitor = new System.Windows.Forms.TextBox();
+            this.txtBoxNomeLeitor = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.Site = new System.Windows.Forms.Label();
@@ -53,68 +49,47 @@
             this.label6 = new System.Windows.Forms.Label();
             this.panel5 = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.button1 = new System.Windows.Forms.Button();
+            this.txtBoxTelefoneLeitor = new System.Windows.Forms.MaskedTextBox();
+            this.txtBoxDataAttLeitor = new System.Windows.Forms.MaskedTextBox();
+            this.txtBoxDataNascLeitor = new System.Windows.Forms.MaskedTextBox();
+            this.btnVoltar = new System.Windows.Forms.Button();
             this.btnSalvar = new System.Windows.Forms.Button();
             this.txtBoxIdLeitor = new System.Windows.Forms.TextBox();
             this.panel7 = new System.Windows.Forms.Panel();
+            this.comboBoxCidadeLeitor = new System.Windows.Forms.ComboBox();
+            this.comboBoxTipoLeitor = new System.Windows.Forms.ComboBox();
+            this.comboBoxCursoLeitor = new System.Windows.Forms.ComboBox();
+            this.comboBoxClasseLeitor = new System.Windows.Forms.ComboBox();
             this.MainTopPanel = new System.Windows.Forms.Panel();
             this.MainTopLabel = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.textBoxDataNascLeitor = new System.Windows.Forms.MaskedTextBox();
-            this.textBoxDataAttLeitor = new System.Windows.Forms.MaskedTextBox();
-            this.textBoxTelefoneLeitor = new System.Windows.Forms.MaskedTextBox();
             this.panel5.SuspendLayout();
             this.panel1.SuspendLayout();
             this.MainTopPanel.SuspendLayout();
             this.SuspendLayout();
             // 
-            // textBoxStatusLeitor
+            // txtBoxStatusLeitor
             // 
-            this.textBoxStatusLeitor.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(229)))), ((int)(((byte)(229)))));
-            this.textBoxStatusLeitor.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBoxStatusLeitor.Enabled = false;
-            this.textBoxStatusLeitor.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxStatusLeitor.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(197)))), ((int)(((byte)(197)))), ((int)(((byte)(197)))));
-            this.textBoxStatusLeitor.Location = new System.Drawing.Point(575, 539);
-            this.textBoxStatusLeitor.Name = "textBoxStatusLeitor";
-            this.textBoxStatusLeitor.Size = new System.Drawing.Size(345, 31);
-            this.textBoxStatusLeitor.TabIndex = 108;
+            this.txtBoxStatusLeitor.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(229)))), ((int)(((byte)(229)))));
+            this.txtBoxStatusLeitor.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtBoxStatusLeitor.Enabled = false;
+            this.txtBoxStatusLeitor.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtBoxStatusLeitor.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(197)))), ((int)(((byte)(197)))), ((int)(((byte)(197)))));
+            this.txtBoxStatusLeitor.Location = new System.Drawing.Point(575, 539);
+            this.txtBoxStatusLeitor.Name = "txtBoxStatusLeitor";
+            this.txtBoxStatusLeitor.Size = new System.Drawing.Size(345, 31);
+            this.txtBoxStatusLeitor.TabIndex = 108;
             // 
-            // textBoxClasseLeitor
+            // txtBoxRgLeitor
             // 
-            this.textBoxClasseLeitor.BackColor = System.Drawing.SystemColors.Window;
-            this.textBoxClasseLeitor.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBoxClasseLeitor.Enabled = false;
-            this.textBoxClasseLeitor.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxClasseLeitor.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(81)))), ((int)(((byte)(116)))));
-            this.textBoxClasseLeitor.Location = new System.Drawing.Point(575, 457);
-            this.textBoxClasseLeitor.Name = "textBoxClasseLeitor";
-            this.textBoxClasseLeitor.Size = new System.Drawing.Size(345, 31);
-            this.textBoxClasseLeitor.TabIndex = 107;
-            // 
-            // textBoxCursoLeitor
-            // 
-            this.textBoxCursoLeitor.BackColor = System.Drawing.SystemColors.Window;
-            this.textBoxCursoLeitor.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBoxCursoLeitor.Enabled = false;
-            this.textBoxCursoLeitor.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxCursoLeitor.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(81)))), ((int)(((byte)(116)))));
-            this.textBoxCursoLeitor.Location = new System.Drawing.Point(575, 374);
-            this.textBoxCursoLeitor.Name = "textBoxCursoLeitor";
-            this.textBoxCursoLeitor.Size = new System.Drawing.Size(345, 31);
-            this.textBoxCursoLeitor.TabIndex = 106;
-            // 
-            // textBoxRGLeitor
-            // 
-            this.textBoxRGLeitor.BackColor = System.Drawing.SystemColors.Window;
-            this.textBoxRGLeitor.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBoxRGLeitor.Enabled = false;
-            this.textBoxRGLeitor.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxRGLeitor.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(81)))), ((int)(((byte)(116)))));
-            this.textBoxRGLeitor.Location = new System.Drawing.Point(102, 457);
-            this.textBoxRGLeitor.Name = "textBoxRGLeitor";
-            this.textBoxRGLeitor.Size = new System.Drawing.Size(345, 31);
-            this.textBoxRGLeitor.TabIndex = 104;
+            this.txtBoxRgLeitor.BackColor = System.Drawing.SystemColors.Window;
+            this.txtBoxRgLeitor.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtBoxRgLeitor.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtBoxRgLeitor.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(81)))), ((int)(((byte)(116)))));
+            this.txtBoxRgLeitor.Location = new System.Drawing.Point(102, 457);
+            this.txtBoxRgLeitor.Name = "txtBoxRgLeitor";
+            this.txtBoxRgLeitor.Size = new System.Drawing.Size(345, 31);
+            this.txtBoxRgLeitor.TabIndex = 104;
             // 
             // label2
             // 
@@ -190,52 +165,27 @@
             this.label12.TabIndex = 97;
             this.label12.Text = "Telefone";
             // 
-            // textBoxTipoLeitor
+            // txtBoxEmailLeitor
             // 
-            this.textBoxTipoLeitor.BackColor = System.Drawing.SystemColors.Window;
-            this.textBoxTipoLeitor.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBoxTipoLeitor.Enabled = false;
-            this.textBoxTipoLeitor.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxTipoLeitor.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(81)))), ((int)(((byte)(116)))));
-            this.textBoxTipoLeitor.Location = new System.Drawing.Point(575, 299);
-            this.textBoxTipoLeitor.Name = "textBoxTipoLeitor";
-            this.textBoxTipoLeitor.Size = new System.Drawing.Size(345, 31);
-            this.textBoxTipoLeitor.TabIndex = 95;
+            this.txtBoxEmailLeitor.BackColor = System.Drawing.SystemColors.Window;
+            this.txtBoxEmailLeitor.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtBoxEmailLeitor.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtBoxEmailLeitor.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(81)))), ((int)(((byte)(116)))));
+            this.txtBoxEmailLeitor.Location = new System.Drawing.Point(102, 299);
+            this.txtBoxEmailLeitor.Name = "txtBoxEmailLeitor";
+            this.txtBoxEmailLeitor.Size = new System.Drawing.Size(345, 31);
+            this.txtBoxEmailLeitor.TabIndex = 92;
             // 
-            // textBoxCidadeLeitor
+            // txtBoxNomeLeitor
             // 
-            this.textBoxCidadeLeitor.BackColor = System.Drawing.SystemColors.Window;
-            this.textBoxCidadeLeitor.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBoxCidadeLeitor.Enabled = false;
-            this.textBoxCidadeLeitor.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxCidadeLeitor.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(81)))), ((int)(((byte)(116)))));
-            this.textBoxCidadeLeitor.Location = new System.Drawing.Point(575, 217);
-            this.textBoxCidadeLeitor.Name = "textBoxCidadeLeitor";
-            this.textBoxCidadeLeitor.Size = new System.Drawing.Size(345, 31);
-            this.textBoxCidadeLeitor.TabIndex = 94;
-            // 
-            // textBoxEmailLeitor
-            // 
-            this.textBoxEmailLeitor.BackColor = System.Drawing.SystemColors.Window;
-            this.textBoxEmailLeitor.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBoxEmailLeitor.Enabled = false;
-            this.textBoxEmailLeitor.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxEmailLeitor.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(81)))), ((int)(((byte)(116)))));
-            this.textBoxEmailLeitor.Location = new System.Drawing.Point(102, 299);
-            this.textBoxEmailLeitor.Name = "textBoxEmailLeitor";
-            this.textBoxEmailLeitor.Size = new System.Drawing.Size(345, 31);
-            this.textBoxEmailLeitor.TabIndex = 92;
-            // 
-            // textBoxNomeLeitor
-            // 
-            this.textBoxNomeLeitor.BackColor = System.Drawing.SystemColors.Window;
-            this.textBoxNomeLeitor.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBoxNomeLeitor.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxNomeLeitor.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(81)))), ((int)(((byte)(116)))));
-            this.textBoxNomeLeitor.Location = new System.Drawing.Point(102, 217);
-            this.textBoxNomeLeitor.Name = "textBoxNomeLeitor";
-            this.textBoxNomeLeitor.Size = new System.Drawing.Size(345, 31);
-            this.textBoxNomeLeitor.TabIndex = 91;
+            this.txtBoxNomeLeitor.BackColor = System.Drawing.SystemColors.Window;
+            this.txtBoxNomeLeitor.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtBoxNomeLeitor.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtBoxNomeLeitor.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(81)))), ((int)(((byte)(116)))));
+            this.txtBoxNomeLeitor.Location = new System.Drawing.Point(102, 217);
+            this.txtBoxNomeLeitor.Name = "txtBoxNomeLeitor";
+            this.txtBoxNomeLeitor.Size = new System.Drawing.Size(345, 31);
+            this.txtBoxNomeLeitor.TabIndex = 91;
             // 
             // label1
             // 
@@ -338,15 +288,13 @@
             this.panel1.AutoScroll = true;
             this.panel1.AutoScrollMargin = new System.Drawing.Size(0, 40);
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(253)))), ((int)(((byte)(253)))));
-            this.panel1.Controls.Add(this.textBoxTelefoneLeitor);
-            this.panel1.Controls.Add(this.textBoxDataAttLeitor);
-            this.panel1.Controls.Add(this.textBoxDataNascLeitor);
-            this.panel1.Controls.Add(this.button1);
+            this.panel1.Controls.Add(this.txtBoxTelefoneLeitor);
+            this.panel1.Controls.Add(this.txtBoxDataAttLeitor);
+            this.panel1.Controls.Add(this.txtBoxDataNascLeitor);
+            this.panel1.Controls.Add(this.btnVoltar);
             this.panel1.Controls.Add(this.btnSalvar);
-            this.panel1.Controls.Add(this.textBoxStatusLeitor);
-            this.panel1.Controls.Add(this.textBoxClasseLeitor);
-            this.panel1.Controls.Add(this.textBoxCursoLeitor);
-            this.panel1.Controls.Add(this.textBoxRGLeitor);
+            this.panel1.Controls.Add(this.txtBoxStatusLeitor);
+            this.panel1.Controls.Add(this.txtBoxRgLeitor);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.label9);
@@ -354,10 +302,8 @@
             this.panel1.Controls.Add(this.label10);
             this.panel1.Controls.Add(this.label11);
             this.panel1.Controls.Add(this.label12);
-            this.panel1.Controls.Add(this.textBoxTipoLeitor);
-            this.panel1.Controls.Add(this.textBoxCidadeLeitor);
-            this.panel1.Controls.Add(this.textBoxEmailLeitor);
-            this.panel1.Controls.Add(this.textBoxNomeLeitor);
+            this.panel1.Controls.Add(this.txtBoxEmailLeitor);
+            this.panel1.Controls.Add(this.txtBoxNomeLeitor);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.label8);
             this.panel1.Controls.Add(this.Site);
@@ -368,25 +314,67 @@
             this.panel1.Controls.Add(this.label6);
             this.panel1.Controls.Add(this.txtBoxIdLeitor);
             this.panel1.Controls.Add(this.panel7);
+            this.panel1.Controls.Add(this.comboBoxCidadeLeitor);
+            this.panel1.Controls.Add(this.comboBoxTipoLeitor);
+            this.panel1.Controls.Add(this.comboBoxCursoLeitor);
+            this.panel1.Controls.Add(this.comboBoxClasseLeitor);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(0, 52);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1004, 579);
             this.panel1.TabIndex = 34;
             // 
-            // button1
+            // txtBoxTelefoneLeitor
             // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(136)))), ((int)(((byte)(217)))));
-            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(253)))), ((int)(((byte)(253)))));
-            this.button1.Location = new System.Drawing.Point(238, 657);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(110, 40);
-            this.button1.TabIndex = 110;
-            this.button1.Text = "Voltar";
-            this.button1.UseVisualStyleBackColor = false;
+            this.txtBoxTelefoneLeitor.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtBoxTelefoneLeitor.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F);
+            this.txtBoxTelefoneLeitor.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(81)))), ((int)(((byte)(116)))));
+            this.txtBoxTelefoneLeitor.Location = new System.Drawing.Point(102, 374);
+            this.txtBoxTelefoneLeitor.Mask = "(99) 00000-0000";
+            this.txtBoxTelefoneLeitor.Name = "txtBoxTelefoneLeitor";
+            this.txtBoxTelefoneLeitor.Size = new System.Drawing.Size(345, 31);
+            this.txtBoxTelefoneLeitor.TabIndex = 113;
+            // 
+            // txtBoxDataAttLeitor
+            // 
+            this.txtBoxDataAttLeitor.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(229)))), ((int)(((byte)(229)))));
+            this.txtBoxDataAttLeitor.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtBoxDataAttLeitor.Enabled = false;
+            this.txtBoxDataAttLeitor.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F);
+            this.txtBoxDataAttLeitor.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(197)))), ((int)(((byte)(197)))), ((int)(((byte)(197)))));
+            this.txtBoxDataAttLeitor.Location = new System.Drawing.Point(575, 134);
+            this.txtBoxDataAttLeitor.Mask = "00/00/0000";
+            this.txtBoxDataAttLeitor.Name = "txtBoxDataAttLeitor";
+            this.txtBoxDataAttLeitor.Size = new System.Drawing.Size(345, 31);
+            this.txtBoxDataAttLeitor.TabIndex = 112;
+            this.txtBoxDataAttLeitor.ValidatingType = typeof(System.DateTime);
+            // 
+            // txtBoxDataNascLeitor
+            // 
+            this.txtBoxDataNascLeitor.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtBoxDataNascLeitor.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F);
+            this.txtBoxDataNascLeitor.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(81)))), ((int)(((byte)(116)))));
+            this.txtBoxDataNascLeitor.Location = new System.Drawing.Point(102, 538);
+            this.txtBoxDataNascLeitor.Mask = "00/00/0000";
+            this.txtBoxDataNascLeitor.Name = "txtBoxDataNascLeitor";
+            this.txtBoxDataNascLeitor.Size = new System.Drawing.Size(345, 31);
+            this.txtBoxDataNascLeitor.TabIndex = 111;
+            this.txtBoxDataNascLeitor.ValidatingType = typeof(System.DateTime);
+            // 
+            // btnVoltar
+            // 
+            this.btnVoltar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(136)))), ((int)(((byte)(217)))));
+            this.btnVoltar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnVoltar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnVoltar.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnVoltar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(253)))), ((int)(((byte)(253)))));
+            this.btnVoltar.Location = new System.Drawing.Point(238, 657);
+            this.btnVoltar.Name = "btnVoltar";
+            this.btnVoltar.Size = new System.Drawing.Size(110, 40);
+            this.btnVoltar.TabIndex = 110;
+            this.btnVoltar.Text = "Voltar";
+            this.btnVoltar.UseVisualStyleBackColor = false;
+            this.btnVoltar.Click += new System.EventHandler(this.btnVoltar_Click);
             // 
             // btnSalvar
             // 
@@ -401,6 +389,7 @@
             this.btnSalvar.TabIndex = 109;
             this.btnSalvar.Text = "Salvar";
             this.btnSalvar.UseVisualStyleBackColor = false;
+            this.btnSalvar.Click += new System.EventHandler(this.btnSalvar_Click);
             // 
             // txtBoxIdLeitor
             // 
@@ -422,6 +411,70 @@
             this.panel7.Size = new System.Drawing.Size(880, 2);
             this.panel7.TabIndex = 65;
             // 
+            // comboBoxCidadeLeitor
+            // 
+            this.comboBoxCidadeLeitor.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
+            this.comboBoxCidadeLeitor.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.comboBoxCidadeLeitor.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBoxCidadeLeitor.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(81)))), ((int)(((byte)(116)))));
+            this.comboBoxCidadeLeitor.FormattingEnabled = true;
+            this.comboBoxCidadeLeitor.IntegralHeight = false;
+            this.comboBoxCidadeLeitor.ItemHeight = 25;
+            this.comboBoxCidadeLeitor.Location = new System.Drawing.Point(575, 217);
+            this.comboBoxCidadeLeitor.Name = "comboBoxCidadeLeitor";
+            this.comboBoxCidadeLeitor.Size = new System.Drawing.Size(345, 33);
+            this.comboBoxCidadeLeitor.TabIndex = 122;
+            // 
+            // comboBoxTipoLeitor
+            // 
+            this.comboBoxTipoLeitor.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
+            this.comboBoxTipoLeitor.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.comboBoxTipoLeitor.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBoxTipoLeitor.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(81)))), ((int)(((byte)(116)))));
+            this.comboBoxTipoLeitor.FormattingEnabled = true;
+            this.comboBoxTipoLeitor.IntegralHeight = false;
+            this.comboBoxTipoLeitor.ItemHeight = 25;
+            this.comboBoxTipoLeitor.Location = new System.Drawing.Point(575, 299);
+            this.comboBoxTipoLeitor.Name = "comboBoxTipoLeitor";
+            this.comboBoxTipoLeitor.Size = new System.Drawing.Size(345, 33);
+            this.comboBoxTipoLeitor.TabIndex = 123;
+            this.comboBoxTipoLeitor.SelectedIndexChanged += new System.EventHandler(this.comboBoxTipoLeitor_SelectedIndexChanged);
+            this.comboBoxTipoLeitor.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.comboBoxTipoLeitor_KeyPress);
+            // 
+            // comboBoxCursoLeitor
+            // 
+            this.comboBoxCursoLeitor.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
+            this.comboBoxCursoLeitor.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.comboBoxCursoLeitor.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBoxCursoLeitor.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(81)))), ((int)(((byte)(116)))));
+            this.comboBoxCursoLeitor.FormattingEnabled = true;
+            this.comboBoxCursoLeitor.IntegralHeight = false;
+            this.comboBoxCursoLeitor.ItemHeight = 25;
+            this.comboBoxCursoLeitor.Location = new System.Drawing.Point(575, 374);
+            this.comboBoxCursoLeitor.Name = "comboBoxCursoLeitor";
+            this.comboBoxCursoLeitor.Size = new System.Drawing.Size(345, 33);
+            this.comboBoxCursoLeitor.TabIndex = 124;
+            this.comboBoxCursoLeitor.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.comboBoxCursoLeitor_KeyPress);
+            // 
+            // comboBoxClasseLeitor
+            // 
+            this.comboBoxClasseLeitor.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
+            this.comboBoxClasseLeitor.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.comboBoxClasseLeitor.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBoxClasseLeitor.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(81)))), ((int)(((byte)(116)))));
+            this.comboBoxClasseLeitor.FormattingEnabled = true;
+            this.comboBoxClasseLeitor.IntegralHeight = false;
+            this.comboBoxClasseLeitor.ItemHeight = 25;
+            this.comboBoxClasseLeitor.Items.AddRange(new object[] {
+            "1",
+            "2",
+            "3"});
+            this.comboBoxClasseLeitor.Location = new System.Drawing.Point(575, 457);
+            this.comboBoxClasseLeitor.Name = "comboBoxClasseLeitor";
+            this.comboBoxClasseLeitor.Size = new System.Drawing.Size(345, 33);
+            this.comboBoxClasseLeitor.TabIndex = 121;
+            this.comboBoxClasseLeitor.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.comboBoxClasseLeitor_KeyPress);
+            // 
             // MainTopPanel
             // 
             this.MainTopPanel.Controls.Add(this.MainTopLabel);
@@ -437,7 +490,7 @@
             this.MainTopLabel.AutoSize = true;
             this.MainTopLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.MainTopLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(81)))), ((int)(((byte)(116)))));
-            this.MainTopLabel.Location = new System.Drawing.Point(15, 12);
+            this.MainTopLabel.Location = new System.Drawing.Point(46, 12);
             this.MainTopLabel.Name = "MainTopLabel";
             this.MainTopLabel.Size = new System.Drawing.Size(237, 29);
             this.MainTopLabel.TabIndex = 75;
@@ -451,44 +504,7 @@
             this.panel2.Size = new System.Drawing.Size(1004, 2);
             this.panel2.TabIndex = 25;
             // 
-            // textBoxDataNascLeitor
-            // 
-            this.textBoxDataNascLeitor.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBoxDataNascLeitor.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F);
-            this.textBoxDataNascLeitor.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(81)))), ((int)(((byte)(116)))));
-            this.textBoxDataNascLeitor.Location = new System.Drawing.Point(102, 538);
-            this.textBoxDataNascLeitor.Mask = "00/00/0000";
-            this.textBoxDataNascLeitor.Name = "textBoxDataNascLeitor";
-            this.textBoxDataNascLeitor.Size = new System.Drawing.Size(345, 31);
-            this.textBoxDataNascLeitor.TabIndex = 111;
-            this.textBoxDataNascLeitor.ValidatingType = typeof(System.DateTime);
-            // 
-            // textBoxDataAttLeitor
-            // 
-            this.textBoxDataAttLeitor.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(229)))), ((int)(((byte)(229)))));
-            this.textBoxDataAttLeitor.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBoxDataAttLeitor.Enabled = false;
-            this.textBoxDataAttLeitor.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F);
-            this.textBoxDataAttLeitor.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(197)))), ((int)(((byte)(197)))), ((int)(((byte)(197)))));
-            this.textBoxDataAttLeitor.Location = new System.Drawing.Point(575, 134);
-            this.textBoxDataAttLeitor.Mask = "00/00/0000";
-            this.textBoxDataAttLeitor.Name = "textBoxDataAttLeitor";
-            this.textBoxDataAttLeitor.Size = new System.Drawing.Size(345, 31);
-            this.textBoxDataAttLeitor.TabIndex = 112;
-            this.textBoxDataAttLeitor.ValidatingType = typeof(System.DateTime);
-            // 
-            // textBoxTelefoneLeitor
-            // 
-            this.textBoxTelefoneLeitor.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBoxTelefoneLeitor.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F);
-            this.textBoxTelefoneLeitor.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(81)))), ((int)(((byte)(116)))));
-            this.textBoxTelefoneLeitor.Location = new System.Drawing.Point(102, 374);
-            this.textBoxTelefoneLeitor.Mask = "(99) 00000-0000";
-            this.textBoxTelefoneLeitor.Name = "textBoxTelefoneLeitor";
-            this.textBoxTelefoneLeitor.Size = new System.Drawing.Size(345, 31);
-            this.textBoxTelefoneLeitor.TabIndex = 113;
-            // 
-            // LeitoresEditar
+            // LeitorEditar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -496,7 +512,7 @@
             this.ClientSize = new System.Drawing.Size(1004, 631);
             this.Controls.Add(this.panel5);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "LeitoresEditar";
+            this.Name = "LeitorEditar";
             this.Text = "LeitoresEditar";
             this.panel5.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
@@ -509,10 +525,8 @@
 
         #endregion
 
-        private System.Windows.Forms.TextBox textBoxStatusLeitor;
-        private System.Windows.Forms.TextBox textBoxClasseLeitor;
-        private System.Windows.Forms.TextBox textBoxCursoLeitor;
-        private System.Windows.Forms.TextBox textBoxRGLeitor;
+        private System.Windows.Forms.TextBox txtBoxStatusLeitor;
+        private System.Windows.Forms.TextBox txtBoxRgLeitor;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label9;
@@ -520,10 +534,8 @@
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.TextBox textBoxTipoLeitor;
-        private System.Windows.Forms.TextBox textBoxCidadeLeitor;
-        private System.Windows.Forms.TextBox textBoxEmailLeitor;
-        private System.Windows.Forms.TextBox textBoxNomeLeitor;
+        private System.Windows.Forms.TextBox txtBoxEmailLeitor;
+        private System.Windows.Forms.TextBox txtBoxNomeLeitor;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label Site;
@@ -539,10 +551,14 @@
         private System.Windows.Forms.Panel MainTopPanel;
         private System.Windows.Forms.Label MainTopLabel;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnVoltar;
         private System.Windows.Forms.Button btnSalvar;
-        private System.Windows.Forms.MaskedTextBox textBoxTelefoneLeitor;
-        private System.Windows.Forms.MaskedTextBox textBoxDataAttLeitor;
-        private System.Windows.Forms.MaskedTextBox textBoxDataNascLeitor;
+        private System.Windows.Forms.MaskedTextBox txtBoxTelefoneLeitor;
+        private System.Windows.Forms.MaskedTextBox txtBoxDataAttLeitor;
+        private System.Windows.Forms.MaskedTextBox txtBoxDataNascLeitor;
+        private System.Windows.Forms.ComboBox comboBoxCidadeLeitor;
+        private System.Windows.Forms.ComboBox comboBoxTipoLeitor;
+        private System.Windows.Forms.ComboBox comboBoxCursoLeitor;
+        private System.Windows.Forms.ComboBox comboBoxClasseLeitor;
     }
 }
