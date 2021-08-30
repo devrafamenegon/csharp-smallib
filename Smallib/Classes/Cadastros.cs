@@ -67,13 +67,15 @@ namespace Smallib
     public class Cadastro_Livro
     {
         public int pk_id_livro { get; set; }
-        public int fk_id_editora_livro { get; set; }
-        public int fk_id_autor_livro { get; set; }
-        public int fk_id_genero_livro { get; set; }
-        public int fk_id_idioma_livro { get; set; }
-
         public string titulo_livro { get; set; }
         public string tombo_livro { get; set; }
+        public string editora_livro { get; set; }
+        public string autor_livro { get; set; }
+        public string genero_livro { get; set; }
+        public string idioma_livro { get; set; }
+        public string ultemprest_livro { get; set; }
+        public string ultleitor_livro { get; set; }
+        public int status_livro { get; set; }
     }
 
     public class Cadastro_Tipo_Leitor
@@ -85,16 +87,16 @@ namespace Smallib
     public class Cadastro_Leitor
     {
         public int pk_id_leitor { get; set; }
-        public int fk_id_curso_leitor { get; set; }
-        public int fk_id_tipo_leitor { get; set; }
-        public int fk_id_cidade_leitor { get; set; }
-
         public string nome_leitor { get; set; }
         public string email_leitor { get; set; }
         public string tel_cel_leitor { get; set; }
         public string rg_leitor { get; set; }
-        public string dtnasc_leitor { get; set; }
-        public string dtcad_leitor { get; set; }
+        public DateTime dtnasc_leitor { get; set; }
+        public DateTime dtcad_leitor { get; set; }
+        public string cidade_leitor { get; set; }
+        public string estado_leitor { get; set; }
+        public string tipo_leitor { get; set; }
+        public string curso_leitor { get; set; }
         public string classe_leitor { get; set; }
         public string status_leitor { get; set; }
     }
