@@ -29,9 +29,9 @@ namespace Smallib.ChildForms.Cadastros.Cidade
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
             this.MainTopPanel = new System.Windows.Forms.Panel();
             this.MainTopLabel = new System.Windows.Forms.Label();
             this.btnAtualizar = new System.Windows.Forms.Button();
@@ -49,7 +49,7 @@ namespace Smallib.ChildForms.Cadastros.Cidade
             this.btnNovo = new System.Windows.Forms.Button();
             this.labelDgv = new System.Windows.Forms.Label();
             this.radioEstadoCidade = new System.Windows.Forms.RadioButton();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnRelatorio = new System.Windows.Forms.Button();
             this.MainTopPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvCidade)).BeginInit();
             this.SuspendLayout();
@@ -122,7 +122,6 @@ namespace Smallib.ChildForms.Cadastros.Cidade
             this.radioNomeCidade.Name = "radioNomeCidade";
             this.radioNomeCidade.Size = new System.Drawing.Size(68, 24);
             this.radioNomeCidade.TabIndex = 32;
-            this.radioNomeCidade.TabStop = true;
             this.radioNomeCidade.Text = "Nome";
             this.radioNomeCidade.UseVisualStyleBackColor = true;
             this.radioNomeCidade.CheckedChanged += new System.EventHandler(this.radioNomeCidade_CheckedChanged);
@@ -130,6 +129,7 @@ namespace Smallib.ChildForms.Cadastros.Cidade
             // radioIdCidade
             // 
             this.radioIdCidade.AutoSize = true;
+            this.radioIdCidade.Checked = true;
             this.radioIdCidade.Cursor = System.Windows.Forms.Cursors.Hand;
             this.radioIdCidade.FlatAppearance.BorderSize = 2;
             this.radioIdCidade.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -159,7 +159,6 @@ namespace Smallib.ChildForms.Cadastros.Cidade
             this.metroTxtBoxPesquisar.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
             this.metroTxtBoxPesquisar.CustomButton.UseSelectable = true;
             this.metroTxtBoxPesquisar.CustomButton.Visible = false;
-            this.metroTxtBoxPesquisar.Enabled = false;
             this.metroTxtBoxPesquisar.FontSize = MetroFramework.MetroTextBoxSize.Tall;
             this.metroTxtBoxPesquisar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(81)))), ((int)(((byte)(116)))));
             this.metroTxtBoxPesquisar.Lines = new string[0];
@@ -188,41 +187,41 @@ namespace Smallib.ChildForms.Cadastros.Cidade
             this.dgvCidade.AllowUserToResizeRows = false;
             this.dgvCidade.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvCidade.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(253)))), ((int)(((byte)(253)))));
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(81)))), ((int)(((byte)(116)))));
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(81)))), ((int)(((byte)(116)))));
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvCidade.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle10.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle10.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(81)))), ((int)(((byte)(116)))));
+            dataGridViewCellStyle10.SelectionBackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle10.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(81)))), ((int)(((byte)(116)))));
+            dataGridViewCellStyle10.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvCidade.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle10;
             this.dgvCidade.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvCidade.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.id_cidade,
             this.nome_cidade,
             this.estado_cidade});
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(81)))), ((int)(((byte)(116)))));
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(179)))), ((int)(((byte)(239)))));
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvCidade.DefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle11.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle11.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle11.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(81)))), ((int)(((byte)(116)))));
+            dataGridViewCellStyle11.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(179)))), ((int)(((byte)(239)))));
+            dataGridViewCellStyle11.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvCidade.DefaultCellStyle = dataGridViewCellStyle11;
             this.dgvCidade.EnableHeadersVisualStyles = false;
             this.dgvCidade.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(229)))), ((int)(((byte)(229)))));
             this.dgvCidade.Location = new System.Drawing.Point(60, 177);
             this.dgvCidade.MultiSelect = false;
             this.dgvCidade.Name = "dgvCidade";
             this.dgvCidade.ReadOnly = true;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(81)))), ((int)(((byte)(116)))));
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(179)))), ((int)(((byte)(239)))));
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvCidade.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle12.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle12.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle12.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(81)))), ((int)(((byte)(116)))));
+            dataGridViewCellStyle12.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(179)))), ((int)(((byte)(239)))));
+            dataGridViewCellStyle12.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle12.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvCidade.RowHeadersDefaultCellStyle = dataGridViewCellStyle12;
             this.dgvCidade.RowHeadersVisible = false;
             this.dgvCidade.RowTemplate.Height = 43;
             this.dgvCidade.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
@@ -338,26 +337,25 @@ namespace Smallib.ChildForms.Cadastros.Cidade
             this.radioEstadoCidade.Name = "radioEstadoCidade";
             this.radioEstadoCidade.Size = new System.Drawing.Size(77, 24);
             this.radioEstadoCidade.TabIndex = 42;
-            this.radioEstadoCidade.TabStop = true;
             this.radioEstadoCidade.Text = "Estado";
             this.radioEstadoCidade.UseVisualStyleBackColor = true;
             this.radioEstadoCidade.CheckedChanged += new System.EventHandler(this.radioEstadoCidade_CheckedChanged);
             // 
-            // button1
+            // btnRelatorio
             // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(136)))), ((int)(((byte)(217)))));
-            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(253)))), ((int)(((byte)(253)))));
-            this.button1.Location = new System.Drawing.Point(833, 552);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(110, 40);
-            this.button1.TabIndex = 43;
-            this.button1.Text = "Relatório";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.btnRelatorio.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(122)))), ((int)(((byte)(129)))), ((int)(((byte)(233)))));
+            this.btnRelatorio.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnRelatorio.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnRelatorio.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnRelatorio.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRelatorio.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(253)))), ((int)(((byte)(253)))));
+            this.btnRelatorio.Location = new System.Drawing.Point(833, 552);
+            this.btnRelatorio.Name = "btnRelatorio";
+            this.btnRelatorio.Size = new System.Drawing.Size(110, 40);
+            this.btnRelatorio.TabIndex = 43;
+            this.btnRelatorio.Text = "Relatório";
+            this.btnRelatorio.UseVisualStyleBackColor = false;
+            this.btnRelatorio.Click += new System.EventHandler(this.btnRelatorio_Click);
             // 
             // CidadeMenu
             // 
@@ -365,7 +363,7 @@ namespace Smallib.ChildForms.Cadastros.Cidade
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(253)))), ((int)(((byte)(253)))));
             this.ClientSize = new System.Drawing.Size(1004, 631);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnRelatorio);
             this.Controls.Add(this.radioEstadoCidade);
             this.Controls.Add(this.labelDgv);
             this.Controls.Add(this.btnConsultar);
@@ -410,6 +408,6 @@ namespace Smallib.ChildForms.Cadastros.Cidade
         private System.Windows.Forms.DataGridViewTextBoxColumn id_cidade;
         private System.Windows.Forms.DataGridViewTextBoxColumn nome_cidade;
         private System.Windows.Forms.DataGridViewTextBoxColumn estado_cidade;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnRelatorio;
     }
 }
