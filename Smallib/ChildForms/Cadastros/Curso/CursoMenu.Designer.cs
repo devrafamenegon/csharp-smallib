@@ -29,9 +29,9 @@ namespace Smallib.ChildForms.Cadastros.Curso
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel5 = new System.Windows.Forms.Panel();
             this.labelDgv = new System.Windows.Forms.Label();
             this.btnConsultar = new System.Windows.Forms.Button();
@@ -49,6 +49,7 @@ namespace Smallib.ChildForms.Cadastros.Curso
             this.dgvCurso = new System.Windows.Forms.DataGridView();
             this.id_curso = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.nome_curso = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.btnRelatorio = new System.Windows.Forms.Button();
             this.panel5.SuspendLayout();
             this.MainTopPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvCurso)).BeginInit();
@@ -57,6 +58,7 @@ namespace Smallib.ChildForms.Cadastros.Curso
             // panel5
             // 
             this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(253)))), ((int)(((byte)(253)))));
+            this.panel5.Controls.Add(this.btnRelatorio);
             this.panel5.Controls.Add(this.labelDgv);
             this.panel5.Controls.Add(this.btnConsultar);
             this.panel5.Controls.Add(this.btnExcluir);
@@ -197,7 +199,6 @@ namespace Smallib.ChildForms.Cadastros.Curso
             this.radioNomeCurso.Name = "radioNomeCurso";
             this.radioNomeCurso.Size = new System.Drawing.Size(68, 24);
             this.radioNomeCurso.TabIndex = 19;
-            this.radioNomeCurso.TabStop = true;
             this.radioNomeCurso.Text = "Nome";
             this.radioNomeCurso.UseVisualStyleBackColor = true;
             this.radioNomeCurso.CheckedChanged += new System.EventHandler(this.radioNomeCurso_CheckedChanged);
@@ -205,6 +206,7 @@ namespace Smallib.ChildForms.Cadastros.Curso
             // radioIdCurso
             // 
             this.radioIdCurso.AutoSize = true;
+            this.radioIdCurso.Checked = true;
             this.radioIdCurso.Cursor = System.Windows.Forms.Cursors.Hand;
             this.radioIdCurso.FlatAppearance.BorderSize = 2;
             this.radioIdCurso.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -263,7 +265,6 @@ namespace Smallib.ChildForms.Cadastros.Curso
             this.metroTxtBoxPesquisar.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
             this.metroTxtBoxPesquisar.CustomButton.UseSelectable = true;
             this.metroTxtBoxPesquisar.CustomButton.Visible = false;
-            this.metroTxtBoxPesquisar.Enabled = false;
             this.metroTxtBoxPesquisar.FontSize = MetroFramework.MetroTextBoxSize.Tall;
             this.metroTxtBoxPesquisar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(81)))), ((int)(((byte)(116)))));
             this.metroTxtBoxPesquisar.Lines = new string[0];
@@ -271,6 +272,7 @@ namespace Smallib.ChildForms.Cadastros.Curso
             this.metroTxtBoxPesquisar.MaxLength = 32767;
             this.metroTxtBoxPesquisar.Name = "metroTxtBoxPesquisar";
             this.metroTxtBoxPesquisar.PasswordChar = '\0';
+            this.metroTxtBoxPesquisar.PromptText = "Pesquisar";
             this.metroTxtBoxPesquisar.ScrollBars = System.Windows.Forms.ScrollBars.None;
             this.metroTxtBoxPesquisar.SelectedText = "";
             this.metroTxtBoxPesquisar.SelectionLength = 0;
@@ -291,40 +293,40 @@ namespace Smallib.ChildForms.Cadastros.Curso
             this.dgvCurso.AllowUserToResizeRows = false;
             this.dgvCurso.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvCurso.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(253)))), ((int)(((byte)(253)))));
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(81)))), ((int)(((byte)(116)))));
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(81)))), ((int)(((byte)(116)))));
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvCurso.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle10.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle10.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(81)))), ((int)(((byte)(116)))));
+            dataGridViewCellStyle10.SelectionBackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle10.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(81)))), ((int)(((byte)(116)))));
+            dataGridViewCellStyle10.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvCurso.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle10;
             this.dgvCurso.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvCurso.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.id_curso,
             this.nome_curso});
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(81)))), ((int)(((byte)(116)))));
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(179)))), ((int)(((byte)(239)))));
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvCurso.DefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle11.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle11.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle11.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(81)))), ((int)(((byte)(116)))));
+            dataGridViewCellStyle11.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(179)))), ((int)(((byte)(239)))));
+            dataGridViewCellStyle11.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvCurso.DefaultCellStyle = dataGridViewCellStyle11;
             this.dgvCurso.EnableHeadersVisualStyles = false;
             this.dgvCurso.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(229)))), ((int)(((byte)(229)))));
             this.dgvCurso.Location = new System.Drawing.Point(60, 177);
             this.dgvCurso.MultiSelect = false;
             this.dgvCurso.Name = "dgvCurso";
             this.dgvCurso.ReadOnly = true;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(81)))), ((int)(((byte)(116)))));
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(179)))), ((int)(((byte)(239)))));
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvCurso.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle12.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle12.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle12.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(81)))), ((int)(((byte)(116)))));
+            dataGridViewCellStyle12.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(179)))), ((int)(((byte)(239)))));
+            dataGridViewCellStyle12.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle12.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvCurso.RowHeadersDefaultCellStyle = dataGridViewCellStyle12;
             this.dgvCurso.RowHeadersVisible = false;
             this.dgvCurso.RowTemplate.Height = 43;
             this.dgvCurso.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
@@ -346,6 +348,21 @@ namespace Smallib.ChildForms.Cadastros.Curso
             this.nome_curso.HeaderText = "Nome";
             this.nome_curso.Name = "nome_curso";
             this.nome_curso.ReadOnly = true;
+            // 
+            // btnRelatorio
+            // 
+            this.btnRelatorio.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(122)))), ((int)(((byte)(129)))), ((int)(((byte)(233)))));
+            this.btnRelatorio.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnRelatorio.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnRelatorio.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnRelatorio.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRelatorio.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(253)))), ((int)(((byte)(253)))));
+            this.btnRelatorio.Location = new System.Drawing.Point(833, 552);
+            this.btnRelatorio.Name = "btnRelatorio";
+            this.btnRelatorio.Size = new System.Drawing.Size(110, 40);
+            this.btnRelatorio.TabIndex = 44;
+            this.btnRelatorio.Text = "Relatório";
+            this.btnRelatorio.UseVisualStyleBackColor = false;
             // 
             // CursoMenu
             // 
@@ -386,5 +403,6 @@ namespace Smallib.ChildForms.Cadastros.Curso
         private MetroFramework.Controls.MetroTextBox metroTxtBoxPesquisar;
         private System.Windows.Forms.DataGridViewTextBoxColumn id_curso;
         private System.Windows.Forms.DataGridViewTextBoxColumn nome_curso;
+        private System.Windows.Forms.Button btnRelatorio;
     }
 }

@@ -65,6 +65,8 @@ namespace Smallib.ChildForms.Cadastros.Curso
         {
             //Liberando o campo de pesquisa
             metroTxtBoxPesquisar.Enabled = true;
+
+
         }
 
         private void radioNomeCurso_CheckedChanged(object sender, EventArgs e)
@@ -87,7 +89,7 @@ namespace Smallib.ChildForms.Cadastros.Curso
             checarLinhasDgv();
 
             //Limpando as radiobutton
-            radioIdCurso.Checked = false;
+            radioIdCurso.Checked = true;
             radioNomeCurso.Checked = false;
             metroTxtBoxPesquisar.Clear();
         }
