@@ -28,11 +28,14 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle19 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle20 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle21 = new System.Windows.Forms.DataGridViewCellStyle();
             this.labelDgv = new System.Windows.Forms.Label();
             this.dgvAutor = new System.Windows.Forms.DataGridView();
+            this.id_usuario = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.nome_autor = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.nome_nacionalidade = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.btnConsultar = new System.Windows.Forms.Button();
             this.btnExcluir = new System.Windows.Forms.Button();
             this.btnEditar = new System.Windows.Forms.Button();
@@ -45,12 +48,10 @@
             this.MainTopPanel = new System.Windows.Forms.Panel();
             this.MainTopLabel = new System.Windows.Forms.Label();
             this.panel5 = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
             this.radioNacionalidadeAutor = new System.Windows.Forms.RadioButton();
             this.metroTxtBoxPesquisar = new MetroFramework.Controls.MetroTextBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.id_usuario = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.nome_autor = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.nome_nacionalidade = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.btnRelatorio = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvAutor)).BeginInit();
             this.MainTopPanel.SuspendLayout();
             this.panel5.SuspendLayout();
@@ -73,46 +74,69 @@
             this.dgvAutor.AllowUserToResizeRows = false;
             this.dgvAutor.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvAutor.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(253)))), ((int)(((byte)(253)))));
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(81)))), ((int)(((byte)(116)))));
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(81)))), ((int)(((byte)(116)))));
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvAutor.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle19.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle19.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle19.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle19.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(81)))), ((int)(((byte)(116)))));
+            dataGridViewCellStyle19.SelectionBackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle19.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(81)))), ((int)(((byte)(116)))));
+            dataGridViewCellStyle19.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvAutor.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle19;
             this.dgvAutor.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvAutor.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.id_usuario,
             this.nome_autor,
             this.nome_nacionalidade});
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(81)))), ((int)(((byte)(116)))));
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(179)))), ((int)(((byte)(239)))));
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvAutor.DefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle20.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle20.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle20.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle20.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(81)))), ((int)(((byte)(116)))));
+            dataGridViewCellStyle20.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(179)))), ((int)(((byte)(239)))));
+            dataGridViewCellStyle20.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle20.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvAutor.DefaultCellStyle = dataGridViewCellStyle20;
             this.dgvAutor.EnableHeadersVisualStyles = false;
             this.dgvAutor.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(229)))), ((int)(((byte)(229)))));
             this.dgvAutor.Location = new System.Drawing.Point(60, 177);
             this.dgvAutor.MultiSelect = false;
             this.dgvAutor.Name = "dgvAutor";
             this.dgvAutor.ReadOnly = true;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(81)))), ((int)(((byte)(116)))));
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(179)))), ((int)(((byte)(239)))));
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvAutor.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle21.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle21.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle21.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle21.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(81)))), ((int)(((byte)(116)))));
+            dataGridViewCellStyle21.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(179)))), ((int)(((byte)(239)))));
+            dataGridViewCellStyle21.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle21.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvAutor.RowHeadersDefaultCellStyle = dataGridViewCellStyle21;
             this.dgvAutor.RowHeadersVisible = false;
             this.dgvAutor.RowTemplate.Height = 43;
             this.dgvAutor.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvAutor.Size = new System.Drawing.Size(883, 353);
             this.dgvAutor.TabIndex = 26;
+            // 
+            // id_usuario
+            // 
+            this.id_usuario.DataPropertyName = "pk_id_autor";
+            this.id_usuario.FillWeight = 30.92407F;
+            this.id_usuario.HeaderText = "ID ";
+            this.id_usuario.Name = "id_usuario";
+            this.id_usuario.ReadOnly = true;
+            // 
+            // nome_autor
+            // 
+            this.nome_autor.DataPropertyName = "nome_autor";
+            this.nome_autor.FillWeight = 100.0759F;
+            this.nome_autor.HeaderText = "Nome ";
+            this.nome_autor.Name = "nome_autor";
+            this.nome_autor.ReadOnly = true;
+            // 
+            // nome_nacionalidade
+            // 
+            this.nome_nacionalidade.DataPropertyName = "nome_nacionalidade";
+            this.nome_nacionalidade.HeaderText = "Nome Nacionalidade";
+            this.nome_nacionalidade.Name = "nome_nacionalidade";
+            this.nome_nacionalidade.ReadOnly = true;
             // 
             // btnConsultar
             // 
@@ -226,7 +250,6 @@
             this.radioNomeAutor.Name = "radioNomeAutor";
             this.radioNomeAutor.Size = new System.Drawing.Size(68, 24);
             this.radioNomeAutor.TabIndex = 19;
-            this.radioNomeAutor.TabStop = true;
             this.radioNomeAutor.Text = "Nome";
             this.radioNomeAutor.UseVisualStyleBackColor = true;
             this.radioNomeAutor.CheckedChanged += new System.EventHandler(this.radioNomeAutor_CheckedChanged);
@@ -234,6 +257,7 @@
             // radioIdAutor
             // 
             this.radioIdAutor.AutoSize = true;
+            this.radioIdAutor.Checked = true;
             this.radioIdAutor.Cursor = System.Windows.Forms.Cursors.Hand;
             this.radioIdAutor.FlatAppearance.BorderSize = 2;
             this.radioIdAutor.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -280,6 +304,7 @@
             // panel5
             // 
             this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(253)))), ((int)(((byte)(253)))));
+            this.panel5.Controls.Add(this.btnRelatorio);
             this.panel5.Controls.Add(this.label1);
             this.panel5.Controls.Add(this.radioNacionalidadeAutor);
             this.panel5.Controls.Add(this.metroTxtBoxPesquisar);
@@ -301,6 +326,15 @@
             this.panel5.Size = new System.Drawing.Size(1004, 631);
             this.panel5.TabIndex = 19;
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(355, 355);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(0, 25);
+            this.label1.TabIndex = 32;
+            // 
             // radioNacionalidadeAutor
             // 
             this.radioNacionalidadeAutor.AutoSize = true;
@@ -313,9 +347,9 @@
             this.radioNacionalidadeAutor.Name = "radioNacionalidadeAutor";
             this.radioNacionalidadeAutor.Size = new System.Drawing.Size(126, 24);
             this.radioNacionalidadeAutor.TabIndex = 31;
-            this.radioNacionalidadeAutor.TabStop = true;
             this.radioNacionalidadeAutor.Text = "Nacionalidade";
             this.radioNacionalidadeAutor.UseVisualStyleBackColor = true;
+            this.radioNacionalidadeAutor.CheckedChanged += new System.EventHandler(this.radioNacionalidadeAutor_CheckedChanged);
             // 
             // metroTxtBoxPesquisar
             // 
@@ -332,7 +366,6 @@
             this.metroTxtBoxPesquisar.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
             this.metroTxtBoxPesquisar.CustomButton.UseSelectable = true;
             this.metroTxtBoxPesquisar.CustomButton.Visible = false;
-            this.metroTxtBoxPesquisar.Enabled = false;
             this.metroTxtBoxPesquisar.FontSize = MetroFramework.MetroTextBoxSize.Tall;
             this.metroTxtBoxPesquisar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(81)))), ((int)(((byte)(116)))));
             this.metroTxtBoxPesquisar.Lines = new string[0];
@@ -353,37 +386,21 @@
             this.metroTxtBoxPesquisar.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(197)))), ((int)(((byte)(197)))), ((int)(((byte)(197)))));
             this.metroTxtBoxPesquisar.WaterMarkFont = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             // 
-            // label1
+            // btnRelatorio
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(355, 355);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(0, 25);
-            this.label1.TabIndex = 32;
-            // 
-            // id_usuario
-            // 
-            this.id_usuario.DataPropertyName = "pk_id_autor";
-            this.id_usuario.FillWeight = 30.92407F;
-            this.id_usuario.HeaderText = "ID ";
-            this.id_usuario.Name = "id_usuario";
-            this.id_usuario.ReadOnly = true;
-            // 
-            // nome_autor
-            // 
-            this.nome_autor.DataPropertyName = "nome_autor";
-            this.nome_autor.FillWeight = 100.0759F;
-            this.nome_autor.HeaderText = "Nome ";
-            this.nome_autor.Name = "nome_autor";
-            this.nome_autor.ReadOnly = true;
-            // 
-            // nome_nacionalidade
-            // 
-            this.nome_nacionalidade.DataPropertyName = "nome_nacionalidade";
-            this.nome_nacionalidade.HeaderText = "Nome Nacionalidade";
-            this.nome_nacionalidade.Name = "nome_nacionalidade";
-            this.nome_nacionalidade.ReadOnly = true;
+            this.btnRelatorio.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(122)))), ((int)(((byte)(129)))), ((int)(((byte)(233)))));
+            this.btnRelatorio.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnRelatorio.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnRelatorio.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnRelatorio.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRelatorio.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(253)))), ((int)(((byte)(253)))));
+            this.btnRelatorio.Location = new System.Drawing.Point(833, 552);
+            this.btnRelatorio.Name = "btnRelatorio";
+            this.btnRelatorio.Size = new System.Drawing.Size(110, 40);
+            this.btnRelatorio.TabIndex = 44;
+            this.btnRelatorio.Text = "Relatório";
+            this.btnRelatorio.UseVisualStyleBackColor = false;
+            this.btnRelatorio.Click += new System.EventHandler(this.btnRelatorio_Click);
             // 
             // AutorMenu
             // 
@@ -425,5 +442,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn id_usuario;
         private System.Windows.Forms.DataGridViewTextBoxColumn nome_autor;
         private System.Windows.Forms.DataGridViewTextBoxColumn nome_nacionalidade;
+        private System.Windows.Forms.Button btnRelatorio;
     }
 }
