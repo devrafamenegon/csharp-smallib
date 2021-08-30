@@ -29,29 +29,29 @@
         private void InitializeComponent()
         {
             this.MainTopLabel = new System.Windows.Forms.Label();
-            this.textBoxDataTomboLivro = new System.Windows.Forms.TextBox();
-            this.textBoxIdiomaLivro = new System.Windows.Forms.TextBox();
-            this.textBoxGeneroLivro = new System.Windows.Forms.TextBox();
-            this.textBoxAutorLivro = new System.Windows.Forms.TextBox();
-            this.textBoxTituloLivro = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.Site = new System.Windows.Forms.Label();
             this.panel8 = new System.Windows.Forms.Panel();
             this.MainTopPanel = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.textBoxEditoraLivro = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.panel7 = new System.Windows.Forms.Panel();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.txtBoxIdLivro = new System.Windows.Forms.TextBox();
             this.panel5 = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.txtBoxDataTomboLivro = new System.Windows.Forms.MaskedTextBox();
+            this.txtBoxTituloLivro = new System.Windows.Forms.TextBox();
+            this.comboBoxAutorLivro = new System.Windows.Forms.ComboBox();
+            this.comboBoxGeneroLivro = new System.Windows.Forms.ComboBox();
+            this.comboBoxEditoraLivro = new System.Windows.Forms.ComboBox();
+            this.comboBoxIdiomaLivro = new System.Windows.Forms.ComboBox();
             this.btnVoltar = new System.Windows.Forms.Button();
             this.btnSalvar = new System.Windows.Forms.Button();
+            this.txtBoxIdLivro = new System.Windows.Forms.TextBox();
             this.MainTopPanel.SuspendLayout();
             this.panel5.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -62,66 +62,11 @@
             this.MainTopLabel.AutoSize = true;
             this.MainTopLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.MainTopLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(81)))), ((int)(((byte)(116)))));
-            this.MainTopLabel.Location = new System.Drawing.Point(15, 12);
+            this.MainTopLabel.Location = new System.Drawing.Point(46, 12);
             this.MainTopLabel.Name = "MainTopLabel";
             this.MainTopLabel.Size = new System.Drawing.Size(195, 29);
             this.MainTopLabel.TabIndex = 0;
             this.MainTopLabel.Text = "Cadastro de livro";
-            // 
-            // textBoxDataTomboLivro
-            // 
-            this.textBoxDataTomboLivro.BackColor = System.Drawing.SystemColors.Window;
-            this.textBoxDataTomboLivro.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBoxDataTomboLivro.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxDataTomboLivro.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(81)))), ((int)(((byte)(116)))));
-            this.textBoxDataTomboLivro.Location = new System.Drawing.Point(569, 382);
-            this.textBoxDataTomboLivro.Name = "textBoxDataTomboLivro";
-            this.textBoxDataTomboLivro.Size = new System.Drawing.Size(345, 31);
-            this.textBoxDataTomboLivro.TabIndex = 81;
-            // 
-            // textBoxIdiomaLivro
-            // 
-            this.textBoxIdiomaLivro.BackColor = System.Drawing.SystemColors.Window;
-            this.textBoxIdiomaLivro.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBoxIdiomaLivro.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxIdiomaLivro.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(81)))), ((int)(((byte)(116)))));
-            this.textBoxIdiomaLivro.Location = new System.Drawing.Point(569, 300);
-            this.textBoxIdiomaLivro.Name = "textBoxIdiomaLivro";
-            this.textBoxIdiomaLivro.Size = new System.Drawing.Size(345, 31);
-            this.textBoxIdiomaLivro.TabIndex = 80;
-            // 
-            // textBoxGeneroLivro
-            // 
-            this.textBoxGeneroLivro.BackColor = System.Drawing.SystemColors.Window;
-            this.textBoxGeneroLivro.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBoxGeneroLivro.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxGeneroLivro.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(81)))), ((int)(((byte)(116)))));
-            this.textBoxGeneroLivro.Location = new System.Drawing.Point(102, 382);
-            this.textBoxGeneroLivro.Name = "textBoxGeneroLivro";
-            this.textBoxGeneroLivro.Size = new System.Drawing.Size(345, 31);
-            this.textBoxGeneroLivro.TabIndex = 79;
-            // 
-            // textBoxAutorLivro
-            // 
-            this.textBoxAutorLivro.BackColor = System.Drawing.SystemColors.Window;
-            this.textBoxAutorLivro.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBoxAutorLivro.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxAutorLivro.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(81)))), ((int)(((byte)(116)))));
-            this.textBoxAutorLivro.Location = new System.Drawing.Point(102, 300);
-            this.textBoxAutorLivro.Name = "textBoxAutorLivro";
-            this.textBoxAutorLivro.Size = new System.Drawing.Size(345, 31);
-            this.textBoxAutorLivro.TabIndex = 78;
-            // 
-            // textBoxTituloLivro
-            // 
-            this.textBoxTituloLivro.BackColor = System.Drawing.SystemColors.Window;
-            this.textBoxTituloLivro.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBoxTituloLivro.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxTituloLivro.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(81)))), ((int)(((byte)(116)))));
-            this.textBoxTituloLivro.Location = new System.Drawing.Point(102, 218);
-            this.textBoxTituloLivro.Name = "textBoxTituloLivro";
-            this.textBoxTituloLivro.Size = new System.Drawing.Size(345, 31);
-            this.textBoxTituloLivro.TabIndex = 77;
             // 
             // label1
             // 
@@ -181,17 +126,6 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(1004, 2);
             this.panel2.TabIndex = 25;
-            // 
-            // textBoxEditoraLivro
-            // 
-            this.textBoxEditoraLivro.BackColor = System.Drawing.SystemColors.Window;
-            this.textBoxEditoraLivro.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBoxEditoraLivro.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxEditoraLivro.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(81)))), ((int)(((byte)(116)))));
-            this.textBoxEditoraLivro.Location = new System.Drawing.Point(569, 218);
-            this.textBoxEditoraLivro.Name = "textBoxEditoraLivro";
-            this.textBoxEditoraLivro.Size = new System.Drawing.Size(345, 31);
-            this.textBoxEditoraLivro.TabIndex = 83;
             // 
             // label2
             // 
@@ -256,18 +190,6 @@
             this.label6.TabIndex = 62;
             this.label6.Text = "ID";
             // 
-            // txtBoxIdLivro
-            // 
-            this.txtBoxIdLivro.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(229)))), ((int)(((byte)(229)))));
-            this.txtBoxIdLivro.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtBoxIdLivro.Enabled = false;
-            this.txtBoxIdLivro.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtBoxIdLivro.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(197)))), ((int)(((byte)(197)))), ((int)(((byte)(197)))));
-            this.txtBoxIdLivro.Location = new System.Drawing.Point(102, 135);
-            this.txtBoxIdLivro.Name = "txtBoxIdLivro";
-            this.txtBoxIdLivro.Size = new System.Drawing.Size(71, 31);
-            this.txtBoxIdLivro.TabIndex = 59;
-            // 
             // panel5
             // 
             this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(253)))), ((int)(((byte)(253)))));
@@ -282,15 +204,15 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(253)))), ((int)(((byte)(253)))));
+            this.panel1.Controls.Add(this.txtBoxDataTomboLivro);
+            this.panel1.Controls.Add(this.txtBoxTituloLivro);
+            this.panel1.Controls.Add(this.comboBoxAutorLivro);
+            this.panel1.Controls.Add(this.comboBoxGeneroLivro);
+            this.panel1.Controls.Add(this.comboBoxEditoraLivro);
+            this.panel1.Controls.Add(this.comboBoxIdiomaLivro);
             this.panel1.Controls.Add(this.btnVoltar);
             this.panel1.Controls.Add(this.btnSalvar);
-            this.panel1.Controls.Add(this.textBoxEditoraLivro);
             this.panel1.Controls.Add(this.label2);
-            this.panel1.Controls.Add(this.textBoxDataTomboLivro);
-            this.panel1.Controls.Add(this.textBoxIdiomaLivro);
-            this.panel1.Controls.Add(this.textBoxGeneroLivro);
-            this.panel1.Controls.Add(this.textBoxAutorLivro);
-            this.panel1.Controls.Add(this.textBoxTituloLivro);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.label8);
             this.panel1.Controls.Add(this.Site);
@@ -307,6 +229,85 @@
             this.panel1.Size = new System.Drawing.Size(1004, 579);
             this.panel1.TabIndex = 34;
             // 
+            // txtBoxDataTomboLivro
+            // 
+            this.txtBoxDataTomboLivro.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtBoxDataTomboLivro.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F);
+            this.txtBoxDataTomboLivro.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(81)))), ((int)(((byte)(116)))));
+            this.txtBoxDataTomboLivro.Location = new System.Drawing.Point(569, 381);
+            this.txtBoxDataTomboLivro.Mask = "00/00/0000";
+            this.txtBoxDataTomboLivro.Name = "txtBoxDataTomboLivro";
+            this.txtBoxDataTomboLivro.Size = new System.Drawing.Size(345, 31);
+            this.txtBoxDataTomboLivro.TabIndex = 131;
+            this.txtBoxDataTomboLivro.ValidatingType = typeof(System.DateTime);
+            // 
+            // txtBoxTituloLivro
+            // 
+            this.txtBoxTituloLivro.BackColor = System.Drawing.SystemColors.Window;
+            this.txtBoxTituloLivro.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtBoxTituloLivro.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtBoxTituloLivro.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(81)))), ((int)(((byte)(116)))));
+            this.txtBoxTituloLivro.Location = new System.Drawing.Point(102, 218);
+            this.txtBoxTituloLivro.Name = "txtBoxTituloLivro";
+            this.txtBoxTituloLivro.Size = new System.Drawing.Size(345, 31);
+            this.txtBoxTituloLivro.TabIndex = 126;
+            // 
+            // comboBoxAutorLivro
+            // 
+            this.comboBoxAutorLivro.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
+            this.comboBoxAutorLivro.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.comboBoxAutorLivro.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBoxAutorLivro.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(81)))), ((int)(((byte)(116)))));
+            this.comboBoxAutorLivro.FormattingEnabled = true;
+            this.comboBoxAutorLivro.IntegralHeight = false;
+            this.comboBoxAutorLivro.ItemHeight = 25;
+            this.comboBoxAutorLivro.Location = new System.Drawing.Point(102, 300);
+            this.comboBoxAutorLivro.Name = "comboBoxAutorLivro";
+            this.comboBoxAutorLivro.Size = new System.Drawing.Size(345, 33);
+            this.comboBoxAutorLivro.TabIndex = 127;
+            // 
+            // comboBoxGeneroLivro
+            // 
+            this.comboBoxGeneroLivro.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
+            this.comboBoxGeneroLivro.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.comboBoxGeneroLivro.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBoxGeneroLivro.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(81)))), ((int)(((byte)(116)))));
+            this.comboBoxGeneroLivro.FormattingEnabled = true;
+            this.comboBoxGeneroLivro.IntegralHeight = false;
+            this.comboBoxGeneroLivro.ItemHeight = 25;
+            this.comboBoxGeneroLivro.Location = new System.Drawing.Point(102, 381);
+            this.comboBoxGeneroLivro.Name = "comboBoxGeneroLivro";
+            this.comboBoxGeneroLivro.Size = new System.Drawing.Size(345, 33);
+            this.comboBoxGeneroLivro.TabIndex = 128;
+            // 
+            // comboBoxEditoraLivro
+            // 
+            this.comboBoxEditoraLivro.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
+            this.comboBoxEditoraLivro.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.comboBoxEditoraLivro.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBoxEditoraLivro.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(81)))), ((int)(((byte)(116)))));
+            this.comboBoxEditoraLivro.FormattingEnabled = true;
+            this.comboBoxEditoraLivro.IntegralHeight = false;
+            this.comboBoxEditoraLivro.ItemHeight = 25;
+            this.comboBoxEditoraLivro.Location = new System.Drawing.Point(569, 217);
+            this.comboBoxEditoraLivro.Name = "comboBoxEditoraLivro";
+            this.comboBoxEditoraLivro.Size = new System.Drawing.Size(345, 33);
+            this.comboBoxEditoraLivro.TabIndex = 129;
+            // 
+            // comboBoxIdiomaLivro
+            // 
+            this.comboBoxIdiomaLivro.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
+            this.comboBoxIdiomaLivro.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.comboBoxIdiomaLivro.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBoxIdiomaLivro.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(81)))), ((int)(((byte)(116)))));
+            this.comboBoxIdiomaLivro.FormattingEnabled = true;
+            this.comboBoxIdiomaLivro.IntegralHeight = false;
+            this.comboBoxIdiomaLivro.ItemHeight = 25;
+            this.comboBoxIdiomaLivro.Location = new System.Drawing.Point(569, 300);
+            this.comboBoxIdiomaLivro.Name = "comboBoxIdiomaLivro";
+            this.comboBoxIdiomaLivro.Size = new System.Drawing.Size(345, 33);
+            this.comboBoxIdiomaLivro.TabIndex = 130;
+            // 
             // btnVoltar
             // 
             this.btnVoltar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(136)))), ((int)(((byte)(217)))));
@@ -320,6 +321,7 @@
             this.btnVoltar.TabIndex = 85;
             this.btnVoltar.Text = "Voltar";
             this.btnVoltar.UseVisualStyleBackColor = false;
+            this.btnVoltar.Click += new System.EventHandler(this.btnVoltar_Click);
             // 
             // btnSalvar
             // 
@@ -334,15 +336,28 @@
             this.btnSalvar.TabIndex = 84;
             this.btnSalvar.Text = "Salvar";
             this.btnSalvar.UseVisualStyleBackColor = false;
+            this.btnSalvar.Click += new System.EventHandler(this.btnSalvar_Click);
             // 
-            // LivrosEditar
+            // txtBoxIdLivro
+            // 
+            this.txtBoxIdLivro.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(229)))), ((int)(((byte)(229)))));
+            this.txtBoxIdLivro.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtBoxIdLivro.Enabled = false;
+            this.txtBoxIdLivro.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtBoxIdLivro.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(197)))), ((int)(((byte)(197)))), ((int)(((byte)(197)))));
+            this.txtBoxIdLivro.Location = new System.Drawing.Point(102, 135);
+            this.txtBoxIdLivro.Name = "txtBoxIdLivro";
+            this.txtBoxIdLivro.Size = new System.Drawing.Size(71, 31);
+            this.txtBoxIdLivro.TabIndex = 125;
+            // 
+            // LivroExcluir
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1004, 631);
             this.Controls.Add(this.panel5);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "LivrosEditar";
+            this.Name = "LivroExcluir";
             this.Text = "LivrosEditar";
             this.MainTopPanel.ResumeLayout(false);
             this.MainTopPanel.PerformLayout();
@@ -356,28 +371,28 @@
         #endregion
 
         private System.Windows.Forms.Label MainTopLabel;
-        private System.Windows.Forms.TextBox textBoxDataTomboLivro;
-        private System.Windows.Forms.TextBox textBoxIdiomaLivro;
-        private System.Windows.Forms.TextBox textBoxGeneroLivro;
-        private System.Windows.Forms.TextBox textBoxAutorLivro;
-        private System.Windows.Forms.TextBox textBoxTituloLivro;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label Site;
         private System.Windows.Forms.Panel panel8;
         private System.Windows.Forms.Panel MainTopPanel;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.TextBox textBoxEditoraLivro;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Panel panel7;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox txtBoxIdLivro;
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button btnVoltar;
         private System.Windows.Forms.Button btnSalvar;
+        private System.Windows.Forms.MaskedTextBox txtBoxDataTomboLivro;
+        private System.Windows.Forms.TextBox txtBoxTituloLivro;
+        private System.Windows.Forms.ComboBox comboBoxAutorLivro;
+        private System.Windows.Forms.ComboBox comboBoxGeneroLivro;
+        private System.Windows.Forms.ComboBox comboBoxEditoraLivro;
+        private System.Windows.Forms.ComboBox comboBoxIdiomaLivro;
+        private System.Windows.Forms.TextBox txtBoxIdLivro;
     }
 }
