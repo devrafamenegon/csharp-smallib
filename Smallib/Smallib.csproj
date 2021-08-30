@@ -36,8 +36,14 @@
     <ApplicationIcon>SmallibIcon.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="BouncyCastle.Crypto, Version=1.8.6.0, Culture=neutral, PublicKeyToken=0e99375e54769942">
+      <HintPath>..\packages\BouncyCastle.1.8.6.1\lib\BouncyCastle.Crypto.dll</HintPath>
+    </Reference>
     <Reference Include="FontAwesome.Sharp, Version=5.15.3.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\FontAwesome.Sharp.5.15.3\lib\net472\FontAwesome.Sharp.dll</HintPath>
+    </Reference>
+    <Reference Include="itextsharp, Version=5.5.13.2, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
+      <HintPath>..\packages\iTextSharp.5.5.13.2\lib\itextsharp.dll</HintPath>
     </Reference>
     <Reference Include="MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
       <HintPath>..\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.dll</HintPath>
@@ -277,6 +283,12 @@
     <Compile Include="ChildForms\Cadastros\Leitor\LeitorNovo.Designer.cs">
       <DependentUpon>LeitorNovo.cs</DependentUpon>
     </Compile>
+    <Compile Include="ChildForms\Cadastros\Livro\LivroExcluir.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChildForms\Cadastros\Livro\LivroExcluir.Designer.cs">
+      <DependentUpon>LivroExcluir.cs</DependentUpon>
+    </Compile>
     <Compile Include="ChildForms\Cadastros\Livro\LivroConsultar.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -288,12 +300,6 @@
     </Compile>
     <Compile Include="ChildForms\Cadastros\Livro\LivroEditar.Designer.cs">
       <DependentUpon>LivroEditar.cs</DependentUpon>
-    </Compile>
-    <Compile Include="ChildForms\Cadastros\Livro\LivroExcluir.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="ChildForms\Cadastros\Livro\LivroExcluir.Designer.cs">
-      <DependentUpon>LivroExcluir.cs</DependentUpon>
     </Compile>
     <Compile Include="ChildForms\Cadastros\Livro\LivroMenu.cs">
       <SubType>Form</SubType>
@@ -337,22 +343,22 @@
     <Compile Include="ChildForms\Cadastros\Nacionalidade\NacionalidadeNovo.Designer.cs">
       <DependentUpon>NacionalidadeNovo.cs</DependentUpon>
     </Compile>
-    <Compile Include="ChildForms\Cadastros\Tipo do Leitor\TipoEditar.cs">
+    <Compile Include="ChildForms\Cadastros\TipoDoLeitor\TipoEditar.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ChildForms\Cadastros\Tipo do Leitor\TipoEditar.Designer.cs">
+    <Compile Include="ChildForms\Cadastros\TipoDoLeitor\TipoEditar.Designer.cs">
       <DependentUpon>TipoEditar.cs</DependentUpon>
     </Compile>
-    <Compile Include="ChildForms\Cadastros\Tipo do Leitor\TipoMenu.cs">
+    <Compile Include="ChildForms\Cadastros\TipoDoLeitor\TipoMenu.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ChildForms\Cadastros\Tipo do Leitor\TipoMenu.Designer.cs">
+    <Compile Include="ChildForms\Cadastros\TipoDoLeitor\TipoMenu.Designer.cs">
       <DependentUpon>TipoMenu.cs</DependentUpon>
     </Compile>
-    <Compile Include="ChildForms\Cadastros\Tipo do Leitor\TipoNovo.cs">
+    <Compile Include="ChildForms\Cadastros\TipoDoLeitor\TipoNovo.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ChildForms\Cadastros\Tipo do Leitor\TipoNovo.Designer.cs">
+    <Compile Include="ChildForms\Cadastros\TipoDoLeitor\TipoNovo.Designer.cs">
       <DependentUpon>TipoNovo.cs</DependentUpon>
     </Compile>
     <Compile Include="ChildForms\Relatorios\Cadastros\RelatorioAutores.cs">
@@ -409,16 +415,16 @@
     <Compile Include="ChildForms\Relatorios\Cadastros\RelatorioNacionalidade.Designer.cs">
       <DependentUpon>RelatorioNacionalidade.cs</DependentUpon>
     </Compile>
-    <Compile Include="ChildForms\Cadastros\Tipo do Leitor\TipoConsultar.cs">
+    <Compile Include="ChildForms\Cadastros\TipoDoLeitor\TipoConsultar.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ChildForms\Cadastros\Tipo do Leitor\TipoConsultar.Designer.cs">
+    <Compile Include="ChildForms\Cadastros\TipoDoLeitor\TipoConsultar.Designer.cs">
       <DependentUpon>TipoConsultar.cs</DependentUpon>
     </Compile>
-    <Compile Include="ChildForms\Cadastros\Tipo do Leitor\TipoExcluir.cs">
+    <Compile Include="ChildForms\Cadastros\TipoDoLeitor\TipoExcluir.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ChildForms\Cadastros\Tipo do Leitor\TipoExcluir.Designer.cs">
+    <Compile Include="ChildForms\Cadastros\TipoDoLeitor\TipoExcluir.Designer.cs">
       <DependentUpon>TipoExcluir.cs</DependentUpon>
     </Compile>
     <Compile Include="ChildForms\Configuracoes\Backup.cs">
@@ -670,14 +676,14 @@
     <EmbeddedResource Include="ChildForms\Cadastros\Leitor\LeitorNovo.resx">
       <DependentUpon>LeitorNovo.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ChildForms\Cadastros\Livro\LivroExcluir.resx">
+      <DependentUpon>LivroExcluir.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ChildForms\Cadastros\Livro\LivroConsultar.resx">
       <DependentUpon>LivroConsultar.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ChildForms\Cadastros\Livro\LivroEditar.resx">
       <DependentUpon>LivroEditar.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="ChildForms\Cadastros\Livro\LivroExcluir.resx">
-      <DependentUpon>LivroExcluir.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ChildForms\Cadastros\Livro\LivroMenu.resx">
       <DependentUpon>LivroMenu.cs</DependentUpon>
@@ -700,13 +706,13 @@
     <EmbeddedResource Include="ChildForms\Cadastros\Nacionalidade\NacionalidadeNovo.resx">
       <DependentUpon>NacionalidadeNovo.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ChildForms\Cadastros\Tipo do Leitor\TipoEditar.resx">
+    <EmbeddedResource Include="ChildForms\Cadastros\TipoDoLeitor\TipoEditar.resx">
       <DependentUpon>TipoEditar.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ChildForms\Cadastros\Tipo do Leitor\TipoMenu.resx">
+    <EmbeddedResource Include="ChildForms\Cadastros\TipoDoLeitor\TipoMenu.resx">
       <DependentUpon>TipoMenu.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ChildForms\Cadastros\Tipo do Leitor\TipoNovo.resx">
+    <EmbeddedResource Include="ChildForms\Cadastros\TipoDoLeitor\TipoNovo.resx">
       <DependentUpon>TipoNovo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ChildForms\Relatorios\Cadastros\RelatorioAutores.resx">
@@ -736,10 +742,10 @@
     <EmbeddedResource Include="ChildForms\Relatorios\Cadastros\RelatorioNacionalidade.resx">
       <DependentUpon>RelatorioNacionalidade.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ChildForms\Cadastros\Tipo do Leitor\TipoConsultar.resx">
+    <EmbeddedResource Include="ChildForms\Cadastros\TipoDoLeitor\TipoConsultar.resx">
       <DependentUpon>TipoConsultar.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ChildForms\Cadastros\Tipo do Leitor\TipoExcluir.resx">
+    <EmbeddedResource Include="ChildForms\Cadastros\TipoDoLeitor\TipoExcluir.resx">
       <DependentUpon>TipoExcluir.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ChildForms\Configuracoes\Backup.resx">

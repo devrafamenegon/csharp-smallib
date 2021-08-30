@@ -53,7 +53,7 @@ namespace Smallib.ChildForms.Cadastros.Relatorios
             this.MainTopPanel.Dock = System.Windows.Forms.DockStyle.Top;
             this.MainTopPanel.Location = new System.Drawing.Point(0, 0);
             this.MainTopPanel.Name = "MainTopPanel";
-            this.MainTopPanel.Size = new System.Drawing.Size(867, 52);
+            this.MainTopPanel.Size = new System.Drawing.Size(1004, 52);
             this.MainTopPanel.TabIndex = 26;
             // 
             // MainTopLabel
@@ -220,7 +220,7 @@ namespace Smallib.ChildForms.Cadastros.Relatorios
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(253)))), ((int)(((byte)(253)))));
-            this.ClientSize = new System.Drawing.Size(867, 481);
+            this.ClientSize = new System.Drawing.Size(1004, 631);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.radioNomeAutor);
             this.Controls.Add(this.radioIdAutor);
