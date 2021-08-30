@@ -8,6 +8,9 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
+using System.IO;
+using iTextSharp.text;
+using iTextSharp.text.pdf;
 
 namespace Smallib.ChildForms.Cadastros.Tipo_do_Leitor
 {
@@ -73,12 +76,36 @@ namespace Smallib.ChildForms.Cadastros.Tipo_do_Leitor
         {
             //Liberando o campo de pesquisa
             metroTxtBoxPesquisar.Enabled = true;
+
+            try
+            {
+                dados = new SqlDataAdapter("select pk_id_tipo, nome_tipo from Tipo order by pk_id_tipo", conectar);
+                datb = new DataTable();
+                dados.Fill(datb);
+                dgvTipo.DataSource = datb;
+            }
+            catch
+            {
+                MessageBox.Show("Não foi possivel se conectar ao banco de dados!", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
         }
 
         private void radioNomeTipo_CheckedChanged(object sender, EventArgs e)
         {
             //Liberando o campo de pesquisa
             metroTxtBoxPesquisar.Enabled = true;
+
+            try
+            {
+                dados = new SqlDataAdapter("select pk_id_tipo, nome_tipo from Tipo order by nome_tipo", conectar);
+                datb = new DataTable();
+                dados.Fill(datb);
+                dgvTipo.DataSource = datb;
+            }
+            catch
+            {
+                MessageBox.Show("Não foi possivel se conectar ao banco de dados!", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
         }
 
         private void btnAtualizar_Click(object sender, EventArgs e)
@@ -86,9 +113,11 @@ namespace Smallib.ChildForms.Cadastros.Tipo_do_Leitor
             dadosTipo();
 
             //Limpando as radiobutton
-            radioIdTipo.Checked = false;
+            radioIdTipo.Checked = true;
             radioNomeTipo.Checked = false;
             metroTxtBoxPesquisar.Clear();
+
+            checarLinhasDgv();
         }
 
         private void btnPesquisar_Click(object sender, EventArgs e)
@@ -192,6 +221,89 @@ namespace Smallib.ChildForms.Cadastros.Tipo_do_Leitor
 
                 //Abrindo a tela de consulta passando esses dados 
                 _principal.OpenChildForm(new TipoConsultar(_principal, tipo));
+            }
+        }
+
+        private void btnRelatorio_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                //verificando se a pasta pdf existe
+                string path = @"c:\pdf";
+                if (Directory.Exists(path) == false)
+                {
+                    //criando pasta pdf
+                    DirectoryInfo di = Directory.CreateDirectory(path);
+                }
+
+                //lugar onde o relatorio pfd vai ficar
+                string caminho = @"C:\pdf\" + DateTime.Now.ToString("yyyyMMdd") + "_RelatorioTipo_SmallLibrary.pdf";
+
+                //Criação do documento
+                Document doc = new Document(PageSize.A4);
+                PdfWriter writer = PdfWriter.GetInstance(doc, new FileStream(caminho, FileMode.Create));
+
+                /*
+                string caminho = System.Environment.CurrentDirectory; //cria o caminho com o PATH do diretório atual
+                string nomearquivo = caminho + @"\relatoriogenero.pdf"; //nome do documento e caminho (no momento, o PDF é criado dentro de bin\debug)
+                FileStream arquivoPDF = new FileStream(nomearquivo, FileMode.Create); //Diz o modo do arquivo
+                Document doc = new Document(PageSize.A4); //Criação do documento
+                PdfWriter escritorpdf = PdfWriter.GetInstance(doc, arquivoPDF); //Criação do escritor de pdf
+                */
+
+                // Parte dos paragrafos
+                string dados = "";
+
+                //small library
+                Paragraph smallibrary = new Paragraph(dados, new iTextSharp.text.Font(iTextSharp.text.Font.NORMAL, 14, (int)System.Drawing.FontStyle.Bold)); //Criação do objeto paragrafo, com fonte normal, 14, em negrito
+                smallibrary.Alignment = Element.ALIGN_RIGHT; //Alinha o conteudo a direita
+                smallibrary.Add("\n SISTEMA SMALL LIBRARY");
+
+                //cabeçalho
+                Paragraph cabecalho = new Paragraph(dados, new iTextSharp.text.Font(iTextSharp.text.Font.NORMAL, 14));
+                cabecalho.Alignment = Element.ALIGN_LEFT; //Alinha o conteudo a esquerda
+                cabecalho.Add("\n RELAÇÃO DE TIPOS DE LEITORES");
+
+                //separador de linha
+                Paragraph l = new Paragraph(new Chunk(new iTextSharp.text.pdf.draw.LineSeparator(0.0F, 100.0F, BaseColor.BLACK, Element.ALIGN_LEFT, 1))); //Linha separadora
+
+                //Classificação
+                Paragraph classificacao = new Paragraph(dados, new iTextSharp.text.Font(iTextSharp.text.Font.NORMAL, 12));
+                classificacao.Alignment = Element.ALIGN_LEFT; //Alinha o conteudo a esquerda
+                classificacao.Add("Classificação: Identificação do Tipo \n\n");
+
+                //Tabela
+                PdfPTable table = new PdfPTable(2);
+                table.DefaultCell.FixedHeight = 20;
+                table.WidthPercentage = 100;
+
+                table.AddCell("ID do Tipo");
+                table.AddCell("Nome do Tipo");
+
+                for (int i = 0; i < (dgvTipo.Rows.Count); i++)
+                {
+                    table.AddCell(dgvTipo[0, i].Value.ToString());
+                    table.AddCell(dgvTipo[1, i].Value.ToString());
+                }
+
+                //Necessário abrir para poder inserir os elementos
+                doc.Open();
+                doc.Add(smallibrary);
+                doc.Add(cabecalho);
+                doc.Add(l);
+                doc.Add(classificacao);
+                doc.Add(table);
+                doc.Close();
+
+                MessageBox.Show("PDF gerado.");
+
+                //abrindo o pdf
+                System.Diagnostics.Process.Start(caminho);
+            }
+
+            catch
+            {
+                MessageBox.Show("Não foi possivel gerar o PDF", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
         }
     }
