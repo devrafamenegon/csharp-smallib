@@ -22,31 +22,24 @@ namespace Smallib.ChildForms
         Cadastro_Usuario cadastro_usuario = new Cadastro_Usuario();
 
         private Principal _principal;
+        void checarLinhasDgv()
+        {
+            //Verificando se a grade está vazia
+            if (dgvUsuario.Rows.Count == 0)
+            {
+                labelDgv.Text = "Nenhum registro encontrado";
+            }
+
+            else
+            {
+                labelDgv.Text = "";
+            }
+        }
 
         public UsuarioMenu(Principal principal)
         {
             InitializeComponent();
             _principal = principal;
-        }
-
-        //função para remover o placeholder da barra de pesquisa
-        public void RemoverTexto()
-        {
-            if (txtBoxPesquisar.Text == "Pesquisar")
-            {
-                txtBoxPesquisar.Text = "";
-                txtBoxPesquisar.ForeColor = Color.FromArgb(46, 81, 116);
-            }
-        }
-
-        //função para adicionar o placeholder da barra de pesquisa
-        public void AdicionarTexto()
-        {
-            if (string.IsNullOrWhiteSpace(txtBoxPesquisar.Text))
-            {
-                txtBoxPesquisar.Text = "Pesquisar";
-                txtBoxPesquisar.ForeColor = Color.FromArgb(197, 197, 197);
-            }
         }
 
         private void UsuarioMenu_Load(object sender, EventArgs e)
@@ -58,7 +51,7 @@ namespace Smallib.ChildForms
             dgvUsuario.DataSource = datb;
             dgvUsuario.Refresh();
 
-            AdicionarTexto();
+            checarLinhasDgv();
         }
 
         private void btnPesquisar_Click(object sender, EventArgs e)
@@ -66,7 +59,7 @@ namespace Smallib.ChildForms
             //Filtra utilizando o ID
             if (radioIdUsuario.Checked)
             {
-                dados = new SqlDataAdapter("select pk_id_usuario, nome_usuario, login_usuario from Usuario where pk_id_usuario Like'%" + txtBoxPesquisar.Text + "%'", conectar);
+                dados = new SqlDataAdapter("select pk_id_usuario, nome_usuario, login_usuario from Usuario where pk_id_usuario Like'%" + metroTxtBoxPesquisar.Text + "%'", conectar);
                 datb = new DataTable();
                 dados.Fill(datb);
                 dgvUsuario.DataSource = datb;
@@ -75,7 +68,7 @@ namespace Smallib.ChildForms
             //Filtra utilizando o nome do usuario
             else if (radioNomeUsuario.Checked)
             {
-                dados = new SqlDataAdapter("select pk_id_usuario, nome_usuario, login_usuario from Usuario where nome_usuario Like'%" + txtBoxPesquisar.Text + "%'", conectar);
+                dados = new SqlDataAdapter("select pk_id_usuario, nome_usuario, login_usuario from Usuario where nome_usuario Like'%" + metroTxtBoxPesquisar.Text + "%'", conectar);
                 datb = new DataTable();
                 dados.Fill(datb);
                 dgvUsuario.DataSource = datb;
@@ -84,7 +77,7 @@ namespace Smallib.ChildForms
             //Filtra utilizando o login do usuario
             else if (radioLoginUsuario.Checked)
             {
-                dados = new SqlDataAdapter("select pk_id_usuario, nome_usuario, login_usuario from Usuario where login_usuario Like'%" + txtBoxPesquisar.Text + "%'", conectar);
+                dados = new SqlDataAdapter("select pk_id_usuario, nome_usuario, login_usuario from Usuario where login_usuario Like'%" + metroTxtBoxPesquisar.Text + "%'", conectar);
                 datb = new DataTable();
                 dados.Fill(datb);
                 dgvUsuario.DataSource = datb;
@@ -96,25 +89,22 @@ namespace Smallib.ChildForms
                 MessageBox.Show("Nenhuma opção de pesquisa selecionada, tente novamente");
             }
 
-            if (dgvUsuario.Rows.Count == 0)
-            {
-                labelDgv.Text = "Nenhum dado encontrado";
-            }
+            checarLinhasDgv();
         }
 
         private void radioIdUsuario_CheckedChanged(object sender, EventArgs e)
         {
-            txtBoxPesquisar.Enabled = true;
+            metroTxtBoxPesquisar.Enabled = true;
         }
 
         private void radioNomeUsuario_CheckedChanged(object sender, EventArgs e)
         {
-            txtBoxPesquisar.Enabled = true;
+            metroTxtBoxPesquisar.Enabled = true;
         }
 
         private void radioLoginUsuario_CheckedChanged(object sender, EventArgs e)
         {
-            txtBoxPesquisar.Enabled = true;
+            metroTxtBoxPesquisar.Enabled = true;
         }
 
         private void btnAtualizar_Click(object sender, EventArgs e)
@@ -124,17 +114,13 @@ namespace Smallib.ChildForms
             dados.Fill(datb);
             dgvUsuario.DataSource = datb;
 
-            radioIdUsuario.Checked = false;
+            radioIdUsuario.Checked = true;
             radioNomeUsuario.Checked = false;
             radioLoginUsuario.Checked = false;
-            txtBoxPesquisar.Text = "";
-            txtBoxPesquisar.Enabled = false;
-            AdicionarTexto();
-        }
 
-        private void txtBoxPesquisar_Click(object sender, EventArgs e)
-        {
-            RemoverTexto();
+            metroTxtBoxPesquisar.Text = "";
+
+            checarLinhasDgv();
         }
 
         private void btnNovo_Click(object sender, EventArgs e)

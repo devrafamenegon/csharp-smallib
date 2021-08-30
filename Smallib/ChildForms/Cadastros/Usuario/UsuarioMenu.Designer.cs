@@ -29,9 +29,9 @@ namespace Smallib.ChildForms
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel5 = new System.Windows.Forms.Panel();
             this.labelDgv = new System.Windows.Forms.Label();
             this.radioLoginUsuario = new System.Windows.Forms.RadioButton();
@@ -47,10 +47,10 @@ namespace Smallib.ChildForms
             this.btnPesquisar = new System.Windows.Forms.Button();
             this.radioNomeUsuario = new System.Windows.Forms.RadioButton();
             this.radioIdUsuario = new System.Windows.Forms.RadioButton();
-            this.txtBoxPesquisar = new System.Windows.Forms.TextBox();
             this.panel7 = new System.Windows.Forms.Panel();
             this.MainTopPanel = new System.Windows.Forms.Panel();
             this.MainTopLabel = new System.Windows.Forms.Label();
+            this.metroTxtBoxPesquisar = new MetroFramework.Controls.MetroTextBox();
             this.panel5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvUsuario)).BeginInit();
             this.MainTopPanel.SuspendLayout();
@@ -70,9 +70,9 @@ namespace Smallib.ChildForms
             this.panel5.Controls.Add(this.btnPesquisar);
             this.panel5.Controls.Add(this.radioNomeUsuario);
             this.panel5.Controls.Add(this.radioIdUsuario);
-            this.panel5.Controls.Add(this.txtBoxPesquisar);
             this.panel5.Controls.Add(this.panel7);
             this.panel5.Controls.Add(this.MainTopPanel);
+            this.panel5.Controls.Add(this.metroTxtBoxPesquisar);
             this.panel5.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel5.Location = new System.Drawing.Point(0, 0);
             this.panel5.Name = "panel5";
@@ -100,7 +100,6 @@ namespace Smallib.ChildForms
             this.radioLoginUsuario.Name = "radioLoginUsuario";
             this.radioLoginUsuario.Size = new System.Drawing.Size(65, 24);
             this.radioLoginUsuario.TabIndex = 27;
-            this.radioLoginUsuario.TabStop = true;
             this.radioLoginUsuario.Text = "Login";
             this.radioLoginUsuario.UseVisualStyleBackColor = true;
             this.radioLoginUsuario.CheckedChanged += new System.EventHandler(this.radioLoginUsuario_CheckedChanged);
@@ -113,41 +112,41 @@ namespace Smallib.ChildForms
             this.dgvUsuario.AllowUserToResizeRows = false;
             this.dgvUsuario.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvUsuario.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(253)))), ((int)(((byte)(253)))));
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(81)))), ((int)(((byte)(116)))));
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(81)))), ((int)(((byte)(116)))));
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvUsuario.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle7.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle7.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(81)))), ((int)(((byte)(116)))));
+            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(81)))), ((int)(((byte)(116)))));
+            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvUsuario.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle7;
             this.dgvUsuario.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvUsuario.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.id_usuario,
             this.nome_usuario,
             this.login_usuario});
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(81)))), ((int)(((byte)(116)))));
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(179)))), ((int)(((byte)(239)))));
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvUsuario.DefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle8.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle8.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(81)))), ((int)(((byte)(116)))));
+            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(179)))), ((int)(((byte)(239)))));
+            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvUsuario.DefaultCellStyle = dataGridViewCellStyle8;
             this.dgvUsuario.EnableHeadersVisualStyles = false;
             this.dgvUsuario.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(229)))), ((int)(((byte)(229)))));
             this.dgvUsuario.Location = new System.Drawing.Point(60, 177);
             this.dgvUsuario.MultiSelect = false;
             this.dgvUsuario.Name = "dgvUsuario";
             this.dgvUsuario.ReadOnly = true;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(81)))), ((int)(((byte)(116)))));
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(179)))), ((int)(((byte)(239)))));
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvUsuario.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle9.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle9.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(81)))), ((int)(((byte)(116)))));
+            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(179)))), ((int)(((byte)(239)))));
+            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvUsuario.RowHeadersDefaultCellStyle = dataGridViewCellStyle9;
             this.dgvUsuario.RowHeadersVisible = false;
             this.dgvUsuario.RowTemplate.Height = 43;
             this.dgvUsuario.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
@@ -289,7 +288,6 @@ namespace Smallib.ChildForms
             this.radioNomeUsuario.Name = "radioNomeUsuario";
             this.radioNomeUsuario.Size = new System.Drawing.Size(68, 24);
             this.radioNomeUsuario.TabIndex = 19;
-            this.radioNomeUsuario.TabStop = true;
             this.radioNomeUsuario.Text = "Nome";
             this.radioNomeUsuario.UseVisualStyleBackColor = true;
             this.radioNomeUsuario.CheckedChanged += new System.EventHandler(this.radioNomeUsuario_CheckedChanged);
@@ -297,6 +295,7 @@ namespace Smallib.ChildForms
             // radioIdUsuario
             // 
             this.radioIdUsuario.AutoSize = true;
+            this.radioIdUsuario.Checked = true;
             this.radioIdUsuario.Cursor = System.Windows.Forms.Cursors.Hand;
             this.radioIdUsuario.FlatAppearance.BorderSize = 2;
             this.radioIdUsuario.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -310,19 +309,6 @@ namespace Smallib.ChildForms
             this.radioIdUsuario.Text = "ID";
             this.radioIdUsuario.UseVisualStyleBackColor = true;
             this.radioIdUsuario.CheckedChanged += new System.EventHandler(this.radioIdUsuario_CheckedChanged);
-            // 
-            // txtBoxPesquisar
-            // 
-            this.txtBoxPesquisar.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtBoxPesquisar.Enabled = false;
-            this.txtBoxPesquisar.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.75F);
-            this.txtBoxPesquisar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(81)))), ((int)(((byte)(116)))));
-            this.txtBoxPesquisar.Location = new System.Drawing.Point(60, 90);
-            this.txtBoxPesquisar.Multiline = true;
-            this.txtBoxPesquisar.Name = "txtBoxPesquisar";
-            this.txtBoxPesquisar.Size = new System.Drawing.Size(649, 35);
-            this.txtBoxPesquisar.TabIndex = 17;
-            this.txtBoxPesquisar.Click += new System.EventHandler(this.txtBoxPesquisar_Click);
             // 
             // panel7
             // 
@@ -352,6 +338,41 @@ namespace Smallib.ChildForms
             this.MainTopLabel.Size = new System.Drawing.Size(233, 29);
             this.MainTopLabel.TabIndex = 0;
             this.MainTopLabel.Text = "Cadastro de Usuário";
+            // 
+            // metroTxtBoxPesquisar
+            // 
+            this.metroTxtBoxPesquisar.BackColor = System.Drawing.SystemColors.Window;
+            // 
+            // 
+            // 
+            this.metroTxtBoxPesquisar.CustomButton.Image = null;
+            this.metroTxtBoxPesquisar.CustomButton.Location = new System.Drawing.Point(615, 1);
+            this.metroTxtBoxPesquisar.CustomButton.Name = "";
+            this.metroTxtBoxPesquisar.CustomButton.Size = new System.Drawing.Size(33, 33);
+            this.metroTxtBoxPesquisar.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
+            this.metroTxtBoxPesquisar.CustomButton.TabIndex = 1;
+            this.metroTxtBoxPesquisar.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.metroTxtBoxPesquisar.CustomButton.UseSelectable = true;
+            this.metroTxtBoxPesquisar.CustomButton.Visible = false;
+            this.metroTxtBoxPesquisar.FontSize = MetroFramework.MetroTextBoxSize.Tall;
+            this.metroTxtBoxPesquisar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(81)))), ((int)(((byte)(116)))));
+            this.metroTxtBoxPesquisar.Lines = new string[0];
+            this.metroTxtBoxPesquisar.Location = new System.Drawing.Point(60, 90);
+            this.metroTxtBoxPesquisar.MaxLength = 32767;
+            this.metroTxtBoxPesquisar.Name = "metroTxtBoxPesquisar";
+            this.metroTxtBoxPesquisar.PasswordChar = '\0';
+            this.metroTxtBoxPesquisar.PromptText = "Pesquisar";
+            this.metroTxtBoxPesquisar.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.metroTxtBoxPesquisar.SelectedText = "";
+            this.metroTxtBoxPesquisar.SelectionLength = 0;
+            this.metroTxtBoxPesquisar.SelectionStart = 0;
+            this.metroTxtBoxPesquisar.ShortcutsEnabled = true;
+            this.metroTxtBoxPesquisar.Size = new System.Drawing.Size(649, 35);
+            this.metroTxtBoxPesquisar.TabIndex = 30;
+            this.metroTxtBoxPesquisar.UseSelectable = true;
+            this.metroTxtBoxPesquisar.WaterMark = "Pesquisar";
+            this.metroTxtBoxPesquisar.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(197)))), ((int)(((byte)(197)))), ((int)(((byte)(197)))));
+            this.metroTxtBoxPesquisar.WaterMarkFont = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             // 
             // UsuarioMenu
             // 
@@ -386,7 +407,6 @@ namespace Smallib.ChildForms
         private System.Windows.Forms.Button btnPesquisar;
         private System.Windows.Forms.RadioButton radioNomeUsuario;
         private System.Windows.Forms.RadioButton radioIdUsuario;
-        private System.Windows.Forms.TextBox txtBoxPesquisar;
         private System.Windows.Forms.Panel panel7;
         private System.Windows.Forms.Panel MainTopPanel;
         private System.Windows.Forms.Label MainTopLabel;
@@ -394,5 +414,6 @@ namespace Smallib.ChildForms
         private System.Windows.Forms.DataGridViewTextBoxColumn id_usuario;
         private System.Windows.Forms.DataGridViewTextBoxColumn nome_usuario;
         private System.Windows.Forms.DataGridViewTextBoxColumn login_usuario;
+        private MetroFramework.Controls.MetroTextBox metroTxtBoxPesquisar;
     }
 }
