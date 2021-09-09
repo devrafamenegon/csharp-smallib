@@ -144,7 +144,6 @@ namespace Smallib.ChildForms
             this.iconCadastros.Text = "Cadastros";
             this.iconCadastros.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.iconCadastros.UseVisualStyleBackColor = false;
-            this.iconCadastros.Click += new System.EventHandler(this.iconCadastros_Click);
             this.iconCadastros.MouseEnter += new System.EventHandler(this.iconCadastros_MouseEnter);
             this.iconCadastros.MouseLeave += new System.EventHandler(this.iconCadastros_MouseLeave);
             // 

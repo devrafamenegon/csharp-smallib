@@ -24,11 +24,6 @@ namespace Smallib.ChildForms
             _principal = principal;
         }
 
-        private void iconCadastros_Click(object sender, EventArgs e)
-        {
-            _principal.OpenChildForm(new RelCadastros(_principal));
-        }
-
         private void iconAdministrativos_Click(object sender, EventArgs e)
         {
             _principal.OpenChildForm(new RelAdministrativos(_principal));

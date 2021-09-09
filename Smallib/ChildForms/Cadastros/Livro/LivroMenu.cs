@@ -95,7 +95,7 @@ namespace Smallib.ChildForms.Cadastros.Livros
             
             try
             {
-                dados = new SqlDataAdapter("select Livro.pk_id_Livro, Livro.titulo_livro, Livro.tombo_livro, Editora.nome_editora, Autor.nome_autor, Genero.nome_genero, Idioma.nome_idioma, Livro.ultemprest_livro, Livro.ultleitor_livro, Livro.status_livro from Livro inner join Editora on Livro.fk_id_editora_livro = Editora.pk_id_editora inner join Autor on Livro.fk_id_autor_livro = Autor.pk_id_autor inner join Genero on Livro.fk_id_genero_livro = Genero.pk_id_genero inner join idioma on Livro.fk_id_idioma_livro = Idioma.pk_id_idioma where titulo_livro Like'%" + metroTxtBoxPesquisar.Text + "%' order by pk_id_livro", conectar);
+                dados = new SqlDataAdapter("select Livro.pk_id_Livro, Livro.titulo_livro, Livro.tombo_livro, Editora.nome_editora, Autor.nome_autor, Genero.nome_genero, Idioma.nome_idioma, Livro.ultemprest_livro, Livro.ultleitor_livro, Livro.status_livro from Livro inner join Editora on Livro.fk_id_editora_livro = Editora.pk_id_editora inner join Autor on Livro.fk_id_autor_livro = Autor.pk_id_autor inner join Genero on Livro.fk_id_genero_livro = Genero.pk_id_genero inner join idioma on Livro.fk_id_idioma_livro = Idioma.pk_id_idioma order by titulo_livro", conectar);
                 datb = new DataTable();
                 dados.Fill(datb);
                 dgvLivro.DataSource = datb;
@@ -114,7 +114,7 @@ namespace Smallib.ChildForms.Cadastros.Livros
 
             try
             {
-                dados = new SqlDataAdapter("select Livro.pk_id_Livro, Livro.titulo_livro, Livro.tombo_livro, Editora.nome_editora, Autor.nome_autor, Genero.nome_genero, Idioma.nome_idioma, Livro.ultemprest_livro, Livro.ultleitor_livro, Livro.status_livro from Livro inner join Editora on Livro.fk_id_editora_livro = Editora.pk_id_editora inner join Autor on Livro.fk_id_autor_livro = Autor.pk_id_autor inner join Genero on Livro.fk_id_genero_livro = Genero.pk_id_genero inner join idioma on Livro.fk_id_idioma_livro = Idioma.pk_id_idioma where Editora.nome_editora Like'%" + metroTxtBoxPesquisar.Text + "%' order by pk_id_livro", conectar);
+                dados = new SqlDataAdapter("select Livro.pk_id_Livro, Livro.titulo_livro, Livro.tombo_livro, Editora.nome_editora, Autor.nome_autor, Genero.nome_genero, Idioma.nome_idioma, Livro.ultemprest_livro, Livro.ultleitor_livro, Livro.status_livro from Livro inner join Editora on Livro.fk_id_editora_livro = Editora.pk_id_editora inner join Autor on Livro.fk_id_autor_livro = Autor.pk_id_autor inner join Genero on Livro.fk_id_genero_livro = Genero.pk_id_genero inner join idioma on Livro.fk_id_idioma_livro = Idioma.pk_id_idioma order by Editora.nome_editora", conectar);
                 datb = new DataTable();
                 dados.Fill(datb);
                 dgvLivro.DataSource = datb;
@@ -133,7 +133,7 @@ namespace Smallib.ChildForms.Cadastros.Livros
 
             try
             {
-                dados = new SqlDataAdapter("select Livro.pk_id_Livro, Livro.titulo_livro, Livro.tombo_livro, Editora.nome_editora, Autor.nome_autor, Genero.nome_genero, Idioma.nome_idioma, Livro.ultemprest_livro, Livro.ultleitor_livro, Livro.status_livro from Livro inner join Editora on Livro.fk_id_editora_livro = Editora.pk_id_editora inner join Autor on Livro.fk_id_autor_livro = Autor.pk_id_autor inner join Genero on Livro.fk_id_genero_livro = Genero.pk_id_genero inner join idioma on Livro.fk_id_idioma_livro = Idioma.pk_id_idioma where Genero.nome_genero Like'%" + metroTxtBoxPesquisar.Text + "%' order by pk_id_livro", conectar);
+                dados = new SqlDataAdapter("select Livro.pk_id_Livro, Livro.titulo_livro, Livro.tombo_livro, Editora.nome_editora, Autor.nome_autor, Genero.nome_genero, Idioma.nome_idioma, Livro.ultemprest_livro, Livro.ultleitor_livro, Livro.status_livro from Livro inner join Editora on Livro.fk_id_editora_livro = Editora.pk_id_editora inner join Autor on Livro.fk_id_autor_livro = Autor.pk_id_autor inner join Genero on Livro.fk_id_genero_livro = Genero.pk_id_genero inner join idioma on Livro.fk_id_idioma_livro = Idioma.pk_id_idioma order by Genero.nome_genero", conectar);
                 datb = new DataTable();
                 dados.Fill(datb);
                 dgvLivro.DataSource = datb;
@@ -152,7 +152,7 @@ namespace Smallib.ChildForms.Cadastros.Livros
 
             try
             {
-                dados = new SqlDataAdapter("select Livro.pk_id_Livro, Livro.titulo_livro, Livro.tombo_livro, Editora.nome_editora, Autor.nome_autor, Genero.nome_genero, Idioma.nome_idioma, Livro.ultemprest_livro, Livro.ultleitor_livro, Livro.status_livro from Livro inner join Editora on Livro.fk_id_editora_livro = Editora.pk_id_editora inner join Autor on Livro.fk_id_autor_livro = Autor.pk_id_autor inner join Genero on Livro.fk_id_genero_livro = Genero.pk_id_genero inner join idioma on Livro.fk_id_idioma_livro = Idioma.pk_id_idioma where Autor.nome_autor Like'%" + metroTxtBoxPesquisar.Text + "%' order by pk_id_livro", conectar);
+                dados = new SqlDataAdapter("select Livro.pk_id_Livro, Livro.titulo_livro, Livro.tombo_livro, Editora.nome_editora, Autor.nome_autor, Genero.nome_genero, Idioma.nome_idioma, Livro.ultemprest_livro, Livro.ultleitor_livro, Livro.status_livro from Livro inner join Editora on Livro.fk_id_editora_livro = Editora.pk_id_editora inner join Autor on Livro.fk_id_autor_livro = Autor.pk_id_autor inner join Genero on Livro.fk_id_genero_livro = Genero.pk_id_genero inner join idioma on Livro.fk_id_idioma_livro = Idioma.pk_id_idioma order by Autor.nome_autor", conectar);
                 datb = new DataTable();
                 dados.Fill(datb);
                 dgvLivro.DataSource = datb;
@@ -171,7 +171,7 @@ namespace Smallib.ChildForms.Cadastros.Livros
 
             try
             {
-                dados = new SqlDataAdapter("select Livro.pk_id_Livro, Livro.titulo_livro, Livro.tombo_livro, Editora.nome_editora, Autor.nome_autor, Genero.nome_genero, Idioma.nome_idioma, Livro.ultemprest_livro, Livro.ultleitor_livro, Livro.status_livro from Livro inner join Editora on Livro.fk_id_editora_livro = Editora.pk_id_editora inner join Autor on Livro.fk_id_autor_livro = Autor.pk_id_autor inner join Genero on Livro.fk_id_genero_livro = Genero.pk_id_genero inner join idioma on Livro.fk_id_idioma_livro = Idioma.pk_id_idioma where status_livro Like'%" + metroTxtBoxPesquisar.Text + "%' order by pk_id_livro", conectar);
+                dados = new SqlDataAdapter("select Livro.pk_id_Livro, Livro.titulo_livro, Livro.tombo_livro, Editora.nome_editora, Autor.nome_autor, Genero.nome_genero, Idioma.nome_idioma, Livro.ultemprest_livro, Livro.ultleitor_livro, Livro.status_livro from Livro inner join Editora on Livro.fk_id_editora_livro = Editora.pk_id_editora inner join Autor on Livro.fk_id_autor_livro = Autor.pk_id_autor inner join Genero on Livro.fk_id_genero_livro = Genero.pk_id_genero inner join idioma on Livro.fk_id_idioma_livro = Idioma.pk_id_idioma order by status_livro", conectar);
                 datb = new DataTable();
                 dados.Fill(datb);
                 dgvLivro.DataSource = datb;
@@ -209,27 +209,27 @@ namespace Smallib.ChildForms.Cadastros.Livros
 
             else if (radioTituloLivro.Checked)
             {
-                dados = new SqlDataAdapter("select Livro.pk_id_Livro, Livro.titulo_livro, Livro.tombo_livro, Editora.nome_editora, Autor.nome_autor, Genero.nome_genero, Idioma.nome_idioma, Livro.ultemprest_livro, Livro.ultleitor_livro, Livro.status_livro from Livro inner join Editora on Livro.fk_id_editora_livro = Editora.pk_id_editora inner join Autor on Livro.fk_id_autor_livro = Autor.pk_id_autor inner join Genero on Livro.fk_id_genero_livro = Genero.pk_id_genero inner join idioma on Livro.fk_id_idioma_livro = Idioma.pk_id_idioma where titulo_livro Like'%" + metroTxtBoxPesquisar.Text + "%' order by titulo_livro", conectar);
+                dados = new SqlDataAdapter("select Livro.pk_id_Livro, Livro.titulo_livro, Livro.tombo_livro, Editora.nome_editora, Autor.nome_autor, Genero.nome_genero, Idioma.nome_idioma, Livro.ultemprest_livro, Livro.ultleitor_livro, Livro.status_livro from Livro inner join Editora on Livro.fk_id_editora_livro = Editora.pk_id_editora inner join Autor on Livro.fk_id_autor_livro = Autor.pk_id_autor inner join Genero on Livro.fk_id_genero_livro = Genero.pk_id_genero inner join idioma on Livro.fk_id_idioma_livro = Idioma.pk_id_idioma where titulo_livro Like'%" + metroTxtBoxPesquisar.Text + "%' order by pk_id_livro", conectar);
             }
 
             else if (radioEditoraLivro.Checked)
             {
-                dados = new SqlDataAdapter("select Livro.pk_id_Livro, Livro.titulo_livro, Livro.tombo_livro, Editora.nome_editora, Autor.nome_autor, Genero.nome_genero, Idioma.nome_idioma, Livro.ultemprest_livro, Livro.ultleitor_livro, Livro.status_livro from Livro inner join Editora on Livro.fk_id_editora_livro = Editora.pk_id_editora inner join Autor on Livro.fk_id_autor_livro = Autor.pk_id_autor inner join Genero on Livro.fk_id_genero_livro = Genero.pk_id_genero inner join idioma on Livro.fk_id_idioma_livro = Idioma.pk_id_idioma where Genero.nome_genero Like'%" + metroTxtBoxPesquisar.Text + "%' order by Editora.nome_editora", conectar);
+                dados = new SqlDataAdapter("select Livro.pk_id_Livro, Livro.titulo_livro, Livro.tombo_livro, Editora.nome_editora, Autor.nome_autor, Genero.nome_genero, Idioma.nome_idioma, Livro.ultemprest_livro, Livro.ultleitor_livro, Livro.status_livro from Livro inner join Editora on Livro.fk_id_editora_livro = Editora.pk_id_editora inner join Autor on Livro.fk_id_autor_livro = Autor.pk_id_autor inner join Genero on Livro.fk_id_genero_livro = Genero.pk_id_genero inner join idioma on Livro.fk_id_idioma_livro = Idioma.pk_id_idioma where Editora.nome_editora Like'%" + metroTxtBoxPesquisar.Text + "%' order by pk_id_livro", conectar);
             }
 
             else if (radioGeneroLivro.Checked)
             {
-                dados = new SqlDataAdapter("select Livro.pk_id_Livro, Livro.titulo_livro, Livro.tombo_livro, Editora.nome_editora, Autor.nome_autor, Genero.nome_genero, Idioma.nome_idioma, Livro.ultemprest_livro, Livro.ultleitor_livro, Livro.status_livro from Livro inner join Editora on Livro.fk_id_editora_livro = Editora.pk_id_editora inner join Autor on Livro.fk_id_autor_livro = Autor.pk_id_autor inner join Genero on Livro.fk_id_genero_livro = Genero.pk_id_genero inner join idioma on Livro.fk_id_idioma_livro = Idioma.pk_id_idioma where Autor.nome_autor Like'%" + metroTxtBoxPesquisar.Text + "%' order by Genero.nome_genero", conectar);
+                dados = new SqlDataAdapter("select Livro.pk_id_Livro, Livro.titulo_livro, Livro.tombo_livro, Editora.nome_editora, Autor.nome_autor, Genero.nome_genero, Idioma.nome_idioma, Livro.ultemprest_livro, Livro.ultleitor_livro, Livro.status_livro from Livro inner join Editora on Livro.fk_id_editora_livro = Editora.pk_id_editora inner join Autor on Livro.fk_id_autor_livro = Autor.pk_id_autor inner join Genero on Livro.fk_id_genero_livro = Genero.pk_id_genero inner join idioma on Livro.fk_id_idioma_livro = Idioma.pk_id_idioma where Genero.nome_genero Like'%" + metroTxtBoxPesquisar.Text + "%' order by pk_id_livro", conectar);
             }
 
             else if (radioAutorLivro.Checked)
             {
-                dados = new SqlDataAdapter("select Livro.pk_id_Livro, Livro.titulo_livro, Livro.tombo_livro, Editora.nome_editora, Autor.nome_autor, Genero.nome_genero, Idioma.nome_idioma, Livro.ultemprest_livro, Livro.ultleitor_livro, Livro.status_livro from Livro inner join Editora on Livro.fk_id_editora_livro = Editora.pk_id_editora inner join Autor on Livro.fk_id_autor_livro = Autor.pk_id_autor inner join Genero on Livro.fk_id_genero_livro = Genero.pk_id_genero inner join idioma on Livro.fk_id_idioma_livro = Idioma.pk_id_idioma where Idioma.nome_idioma Like'%" + metroTxtBoxPesquisar.Text + "%' order by Autor.nome_autor", conectar);
+                dados = new SqlDataAdapter("select Livro.pk_id_Livro, Livro.titulo_livro, Livro.tombo_livro, Editora.nome_editora, Autor.nome_autor, Genero.nome_genero, Idioma.nome_idioma, Livro.ultemprest_livro, Livro.ultleitor_livro, Livro.status_livro from Livro inner join Editora on Livro.fk_id_editora_livro = Editora.pk_id_editora inner join Autor on Livro.fk_id_autor_livro = Autor.pk_id_autor inner join Genero on Livro.fk_id_genero_livro = Genero.pk_id_genero inner join idioma on Livro.fk_id_idioma_livro = Idioma.pk_id_idioma where Autor.nome_autor Like'%" + metroTxtBoxPesquisar.Text + "%' order by pk_id_livro", conectar);
             }
 
             else if (radioStatusLivro.Checked)
             {
-                dados = new SqlDataAdapter("select Livro.pk_id_Livro, Livro.titulo_livro, Livro.tombo_livro, Editora.nome_editora, Autor.nome_autor, Genero.nome_genero, Idioma.nome_idioma, Livro.ultemprest_livro, Livro.ultleitor_livro, Livro.status_livro from Livro inner join Editora on Livro.fk_id_editora_livro = Editora.pk_id_editora inner join Autor on Livro.fk_id_autor_livro = Autor.pk_id_autor inner join Genero on Livro.fk_id_genero_livro = Genero.pk_id_genero inner join idioma on Livro.fk_id_idioma_livro = Idioma.pk_id_idioma where Idioma.nome_idioma Like'%" + metroTxtBoxPesquisar.Text + "%' order by status_livro", conectar);
+                dados = new SqlDataAdapter("select Livro.pk_id_Livro, Livro.titulo_livro, Livro.tombo_livro, Editora.nome_editora, Autor.nome_autor, Genero.nome_genero, Idioma.nome_idioma, Livro.ultemprest_livro, Livro.ultleitor_livro, Livro.status_livro from Livro inner join Editora on Livro.fk_id_editora_livro = Editora.pk_id_editora inner join Autor on Livro.fk_id_autor_livro = Autor.pk_id_autor inner join Genero on Livro.fk_id_genero_livro = Genero.pk_id_genero inner join idioma on Livro.fk_id_idioma_livro = Idioma.pk_id_idioma where Idioma.nome_idioma Like'%" + metroTxtBoxPesquisar.Text + "%' order by pk_id_livro", conectar);
             }
 
             datb = new DataTable();
