@@ -90,12 +90,25 @@ namespace Smallib.ChildForms.Cadastros.Leitores
 
             try
             {
-                //Consultando os leitores no banco de dados filtrando por id
-                dados = new SqlDataAdapter("select L.pk_id_leitor as pk_id_leitor, L.nome_leitor as nome_leitor, L.email_leitor as email_leitor, L.tel_cel_leitor as tel_cel_leitor, L.rg_leitor as rg_leitor, L.dtnasc_leitor as dtnasc_leitor, L.dtcad_leitor as dtcad_leitor, C.nome_cidade as nome_cidade, C.estado_cidade as estado_cidade, T.nome_tipo as nome_tipo, N.nome_curso as nome_curso, L.classe_leitor as classe_leitor, L.status_leitor as status_leitor from Leitor as L inner join Cidade as C on L.fk_id_cidade_leitor=C.pk_id_cidade inner join Tipo as T on L.fk_id_tipo_leitor= T.pk_id_tipo left join Curso as N on L.fk_id_curso_leitor = N.pk_id_curso order by pk_id_leitor", conectar);
+                dadosLeitor();
+
+                if (checkBoxAtrasoLeitor.Checked == true)
+                {
+                    dados = new SqlDataAdapter("select L.pk_id_leitor as pk_id_leitor, L.nome_leitor as nome_leitor, L.email_leitor as email_leitor, L.tel_cel_leitor as tel_cel_leitor, L.rg_leitor as rg_leitor, L.dtnasc_leitor as dtnasc_leitor, L.dtcad_leitor as dtcad_leitor, C.nome_cidade as nome_cidade, C.estado_cidade as estado_cidade, T.nome_tipo as nome_tipo, N.nome_curso as nome_curso, L.classe_leitor as classe_leitor, L.status_leitor as status_leitor from Leitor as L inner join Cidade as C on L.fk_id_cidade_leitor=C.pk_id_cidade inner join Tipo as T on L.fk_id_tipo_leitor= T.pk_id_tipo left join Curso as N on L.fk_id_curso_leitor = N.pk_id_curso inner join Emprestimo on pk_id_leitor = fk_id_leitor_emprestimo where dt_dev_prev_emprestimo < dt_devolucao_emprestimo order by pk_id_leitor", conectar);
+
+                }
+
+                else
+                {
+                    dados = new SqlDataAdapter("select L.pk_id_leitor as pk_id_leitor, L.nome_leitor as nome_leitor, L.email_leitor as email_leitor, L.tel_cel_leitor as tel_cel_leitor, L.rg_leitor as rg_leitor, L.dtnasc_leitor as dtnasc_leitor, L.dtcad_leitor as dtcad_leitor, C.nome_cidade as nome_cidade, C.estado_cidade as estado_cidade, T.nome_tipo as nome_tipo, N.nome_curso as nome_curso, L.classe_leitor as classe_leitor, L.status_leitor as status_leitor from Leitor as L inner join Cidade as C on L.fk_id_cidade_leitor=C.pk_id_cidade inner join Tipo as T on L.fk_id_tipo_leitor= T.pk_id_tipo left join Curso as N on L.fk_id_curso_leitor = N.pk_id_curso order by pk_id_leitor", conectar);
+                }
+
                 datb = new DataTable();
                 dados.Fill(datb);
                 dgvLeitor.DataSource = datb;
+                
             }
+
             catch
             {
                 MessageBox.Show("Erro ao realizar consulta no banco de dados!!");
@@ -109,12 +122,23 @@ namespace Smallib.ChildForms.Cadastros.Leitores
 
             try
             {
-                //Consultando os leitores no banco de dados filtrando por id
-                dados = new SqlDataAdapter("select L.pk_id_leitor as pk_id_leitor, L.nome_leitor as nome_leitor, L.email_leitor as email_leitor, L.tel_cel_leitor as tel_cel_leitor, L.rg_leitor as rg_leitor, L.dtnasc_leitor as dtnasc_leitor, L.dtcad_leitor as dtcad_leitor, C.nome_cidade as nome_cidade, C.estado_cidade as estado_cidade, T.nome_tipo as nome_tipo, N.nome_curso as nome_curso, L.classe_leitor as classe_leitor, L.status_leitor as status_leitor from Leitor as L inner join Cidade as C on L.fk_id_cidade_leitor=C.pk_id_cidade inner join Tipo as T on L.fk_id_tipo_leitor= T.pk_id_tipo left join Curso as N on L.fk_id_curso_leitor = N.pk_id_curso order by nome_leitor", conectar);
+                dadosLeitor();
+
+                if (checkBoxAtrasoLeitor.Checked == true)
+                {
+                    dados = new SqlDataAdapter("select L.pk_id_leitor as pk_id_leitor, L.nome_leitor as nome_leitor, L.email_leitor as email_leitor, L.tel_cel_leitor as tel_cel_leitor, L.rg_leitor as rg_leitor, L.dtnasc_leitor as dtnasc_leitor, L.dtcad_leitor as dtcad_leitor, C.nome_cidade as nome_cidade, C.estado_cidade as estado_cidade, T.nome_tipo as nome_tipo, N.nome_curso as nome_curso, L.classe_leitor as classe_leitor, L.status_leitor as status_leitor from Leitor as L inner join Cidade as C on L.fk_id_cidade_leitor=C.pk_id_cidade inner join Tipo as T on L.fk_id_tipo_leitor= T.pk_id_tipo left join Curso as N on L.fk_id_curso_leitor = N.pk_id_curso inner join Emprestimo on pk_id_leitor = fk_id_leitor_emprestimo where dt_dev_prev_emprestimo < dt_devolucao_emprestimo order by nome_leitor", conectar);
+                }
+
+                else
+                {
+                    dados = new SqlDataAdapter("select L.pk_id_leitor as pk_id_leitor, L.nome_leitor as nome_leitor, L.email_leitor as email_leitor, L.tel_cel_leitor as tel_cel_leitor, L.rg_leitor as rg_leitor, L.dtnasc_leitor as dtnasc_leitor, L.dtcad_leitor as dtcad_leitor, C.nome_cidade as nome_cidade, C.estado_cidade as estado_cidade, T.nome_tipo as nome_tipo, N.nome_curso as nome_curso, L.classe_leitor as classe_leitor, L.status_leitor as status_leitor from Leitor as L inner join Cidade as C on L.fk_id_cidade_leitor=C.pk_id_cidade inner join Tipo as T on L.fk_id_tipo_leitor= T.pk_id_tipo left join Curso as N on L.fk_id_curso_leitor = N.pk_id_curso order by nome_leitor", conectar);
+                }
+
                 datb = new DataTable();
                 dados.Fill(datb);
                 dgvLeitor.DataSource = datb;
             }
+
             catch
             {
                 MessageBox.Show("Erro ao realizar consulta no banco de dados!!");
@@ -128,12 +152,24 @@ namespace Smallib.ChildForms.Cadastros.Leitores
 
             try
             {
-                //Consultando os leitores no banco de dados filtrando por id
-                dados = new SqlDataAdapter("select L.pk_id_leitor as pk_id_leitor, L.nome_leitor as nome_leitor, L.email_leitor as email_leitor, L.tel_cel_leitor as tel_cel_leitor, L.rg_leitor as rg_leitor, L.dtnasc_leitor as dtnasc_leitor, L.dtcad_leitor as dtcad_leitor, C.nome_cidade as nome_cidade, C.estado_cidade as estado_cidade, T.nome_tipo as nome_tipo, N.nome_curso as nome_curso, L.classe_leitor as classe_leitor, L.status_leitor as status_leitor from Leitor as L inner join Cidade as C on L.fk_id_cidade_leitor=C.pk_id_cidade inner join Tipo as T on L.fk_id_tipo_leitor= T.pk_id_tipo left join Curso as N on L.fk_id_curso_leitor = N.pk_id_curso order by nome_cidade", conectar);
+                dadosLeitor();
+
+                if (checkBoxAtrasoLeitor.Checked == true)
+                {
+                    dados = new SqlDataAdapter("select L.pk_id_leitor as pk_id_leitor, L.nome_leitor as nome_leitor, L.email_leitor as email_leitor, L.tel_cel_leitor as tel_cel_leitor, L.rg_leitor as rg_leitor, L.dtnasc_leitor as dtnasc_leitor, L.dtcad_leitor as dtcad_leitor, C.nome_cidade as nome_cidade, C.estado_cidade as estado_cidade, T.nome_tipo as nome_tipo, N.nome_curso as nome_curso, L.classe_leitor as classe_leitor, L.status_leitor as status_leitor from Leitor as L inner join Cidade as C on L.fk_id_cidade_leitor=C.pk_id_cidade inner join Tipo as T on L.fk_id_tipo_leitor= T.pk_id_tipo left join Curso as N on L.fk_id_curso_leitor = N.pk_id_curso inner join Emprestimo on pk_id_leitor = fk_id_leitor_emprestimo where dt_dev_prev_emprestimo < dt_devolucao_emprestimo order by nome_cidade", conectar);
+
+                }
+
+                else
+                {
+                    dados = new SqlDataAdapter("select L.pk_id_leitor as pk_id_leitor, L.nome_leitor as nome_leitor, L.email_leitor as email_leitor, L.tel_cel_leitor as tel_cel_leitor, L.rg_leitor as rg_leitor, L.dtnasc_leitor as dtnasc_leitor, L.dtcad_leitor as dtcad_leitor, C.nome_cidade as nome_cidade, C.estado_cidade as estado_cidade, T.nome_tipo as nome_tipo, N.nome_curso as nome_curso, L.classe_leitor as classe_leitor, L.status_leitor as status_leitor from Leitor as L inner join Cidade as C on L.fk_id_cidade_leitor=C.pk_id_cidade inner join Tipo as T on L.fk_id_tipo_leitor= T.pk_id_tipo left join Curso as N on L.fk_id_curso_leitor = N.pk_id_curso order by nome_cidade", conectar);
+                }
+
                 datb = new DataTable();
                 dados.Fill(datb);
                 dgvLeitor.DataSource = datb;
             }
+
             catch
             {
                 MessageBox.Show("Erro ao realizar consulta no banco de dados!!");
@@ -147,12 +183,24 @@ namespace Smallib.ChildForms.Cadastros.Leitores
 
             try
             {
-                //Consultando os leitores no banco de dados filtrando por id
-                dados = new SqlDataAdapter("select L.pk_id_leitor as pk_id_leitor, L.nome_leitor as nome_leitor, L.email_leitor as email_leitor, L.tel_cel_leitor as tel_cel_leitor, L.rg_leitor as rg_leitor, L.dtnasc_leitor as dtnasc_leitor, L.dtcad_leitor as dtcad_leitor, C.nome_cidade as nome_cidade, C.estado_cidade as estado_cidade, T.nome_tipo as nome_tipo, N.nome_curso as nome_curso, L.classe_leitor as classe_leitor, L.status_leitor as status_leitor from Leitor as L inner join Cidade as C on L.fk_id_cidade_leitor=C.pk_id_cidade inner join Tipo as T on L.fk_id_tipo_leitor= T.pk_id_tipo left join Curso as N on L.fk_id_curso_leitor = N.pk_id_curso order by nome_tipo", conectar);
+                dadosLeitor();
+
+                if (checkBoxAtrasoLeitor.Checked == true)
+                {
+                    dados = new SqlDataAdapter("select L.pk_id_leitor as pk_id_leitor, L.nome_leitor as nome_leitor, L.email_leitor as email_leitor, L.tel_cel_leitor as tel_cel_leitor, L.rg_leitor as rg_leitor, L.dtnasc_leitor as dtnasc_leitor, L.dtcad_leitor as dtcad_leitor, C.nome_cidade as nome_cidade, C.estado_cidade as estado_cidade, T.nome_tipo as nome_tipo, N.nome_curso as nome_curso, L.classe_leitor as classe_leitor, L.status_leitor as status_leitor from Leitor as L inner join Cidade as C on L.fk_id_cidade_leitor=C.pk_id_cidade inner join Tipo as T on L.fk_id_tipo_leitor= T.pk_id_tipo left join Curso as N on L.fk_id_curso_leitor = N.pk_id_curso inner join Emprestimo on pk_id_leitor = fk_id_leitor_emprestimo where dt_dev_prev_emprestimo < dt_devolucao_emprestimo order by nome_tipo", conectar);
+
+                }
+
+                else
+                {
+                    dados = new SqlDataAdapter("select L.pk_id_leitor as pk_id_leitor, L.nome_leitor as nome_leitor, L.email_leitor as email_leitor, L.tel_cel_leitor as tel_cel_leitor, L.rg_leitor as rg_leitor, L.dtnasc_leitor as dtnasc_leitor, L.dtcad_leitor as dtcad_leitor, C.nome_cidade as nome_cidade, C.estado_cidade as estado_cidade, T.nome_tipo as nome_tipo, N.nome_curso as nome_curso, L.classe_leitor as classe_leitor, L.status_leitor as status_leitor from Leitor as L inner join Cidade as C on L.fk_id_cidade_leitor=C.pk_id_cidade inner join Tipo as T on L.fk_id_tipo_leitor= T.pk_id_tipo left join Curso as N on L.fk_id_curso_leitor = N.pk_id_curso order by nome_tipo", conectar);
+                }
+
                 datb = new DataTable();
                 dados.Fill(datb);
                 dgvLeitor.DataSource = datb;
             }
+
             catch
             {
                 MessageBox.Show("Erro ao realizar consulta no banco de dados!!");
@@ -166,12 +214,25 @@ namespace Smallib.ChildForms.Cadastros.Leitores
 
             try
             {
-                //Consultando os leitores no banco de dados filtrando por id
-                dados = new SqlDataAdapter("select L.pk_id_leitor as pk_id_leitor, L.nome_leitor as nome_leitor, L.email_leitor as email_leitor, L.tel_cel_leitor as tel_cel_leitor, L.rg_leitor as rg_leitor, L.dtnasc_leitor as dtnasc_leitor, L.dtcad_leitor as dtcad_leitor, C.nome_cidade as nome_cidade, C.estado_cidade as estado_cidade, T.nome_tipo as nome_tipo, N.nome_curso as nome_curso, L.classe_leitor as classe_leitor, L.status_leitor as status_leitor from Leitor as L inner join Cidade as C on L.fk_id_cidade_leitor=C.pk_id_cidade inner join Tipo as T on L.fk_id_tipo_leitor= T.pk_id_tipo left join Curso as N on L.fk_id_curso_leitor = N.pk_id_curso order by status_leitor", conectar);
+                dadosLeitor();
+
+                if (checkBoxAtrasoLeitor.Checked == true)
+                {
+                    dados = new SqlDataAdapter("select L.pk_id_leitor as pk_id_leitor, L.nome_leitor as nome_leitor, L.email_leitor as email_leitor, L.tel_cel_leitor as tel_cel_leitor, L.rg_leitor as rg_leitor, L.dtnasc_leitor as dtnasc_leitor, L.dtcad_leitor as dtcad_leitor, C.nome_cidade as nome_cidade, C.estado_cidade as estado_cidade, T.nome_tipo as nome_tipo, N.nome_curso as nome_curso, L.classe_leitor as classe_leitor, L.status_leitor as status_leitor from Leitor as L inner join Cidade as C on L.fk_id_cidade_leitor=C.pk_id_cidade inner join Tipo as T on L.fk_id_tipo_leitor= T.pk_id_tipo left join Curso as N on L.fk_id_curso_leitor = N.pk_id_curso inner join Emprestimo on pk_id_leitor = fk_id_leitor_emprestimo where dt_dev_prev_emprestimo < dt_devolucao_emprestimo order by status_leitor", conectar);
+
+                }
+
+                else
+                {
+                    dados = new SqlDataAdapter("select L.pk_id_leitor as pk_id_leitor, L.nome_leitor as nome_leitor, L.email_leitor as email_leitor, L.tel_cel_leitor as tel_cel_leitor, L.rg_leitor as rg_leitor, L.dtnasc_leitor as dtnasc_leitor, L.dtcad_leitor as dtcad_leitor, C.nome_cidade as nome_cidade, C.estado_cidade as estado_cidade, T.nome_tipo as nome_tipo, N.nome_curso as nome_curso, L.classe_leitor as classe_leitor, L.status_leitor as status_leitor from Leitor as L inner join Cidade as C on L.fk_id_cidade_leitor=C.pk_id_cidade inner join Tipo as T on L.fk_id_tipo_leitor= T.pk_id_tipo left join Curso as N on L.fk_id_curso_leitor = N.pk_id_curso order by status_leitor", conectar);
+                }
+
                 datb = new DataTable();
                 dados.Fill(datb);
                 dgvLeitor.DataSource = datb;
+                //Consultando os leitores no banco de dados filtrando por id
             }
+
             catch
             {
                 MessageBox.Show("Erro ao realizar consulta no banco de dados!!");
@@ -228,7 +289,7 @@ namespace Smallib.ChildForms.Cadastros.Leitores
                 try
                 {
                     //Consultando os leitores no banco de dados filtrando por cidade
-                    dados = new SqlDataAdapter("select L.pk_id_leitor as pk_id_leitor, L.nome_leitor as nome_leitor, L.email_leitor as email_leitor, L.tel_cel_leitor as tel_cel_leitor, L.rg_leitor as rg_leitor, L.dtnasc_leitor as dtnasc_leitor, L.dtcad_leitor as dtcad_leitor, C.nome_cidade as nome_cidade, C.estado_cidade as estado_cidade, T.nome_tipo as nome_tipo, N.nome_curso as nome_curso, L.classe_leitor as classe_leitor, L.status_leitor as status_leitor from Leitor as L inner join Cidade as C on L.fk_id_cidade_leitor=C.pk_id_cidade inner join Tipo as T on L.fk_id_tipo_leitor= T.pk_id_tipo left join Curso as N on L.fk_id_curso_leitor = N.pk_id_curso where cidade_leitor Like'%" + metroTxtBoxPesquisar.Text + "%'", conectar);
+                    dados = new SqlDataAdapter("select L.pk_id_leitor as pk_id_leitor, L.nome_leitor as nome_leitor, L.email_leitor as email_leitor, L.tel_cel_leitor as tel_cel_leitor, L.rg_leitor as rg_leitor, L.dtnasc_leitor as dtnasc_leitor, L.dtcad_leitor as dtcad_leitor, C.nome_cidade as nome_cidade, C.estado_cidade as estado_cidade, T.nome_tipo as nome_tipo, N.nome_curso as nome_curso, L.classe_leitor as classe_leitor, L.status_leitor as status_leitor from Leitor as L inner join Cidade as C on L.fk_id_cidade_leitor=C.pk_id_cidade inner join Tipo as T on L.fk_id_tipo_leitor= T.pk_id_tipo left join Curso as N on L.fk_id_curso_leitor = N.pk_id_curso where nome_cidade Like'%" + metroTxtBoxPesquisar.Text + "%'", conectar);
                 }
                 catch
                 {
@@ -241,7 +302,7 @@ namespace Smallib.ChildForms.Cadastros.Leitores
                 try
                 {
                     //Consultando os leitores no banco de dados filtrando por tipo
-                    dados = new SqlDataAdapter("select L.pk_id_leitor as pk_id_leitor, L.nome_leitor as nome_leitor, L.email_leitor as email_leitor, L.tel_cel_leitor as tel_cel_leitor, L.rg_leitor as rg_leitor, L.dtnasc_leitor as dtnasc_leitor, L.dtcad_leitor as dtcad_leitor, C.nome_cidade as nome_cidade, C.estado_cidade as estado_cidade, T.nome_tipo as nome_tipo, N.nome_curso as nome_curso, L.classe_leitor as classe_leitor, L.status_leitor as status_leitor from Leitor as L inner join Cidade as C on L.fk_id_cidade_leitor=C.pk_id_cidade inner join Tipo as T on L.fk_id_tipo_leitor= T.pk_id_tipo left join Curso as N on L.fk_id_curso_leitor = N.pk_id_curso where tipo_leitor Like'%" + metroTxtBoxPesquisar.Text + "%'", conectar);
+                    dados = new SqlDataAdapter("select L.pk_id_leitor as pk_id_leitor, L.nome_leitor as nome_leitor, L.email_leitor as email_leitor, L.tel_cel_leitor as tel_cel_leitor, L.rg_leitor as rg_leitor, L.dtnasc_leitor as dtnasc_leitor, L.dtcad_leitor as dtcad_leitor, C.nome_cidade as nome_cidade, C.estado_cidade as estado_cidade, T.nome_tipo as nome_tipo, N.nome_curso as nome_curso, L.classe_leitor as classe_leitor, L.status_leitor as status_leitor from Leitor as L inner join Cidade as C on L.fk_id_cidade_leitor=C.pk_id_cidade inner join Tipo as T on L.fk_id_tipo_leitor= T.pk_id_tipo left join Curso as N on L.fk_id_curso_leitor = N.pk_id_curso where nome_tipo Like'%" + metroTxtBoxPesquisar.Text + "%'", conectar);
                 }
                 catch
                 {
@@ -464,5 +525,77 @@ namespace Smallib.ChildForms.Cadastros.Leitores
             }
         }
 
+        private void radioBtnAtrasoLeitor_CheckedChanged(object sender, EventArgs e)
+        {
+            try
+            {
+                //Consultando os leitores no banco de dados filtrando por id
+                dados = new SqlDataAdapter("select L.pk_id_leitor as pk_id_leitor, L.nome_leitor as nome_leitor, L.email_leitor as email_leitor, L.tel_cel_leitor as tel_cel_leitor, L.rg_leitor as rg_leitor, L.dtnasc_leitor as dtnasc_leitor, L.dtcad_leitor as dtcad_leitor, C.nome_cidade as nome_cidade, C.estado_cidade as estado_cidade, T.nome_tipo as nome_tipo, N.nome_curso as nome_curso, L.classe_leitor as classe_leitor, L.status_leitor as status_leitor from Leitor as L inner join Cidade as C on L.fk_id_cidade_leitor=C.pk_id_cidade inner join Tipo as T on L.fk_id_tipo_leitor= T.pk_id_tipo left join Curso as N on L.fk_id_curso_leitor = N.pk_id_curso inner join Emprestimo on pk_id_leitor = fk_id_leitor_emprestimo where dt_dev_prev_emprestimo < dt_devolucao_emprestimo order by pk_id_leitor", conectar);
+                datb = new DataTable();
+                dados.Fill(datb);
+                dgvLeitor.DataSource = datb;
+            }
+            catch
+            {
+                MessageBox.Show("Erro ao realizar consulta no banco de dados!!");
+            }
+        }
+
+        private void checkBoxAtrasoLeitor_CheckedChanged(object sender, EventArgs e)
+        {
+            if(checkBoxAtrasoLeitor.Checked)
+            {
+                if (radioIdLeitor.Checked)
+                {
+                    dados = new SqlDataAdapter("select L.pk_id_leitor as pk_id_leitor, L.nome_leitor as nome_leitor, L.email_leitor as email_leitor, L.tel_cel_leitor as tel_cel_leitor, L.rg_leitor as rg_leitor, L.dtnasc_leitor as dtnasc_leitor, L.dtcad_leitor as dtcad_leitor, C.nome_cidade as nome_cidade, C.estado_cidade as estado_cidade, T.nome_tipo as nome_tipo, N.nome_curso as nome_curso, L.classe_leitor as classe_leitor, L.status_leitor as status_leitor from Leitor as L inner join Cidade as C on L.fk_id_cidade_leitor=C.pk_id_cidade inner join Tipo as T on L.fk_id_tipo_leitor= T.pk_id_tipo left join Curso as N on L.fk_id_curso_leitor = N.pk_id_curso inner join Emprestimo on pk_id_leitor = fk_id_leitor_emprestimo where dt_dev_prev_emprestimo < dt_devolucao_emprestimo order by nome_tipo", conectar);
+                }
+                
+                else if (radioNomeLeitor.Checked)
+                {
+                    dados = new SqlDataAdapter("select L.pk_id_leitor as pk_id_leitor, L.nome_leitor as nome_leitor, L.email_leitor as email_leitor, L.tel_cel_leitor as tel_cel_leitor, L.rg_leitor as rg_leitor, L.dtnasc_leitor as dtnasc_leitor, L.dtcad_leitor as dtcad_leitor, C.nome_cidade as nome_cidade, C.estado_cidade as estado_cidade, T.nome_tipo as nome_tipo, N.nome_curso as nome_curso, L.classe_leitor as classe_leitor, L.status_leitor as status_leitor from Leitor as L inner join Cidade as C on L.fk_id_cidade_leitor=C.pk_id_cidade inner join Tipo as T on L.fk_id_tipo_leitor= T.pk_id_tipo left join Curso as N on L.fk_id_curso_leitor = N.pk_id_curso inner join Emprestimo on pk_id_leitor = fk_id_leitor_emprestimo where dt_dev_prev_emprestimo < dt_devolucao_emprestimo order by nome_leitor", conectar);
+                }
+                else if (radioCidadeLeitor.Checked)
+                {
+                    dados = new SqlDataAdapter("select L.pk_id_leitor as pk_id_leitor, L.nome_leitor as nome_leitor, L.email_leitor as email_leitor, L.tel_cel_leitor as tel_cel_leitor, L.rg_leitor as rg_leitor, L.dtnasc_leitor as dtnasc_leitor, L.dtcad_leitor as dtcad_leitor, C.nome_cidade as nome_cidade, C.estado_cidade as estado_cidade, T.nome_tipo as nome_tipo, N.nome_curso as nome_curso, L.classe_leitor as classe_leitor, L.status_leitor as status_leitor from Leitor as L inner join Cidade as C on L.fk_id_cidade_leitor=C.pk_id_cidade inner join Tipo as T on L.fk_id_tipo_leitor= T.pk_id_tipo left join Curso as N on L.fk_id_curso_leitor = N.pk_id_curso inner join Emprestimo on pk_id_leitor = fk_id_leitor_emprestimo where dt_dev_prev_emprestimo < dt_devolucao_emprestimo order by nome_cidade", conectar);
+                }
+                else if (radioTipoLeitor.Checked)
+                {
+                    dados = new SqlDataAdapter("select L.pk_id_leitor as pk_id_leitor, L.nome_leitor as nome_leitor, L.email_leitor as email_leitor, L.tel_cel_leitor as tel_cel_leitor, L.rg_leitor as rg_leitor, L.dtnasc_leitor as dtnasc_leitor, L.dtcad_leitor as dtcad_leitor, C.nome_cidade as nome_cidade, C.estado_cidade as estado_cidade, T.nome_tipo as nome_tipo, N.nome_curso as nome_curso, L.classe_leitor as classe_leitor, L.status_leitor as status_leitor from Leitor as L inner join Cidade as C on L.fk_id_cidade_leitor=C.pk_id_cidade inner join Tipo as T on L.fk_id_tipo_leitor= T.pk_id_tipo left join Curso as N on L.fk_id_curso_leitor = N.pk_id_curso inner join Emprestimo on pk_id_leitor = fk_id_leitor_emprestimo where dt_dev_prev_emprestimo < dt_devolucao_emprestimo order by nome_tipo", conectar);
+                }
+                else if (radioStatusLeitor.Checked)
+                {
+                    dados = new SqlDataAdapter("select L.pk_id_leitor as pk_id_leitor, L.nome_leitor as nome_leitor, L.email_leitor as email_leitor, L.tel_cel_leitor as tel_cel_leitor, L.rg_leitor as rg_leitor, L.dtnasc_leitor as dtnasc_leitor, L.dtcad_leitor as dtcad_leitor, C.nome_cidade as nome_cidade, C.estado_cidade as estado_cidade, T.nome_tipo as nome_tipo, N.nome_curso as nome_curso, L.classe_leitor as classe_leitor, L.status_leitor as status_leitor from Leitor as L inner join Cidade as C on L.fk_id_cidade_leitor=C.pk_id_cidade inner join Tipo as T on L.fk_id_tipo_leitor= T.pk_id_tipo left join Curso as N on L.fk_id_curso_leitor = N.pk_id_curso inner join Emprestimo on pk_id_leitor = fk_id_leitor_emprestimo where dt_dev_prev_emprestimo < dt_devolucao_emprestimo order by status_leitor", conectar);
+                }
+            }
+
+            else
+            {
+                if (radioIdLeitor.Checked)
+                {
+                    dados = new SqlDataAdapter("select L.pk_id_leitor as pk_id_leitor, L.nome_leitor as nome_leitor, L.email_leitor as email_leitor, L.tel_cel_leitor as tel_cel_leitor, L.rg_leitor as rg_leitor, L.dtnasc_leitor as dtnasc_leitor, L.dtcad_leitor as dtcad_leitor, C.nome_cidade as nome_cidade, C.estado_cidade as estado_cidade, T.nome_tipo as nome_tipo, N.nome_curso as nome_curso, L.classe_leitor as classe_leitor, L.status_leitor as status_leitor from Leitor as L inner join Cidade as C on L.fk_id_cidade_leitor=C.pk_id_cidade inner join Tipo as T on L.fk_id_tipo_leitor= T.pk_id_tipo left join Curso as N on L.fk_id_curso_leitor = N.pk_id_curso order by pk_id_leitor", conectar);
+                }
+
+                else if (radioNomeLeitor.Checked)
+                {
+                    dados = new SqlDataAdapter("select L.pk_id_leitor as pk_id_leitor, L.nome_leitor as nome_leitor, L.email_leitor as email_leitor, L.tel_cel_leitor as tel_cel_leitor, L.rg_leitor as rg_leitor, L.dtnasc_leitor as dtnasc_leitor, L.dtcad_leitor as dtcad_leitor, C.nome_cidade as nome_cidade, C.estado_cidade as estado_cidade, T.nome_tipo as nome_tipo, N.nome_curso as nome_curso, L.classe_leitor as classe_leitor, L.status_leitor as status_leitor from Leitor as L inner join Cidade as C on L.fk_id_cidade_leitor=C.pk_id_cidade inner join Tipo as T on L.fk_id_tipo_leitor= T.pk_id_tipo left join Curso as N on L.fk_id_curso_leitor = N.pk_id_curso order by nome_leitor", conectar);
+                }
+                else if (radioCidadeLeitor.Checked)
+                {
+                    dados = new SqlDataAdapter("select L.pk_id_leitor as pk_id_leitor, L.nome_leitor as nome_leitor, L.email_leitor as email_leitor, L.tel_cel_leitor as tel_cel_leitor, L.rg_leitor as rg_leitor, L.dtnasc_leitor as dtnasc_leitor, L.dtcad_leitor as dtcad_leitor, C.nome_cidade as nome_cidade, C.estado_cidade as estado_cidade, T.nome_tipo as nome_tipo, N.nome_curso as nome_curso, L.classe_leitor as classe_leitor, L.status_leitor as status_leitor from Leitor as L inner join Cidade as C on L.fk_id_cidade_leitor=C.pk_id_cidade inner join Tipo as T on L.fk_id_tipo_leitor= T.pk_id_tipo left join Curso as N on L.fk_id_curso_leitor = N.pk_id_curso order by nome_cidade", conectar);
+                }
+                else if (radioTipoLeitor.Checked)
+                {
+                    dados = new SqlDataAdapter("select L.pk_id_leitor as pk_id_leitor, L.nome_leitor as nome_leitor, L.email_leitor as email_leitor, L.tel_cel_leitor as tel_cel_leitor, L.rg_leitor as rg_leitor, L.dtnasc_leitor as dtnasc_leitor, L.dtcad_leitor as dtcad_leitor, C.nome_cidade as nome_cidade, C.estado_cidade as estado_cidade, T.nome_tipo as nome_tipo, N.nome_curso as nome_curso, L.classe_leitor as classe_leitor, L.status_leitor as status_leitor from Leitor as L inner join Cidade as C on L.fk_id_cidade_leitor=C.pk_id_cidade inner join Tipo as T on L.fk_id_tipo_leitor= T.pk_id_tipo left join Curso as N on L.fk_id_curso_leitor = N.pk_id_curso order by nome_tipo", conectar);
+                }
+                else if (radioStatusLeitor.Checked)
+                {
+                    dados = new SqlDataAdapter("select L.pk_id_leitor as pk_id_leitor, L.nome_leitor as nome_leitor, L.email_leitor as email_leitor, L.tel_cel_leitor as tel_cel_leitor, L.rg_leitor as rg_leitor, L.dtnasc_leitor as dtnasc_leitor, L.dtcad_leitor as dtcad_leitor, C.nome_cidade as nome_cidade, C.estado_cidade as estado_cidade, T.nome_tipo as nome_tipo, N.nome_curso as nome_curso, L.classe_leitor as classe_leitor, L.status_leitor as status_leitor from Leitor as L inner join Cidade as C on L.fk_id_cidade_leitor=C.pk_id_cidade inner join Tipo as T on L.fk_id_tipo_leitor= T.pk_id_tipo left join Curso as N on L.fk_id_curso_leitor = N.pk_id_curso order by status_leitor", conectar);
+                }
+            }
+
+            datb = new DataTable();
+            dados.Fill(datb);
+            dgvLeitor.DataSource = datb;
+        }
     }
 }

@@ -33,23 +33,6 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.labelDgv = new System.Windows.Forms.Label();
             this.dgvLeitor = new System.Windows.Forms.DataGridView();
-            this.btnConsultar = new System.Windows.Forms.Button();
-            this.btnExcluir = new System.Windows.Forms.Button();
-            this.btnEditar = new System.Windows.Forms.Button();
-            this.btnNovo = new System.Windows.Forms.Button();
-            this.btnAtualizar = new System.Windows.Forms.Button();
-            this.btnPesquisar = new System.Windows.Forms.Button();
-            this.radioNomeLeitor = new System.Windows.Forms.RadioButton();
-            this.radioIdLeitor = new System.Windows.Forms.RadioButton();
-            this.panel7 = new System.Windows.Forms.Panel();
-            this.MainTopPanel = new System.Windows.Forms.Panel();
-            this.MainTopLabel = new System.Windows.Forms.Label();
-            this.panel5 = new System.Windows.Forms.Panel();
-            this.btnRelatorio = new System.Windows.Forms.Button();
-            this.radioStatusLeitor = new System.Windows.Forms.RadioButton();
-            this.radioTipoLeitor = new System.Windows.Forms.RadioButton();
-            this.metroTxtBoxPesquisar = new MetroFramework.Controls.MetroTextBox();
-            this.radioCidadeLeitor = new System.Windows.Forms.RadioButton();
             this.pk_id_leitor = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.nome_leitor = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.email_leitor = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -63,6 +46,24 @@
             this.nome_curso = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.classe_leitor = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.status_leitor = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.btnConsultar = new System.Windows.Forms.Button();
+            this.btnExcluir = new System.Windows.Forms.Button();
+            this.btnEditar = new System.Windows.Forms.Button();
+            this.btnNovo = new System.Windows.Forms.Button();
+            this.btnAtualizar = new System.Windows.Forms.Button();
+            this.btnPesquisar = new System.Windows.Forms.Button();
+            this.radioNomeLeitor = new System.Windows.Forms.RadioButton();
+            this.radioIdLeitor = new System.Windows.Forms.RadioButton();
+            this.panel7 = new System.Windows.Forms.Panel();
+            this.MainTopPanel = new System.Windows.Forms.Panel();
+            this.MainTopLabel = new System.Windows.Forms.Label();
+            this.panel5 = new System.Windows.Forms.Panel();
+            this.checkBoxAtrasoLeitor = new System.Windows.Forms.CheckBox();
+            this.btnRelatorio = new System.Windows.Forms.Button();
+            this.radioStatusLeitor = new System.Windows.Forms.RadioButton();
+            this.radioTipoLeitor = new System.Windows.Forms.RadioButton();
+            this.metroTxtBoxPesquisar = new MetroFramework.Controls.MetroTextBox();
+            this.radioCidadeLeitor = new System.Windows.Forms.RadioButton();
             ((System.ComponentModel.ISupportInitialize)(this.dgvLeitor)).BeginInit();
             this.MainTopPanel.SuspendLayout();
             this.panel5.SuspendLayout();
@@ -135,6 +136,109 @@
             this.dgvLeitor.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvLeitor.Size = new System.Drawing.Size(883, 353);
             this.dgvLeitor.TabIndex = 26;
+            // 
+            // pk_id_leitor
+            // 
+            this.pk_id_leitor.DataPropertyName = "pk_id_leitor";
+            this.pk_id_leitor.FillWeight = 20.92407F;
+            this.pk_id_leitor.HeaderText = "ID ";
+            this.pk_id_leitor.Name = "pk_id_leitor";
+            this.pk_id_leitor.ReadOnly = true;
+            // 
+            // nome_leitor
+            // 
+            this.nome_leitor.DataPropertyName = "nome_leitor";
+            this.nome_leitor.HeaderText = "Nome";
+            this.nome_leitor.Name = "nome_leitor";
+            this.nome_leitor.ReadOnly = true;
+            // 
+            // email_leitor
+            // 
+            this.email_leitor.DataPropertyName = "email_leitor";
+            this.email_leitor.HeaderText = "Email";
+            this.email_leitor.Name = "email_leitor";
+            this.email_leitor.ReadOnly = true;
+            this.email_leitor.Visible = false;
+            // 
+            // tel_cel_leitor
+            // 
+            this.tel_cel_leitor.DataPropertyName = "tel_cel_leitor";
+            this.tel_cel_leitor.HeaderText = "Tel. Celular";
+            this.tel_cel_leitor.Name = "tel_cel_leitor";
+            this.tel_cel_leitor.ReadOnly = true;
+            this.tel_cel_leitor.Visible = false;
+            // 
+            // rg_leitor
+            // 
+            this.rg_leitor.DataPropertyName = "rg_leitor";
+            this.rg_leitor.HeaderText = "RG";
+            this.rg_leitor.Name = "rg_leitor";
+            this.rg_leitor.ReadOnly = true;
+            this.rg_leitor.Visible = false;
+            // 
+            // dtnasc_leitor
+            // 
+            this.dtnasc_leitor.DataPropertyName = "dtnasc_leitor";
+            this.dtnasc_leitor.HeaderText = "Data de Nascimento";
+            this.dtnasc_leitor.Name = "dtnasc_leitor";
+            this.dtnasc_leitor.ReadOnly = true;
+            this.dtnasc_leitor.Visible = false;
+            // 
+            // dtcad_leitor
+            // 
+            this.dtcad_leitor.DataPropertyName = "dtcad_leitor";
+            this.dtcad_leitor.HeaderText = "Data de Atualização";
+            this.dtcad_leitor.Name = "dtcad_leitor";
+            this.dtcad_leitor.ReadOnly = true;
+            this.dtcad_leitor.Visible = false;
+            // 
+            // nome_cidade
+            // 
+            this.nome_cidade.DataPropertyName = "nome_cidade";
+            this.nome_cidade.FillWeight = 60F;
+            this.nome_cidade.HeaderText = "Cidade";
+            this.nome_cidade.Name = "nome_cidade";
+            this.nome_cidade.ReadOnly = true;
+            // 
+            // estado_cidade
+            // 
+            this.estado_cidade.DataPropertyName = "estado_cidade";
+            this.estado_cidade.HeaderText = "Estado";
+            this.estado_cidade.Name = "estado_cidade";
+            this.estado_cidade.ReadOnly = true;
+            this.estado_cidade.Visible = false;
+            // 
+            // nome_tipo
+            // 
+            this.nome_tipo.DataPropertyName = "nome_tipo";
+            this.nome_tipo.FillWeight = 50F;
+            this.nome_tipo.HeaderText = "Tipo";
+            this.nome_tipo.Name = "nome_tipo";
+            this.nome_tipo.ReadOnly = true;
+            // 
+            // nome_curso
+            // 
+            this.nome_curso.DataPropertyName = "nome_curso";
+            this.nome_curso.HeaderText = "Curso";
+            this.nome_curso.Name = "nome_curso";
+            this.nome_curso.ReadOnly = true;
+            this.nome_curso.Visible = false;
+            // 
+            // classe_leitor
+            // 
+            this.classe_leitor.DataPropertyName = "classe_leitor";
+            this.classe_leitor.HeaderText = "Classe";
+            this.classe_leitor.Name = "classe_leitor";
+            this.classe_leitor.ReadOnly = true;
+            this.classe_leitor.Visible = false;
+            // 
+            // status_leitor
+            // 
+            this.status_leitor.DataPropertyName = "status_leitor";
+            this.status_leitor.FillWeight = 40F;
+            this.status_leitor.HeaderText = "Status";
+            this.status_leitor.Name = "status_leitor";
+            this.status_leitor.ReadOnly = true;
             // 
             // btnConsultar
             // 
@@ -302,6 +406,7 @@
             // panel5
             // 
             this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(253)))), ((int)(((byte)(253)))));
+            this.panel5.Controls.Add(this.checkBoxAtrasoLeitor);
             this.panel5.Controls.Add(this.btnRelatorio);
             this.panel5.Controls.Add(this.radioStatusLeitor);
             this.panel5.Controls.Add(this.radioTipoLeitor);
@@ -324,6 +429,19 @@
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(1004, 631);
             this.panel5.TabIndex = 19;
+            // 
+            // checkBoxAtrasoLeitor
+            // 
+            this.checkBoxAtrasoLeitor.AutoSize = true;
+            this.checkBoxAtrasoLeitor.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxAtrasoLeitor.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(81)))), ((int)(((byte)(116)))));
+            this.checkBoxAtrasoLeitor.Location = new System.Drawing.Point(613, 132);
+            this.checkBoxAtrasoLeitor.Name = "checkBoxAtrasoLeitor";
+            this.checkBoxAtrasoLeitor.Size = new System.Drawing.Size(96, 22);
+            this.checkBoxAtrasoLeitor.TabIndex = 49;
+            this.checkBoxAtrasoLeitor.Text = "Em atraso";
+            this.checkBoxAtrasoLeitor.UseVisualStyleBackColor = true;
+            this.checkBoxAtrasoLeitor.CheckedChanged += new System.EventHandler(this.checkBoxAtrasoLeitor_CheckedChanged);
             // 
             // btnRelatorio
             // 
@@ -424,109 +542,6 @@
             this.radioCidadeLeitor.UseVisualStyleBackColor = true;
             this.radioCidadeLeitor.CheckedChanged += new System.EventHandler(this.radioCidadeLeitor_CheckedChanged);
             // 
-            // pk_id_leitor
-            // 
-            this.pk_id_leitor.DataPropertyName = "pk_id_leitor";
-            this.pk_id_leitor.FillWeight = 20.92407F;
-            this.pk_id_leitor.HeaderText = "ID ";
-            this.pk_id_leitor.Name = "pk_id_leitor";
-            this.pk_id_leitor.ReadOnly = true;
-            // 
-            // nome_leitor
-            // 
-            this.nome_leitor.DataPropertyName = "nome_leitor";
-            this.nome_leitor.HeaderText = "Nome";
-            this.nome_leitor.Name = "nome_leitor";
-            this.nome_leitor.ReadOnly = true;
-            // 
-            // email_leitor
-            // 
-            this.email_leitor.DataPropertyName = "email_leitor";
-            this.email_leitor.HeaderText = "Email";
-            this.email_leitor.Name = "email_leitor";
-            this.email_leitor.ReadOnly = true;
-            this.email_leitor.Visible = false;
-            // 
-            // tel_cel_leitor
-            // 
-            this.tel_cel_leitor.DataPropertyName = "tel_cel_leitor";
-            this.tel_cel_leitor.HeaderText = "Tel. Celular";
-            this.tel_cel_leitor.Name = "tel_cel_leitor";
-            this.tel_cel_leitor.ReadOnly = true;
-            this.tel_cel_leitor.Visible = false;
-            // 
-            // rg_leitor
-            // 
-            this.rg_leitor.DataPropertyName = "rg_leitor";
-            this.rg_leitor.HeaderText = "RG";
-            this.rg_leitor.Name = "rg_leitor";
-            this.rg_leitor.ReadOnly = true;
-            this.rg_leitor.Visible = false;
-            // 
-            // dtnasc_leitor
-            // 
-            this.dtnasc_leitor.DataPropertyName = "dtnasc_leitor";
-            this.dtnasc_leitor.HeaderText = "Data de Nascimento";
-            this.dtnasc_leitor.Name = "dtnasc_leitor";
-            this.dtnasc_leitor.ReadOnly = true;
-            this.dtnasc_leitor.Visible = false;
-            // 
-            // dtcad_leitor
-            // 
-            this.dtcad_leitor.DataPropertyName = "dtcad_leitor";
-            this.dtcad_leitor.HeaderText = "Data de Atualização";
-            this.dtcad_leitor.Name = "dtcad_leitor";
-            this.dtcad_leitor.ReadOnly = true;
-            this.dtcad_leitor.Visible = false;
-            // 
-            // nome_cidade
-            // 
-            this.nome_cidade.DataPropertyName = "nome_cidade";
-            this.nome_cidade.FillWeight = 60F;
-            this.nome_cidade.HeaderText = "Cidade";
-            this.nome_cidade.Name = "nome_cidade";
-            this.nome_cidade.ReadOnly = true;
-            // 
-            // estado_cidade
-            // 
-            this.estado_cidade.DataPropertyName = "estado_cidade";
-            this.estado_cidade.HeaderText = "Estado";
-            this.estado_cidade.Name = "estado_cidade";
-            this.estado_cidade.ReadOnly = true;
-            this.estado_cidade.Visible = false;
-            // 
-            // nome_tipo
-            // 
-            this.nome_tipo.DataPropertyName = "nome_tipo";
-            this.nome_tipo.FillWeight = 50F;
-            this.nome_tipo.HeaderText = "Tipo";
-            this.nome_tipo.Name = "nome_tipo";
-            this.nome_tipo.ReadOnly = true;
-            // 
-            // nome_curso
-            // 
-            this.nome_curso.DataPropertyName = "nome_curso";
-            this.nome_curso.HeaderText = "Curso";
-            this.nome_curso.Name = "nome_curso";
-            this.nome_curso.ReadOnly = true;
-            this.nome_curso.Visible = false;
-            // 
-            // classe_leitor
-            // 
-            this.classe_leitor.DataPropertyName = "classe_leitor";
-            this.classe_leitor.HeaderText = "Classe";
-            this.classe_leitor.Name = "classe_leitor";
-            this.classe_leitor.ReadOnly = true;
-            this.classe_leitor.Visible = false;
-            // 
-            // status_leitor
-            // 
-            this.status_leitor.DataPropertyName = "status_leitor";
-            this.status_leitor.FillWeight = 40F;
-            this.status_leitor.HeaderText = "Status";
-            this.status_leitor.Name = "status_leitor";
-            this.status_leitor.ReadOnly = true;
-            // 
             // LeitorMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -579,5 +594,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn nome_curso;
         private System.Windows.Forms.DataGridViewTextBoxColumn classe_leitor;
         private System.Windows.Forms.DataGridViewTextBoxColumn status_leitor;
+        private System.Windows.Forms.CheckBox checkBoxAtrasoLeitor;
     }
 }
