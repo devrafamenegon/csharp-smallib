@@ -8,16 +8,12 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
+using static Smallib.Program;
 
 namespace Smallib.ChildForms.Cadastros.Cidade
 {
     public partial class CidadeEditar : Form
     {
-        SqlConnection conectar = new SqlConnection(@"Data Source=localhost\SQLEXPRESS;Initial Catalog = BIBLIOTECA; Integrated Security = True"); //Variável para conexão com o banco
-        SqlDataAdapter dados; //uma das classes que auxilia na recuperação de dados
-        SqlCommandBuilder cmd; //mostra os códigos SQL
-        DataTable datb; //DataTable é quem vai receber os dados do adapter
-
         string nome_cidade, estado_cidade, nome_cidade_global, estado_cidade_global;
         int pk_id_cidade;
 
