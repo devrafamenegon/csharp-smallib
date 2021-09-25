@@ -11,16 +11,12 @@ using System.Data.SqlClient;
 using iTextSharp.text;
 using iTextSharp.text.pdf;
 using System.IO;
+using static Smallib.Program;
 
 namespace Smallib.ChildForms.Cadastros.Livros
 {
     public partial class LivroMenu : Form
     {
-        SqlConnection conectar = new SqlConnection(@"Data Source=localhost\SQLEXPRESS;Initial Catalog = BIBLIOTECA; Integrated Security = True");
-        SqlDataAdapter dados; //uma das classes que auxilia na recuperação de dados
-        SqlCommandBuilder cmd; //mostra os códigos SQL
-        DataTable datb; //DataTable é quem vai receber os dados do adapter
-
         //Criando um objeto da classe livro
         Cadastro_Livro livro = new Cadastro_Livro();
 
