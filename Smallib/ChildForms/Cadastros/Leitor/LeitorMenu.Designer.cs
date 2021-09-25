@@ -58,7 +58,6 @@
             this.MainTopPanel = new System.Windows.Forms.Panel();
             this.MainTopLabel = new System.Windows.Forms.Label();
             this.panel5 = new System.Windows.Forms.Panel();
-            this.checkBoxAtrasoLeitor = new System.Windows.Forms.CheckBox();
             this.btnRelatorio = new System.Windows.Forms.Button();
             this.radioStatusLeitor = new System.Windows.Forms.RadioButton();
             this.radioTipoLeitor = new System.Windows.Forms.RadioButton();
@@ -406,14 +405,13 @@
             // panel5
             // 
             this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(253)))), ((int)(((byte)(253)))));
-            this.panel5.Controls.Add(this.checkBoxAtrasoLeitor);
+            this.panel5.Controls.Add(this.dgvLeitor);
             this.panel5.Controls.Add(this.btnRelatorio);
             this.panel5.Controls.Add(this.radioStatusLeitor);
             this.panel5.Controls.Add(this.radioTipoLeitor);
             this.panel5.Controls.Add(this.metroTxtBoxPesquisar);
             this.panel5.Controls.Add(this.radioCidadeLeitor);
             this.panel5.Controls.Add(this.labelDgv);
-            this.panel5.Controls.Add(this.dgvLeitor);
             this.panel5.Controls.Add(this.btnConsultar);
             this.panel5.Controls.Add(this.btnExcluir);
             this.panel5.Controls.Add(this.btnEditar);
@@ -429,19 +427,6 @@
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(1004, 631);
             this.panel5.TabIndex = 19;
-            // 
-            // checkBoxAtrasoLeitor
-            // 
-            this.checkBoxAtrasoLeitor.AutoSize = true;
-            this.checkBoxAtrasoLeitor.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBoxAtrasoLeitor.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(81)))), ((int)(((byte)(116)))));
-            this.checkBoxAtrasoLeitor.Location = new System.Drawing.Point(613, 132);
-            this.checkBoxAtrasoLeitor.Name = "checkBoxAtrasoLeitor";
-            this.checkBoxAtrasoLeitor.Size = new System.Drawing.Size(96, 22);
-            this.checkBoxAtrasoLeitor.TabIndex = 49;
-            this.checkBoxAtrasoLeitor.Text = "Em atraso";
-            this.checkBoxAtrasoLeitor.UseVisualStyleBackColor = true;
-            this.checkBoxAtrasoLeitor.CheckedChanged += new System.EventHandler(this.checkBoxAtrasoLeitor_CheckedChanged);
             // 
             // btnRelatorio
             // 
@@ -594,6 +579,5 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn nome_curso;
         private System.Windows.Forms.DataGridViewTextBoxColumn classe_leitor;
         private System.Windows.Forms.DataGridViewTextBoxColumn status_leitor;
-        private System.Windows.Forms.CheckBox checkBoxAtrasoLeitor;
     }
 }

@@ -8,17 +8,12 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
-using System.Data.SqlClient;
+using static Smallib.Program;
 
 namespace Smallib.ChildForms.Cadastros.Leitores
 {
     public partial class LeitorNovo : Form
     {
-        SqlConnection conectar = new SqlConnection(@"Data Source=localhost\SQLEXPRESS;Initial Catalog = BIBLIOTECA; Integrated Security = True");
-        SqlDataAdapter dados; //uma das classes que auxilia na recuperação de dados
-        SqlCommandBuilder cmd; //mostra os códigos SQL
-        DataTable datb; //DataTable é quem vai receber os dados do adapter
-
         //Variáveis para manipular o id
         int id;
         string idstring;
