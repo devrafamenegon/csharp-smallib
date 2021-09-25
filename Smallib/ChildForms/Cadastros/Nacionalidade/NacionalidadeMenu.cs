@@ -11,16 +11,12 @@ using System.Data.SqlClient;
 using System.IO;
 using iTextSharp.text;
 using iTextSharp.text.pdf;
+using static Smallib.Program;
 
 namespace Smallib.ChildForms.Cadastros.Nacionalidade
 {
     public partial class NacionalidadeMenu : Form
     {
-        SqlConnection conectar = new SqlConnection(@"Data Source=localhost\SQLEXPRESS;Initial Catalog = BIBLIOTECA; Integrated Security = True");
-        SqlDataAdapter dados; //uma das classes que auxilia na recuperação de dados
-        SqlCommandBuilder cmd; //mostra os códigos SQL
-        DataTable datb; //DataTable é quem vai receber os dados do adapter
-
         string pk_id_nacionalidade, nome_nacionaliadde;
         Cadastro_Nacionalidade Cadastro_Nacionalidade = new Cadastro_Nacionalidade();
 
