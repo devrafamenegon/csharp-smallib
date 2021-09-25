@@ -8,16 +8,12 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
+using static Smallib.Program;
 
 namespace Smallib.ChildForms
 {
     public partial class UsuarioMenu : Form
     {
-        SqlConnection conectar = new SqlConnection(@"Data Source=localhost\SQLEXPRESS;Initial Catalog = BIBLIOTECA; Integrated Security = True"); //Variável para conexão com o banco
-        SqlDataAdapter dados; //uma das classes que auxilia na recuperação de dados
-        SqlCommandBuilder cmd; //mostra os códigos SQL
-        DataTable datb; //DataTable é quem vai receber os dados do adapter
-
         //instanciando a classe
         Cadastro_Usuario cadastro_usuario = new Cadastro_Usuario();
 

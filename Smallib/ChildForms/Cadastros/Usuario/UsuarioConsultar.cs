@@ -13,11 +13,6 @@ namespace Smallib.ChildForms
 {
     public partial class UsuarioConsultar : Form
     {
-        SqlConnection conectar = new SqlConnection(@"Data Source=localhost\SQLEXPRESS;Initial Catalog = BIBLIOTECA; Integrated Security = True");
-        SqlDataAdapter dados; //uma das classes que auxilia na recuperação de dados
-        SqlCommandBuilder cmd; //mostra os códigos SQL
-        DataTable datb; //DataTable é quem vai receber os dados do adapter
-
         private Principal _principal;
         public UsuarioConsultar(Principal principal, Cadastro_Usuario c1)
         {
