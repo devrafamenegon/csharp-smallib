@@ -8,14 +8,12 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
+using static Smallib.Program;
 
 namespace Smallib
 {
     public partial class Cadastro : Form
     {
-        //string de conexão com o banco de dados
-        SqlConnection conectar = new SqlConnection(@"Data Source=localhost\SQLEXPRESS;Initial Catalog = BIBLIOTECA; Integrated Security = True"); //Variável para conexão com o banco
-
         string nome_usuario, login_usuario, senha_usuario;
         public Cadastro()
         {
