@@ -11,15 +11,12 @@ using System.Windows.Forms;
 using System.IO;
 using iTextSharp.text;
 using iTextSharp.text.pdf;
+using static Smallib.Program;
 
 namespace Smallib.ChildForms.Cadastros.Autores
 {
     public partial class AutorMenu : Form
     {
-        SqlConnection conectar = new SqlConnection(@"Data Source=localhost\SQLEXPRESS;Initial Catalog = BIBLIOTECA; Integrated Security = True");
-        SqlDataAdapter dados; //uma das classes que auxilia na recuperação de dados
-        DataTable datb; //DataTable é quem vai receber os dados do adapter
-
         //Criando um objeto da classe cidade
         Cadastro_Autor autores = new Cadastro_Autor();
 
