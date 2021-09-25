@@ -10,17 +10,12 @@ using System.Windows.Forms;
 using FontAwesome.Sharp;
 using Smallib.ChildForms;
 using System.Data.SqlClient;
+using static Smallib.Program;
 
 namespace Smallib
 {
     public partial class Principal : Form
     {
-        //string de conexão com o banco de dados
-        SqlConnection conectar = new SqlConnection(@"Data Source=localhost\SQLEXPRESS;Initial Catalog = BIBLIOTECA; Integrated Security = True"); //Variável para conexão com o banco
-        SqlDataAdapter dados; //uma das classes que auxilia na recuperação de dados
-        SqlCommandBuilder cmd; //mostra os códigos SQL
-        DataTable datb; //DataTable é quem vai receber os dados do adapter
-
         //Fields
         private IconButton currentBtn;
         private Panel leftBorderBtn;
@@ -137,7 +132,7 @@ namespace Smallib
         private void btnEmprestimo_Click(object sender, EventArgs e)
         {
             ActivateButton(btnEmprestimo, RGBColors.azulEscuro);
-            OpenChildForm(new Emprestimo(this));
+            OpenChildForm(new EmprestimoLivro(this));
         }
 
         private void btnDevolucao_Click(object sender, EventArgs e)
@@ -155,7 +150,7 @@ namespace Smallib
         private void btnRelatorios_Click(object sender, EventArgs e)
         {
             ActivateButton(btnRelatorios, RGBColors.azulEscuro);
-            OpenChildForm(new RelatoriosRoot(this));
+            OpenChildForm(new RelAdministrativosRoot(this));
         }
 
         private void btnConfiguracoes_Click(object sender, EventArgs e)
