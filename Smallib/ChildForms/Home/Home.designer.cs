@@ -64,7 +64,7 @@ namespace Smallib.ChildForms
             this.MainTopLabel.TabIndex = 0;
             this.MainTopLabel.Text = "Início";
             // 
-            // Inicio
+            // Home
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -73,7 +73,7 @@ namespace Smallib.ChildForms
             this.Controls.Add(this.panel7);
             this.Controls.Add(this.MainTopPanel);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "Inicio";
+            this.Name = "Home";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Inicio";
             this.MainTopPanel.ResumeLayout(false);
