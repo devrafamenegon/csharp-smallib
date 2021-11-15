@@ -100,7 +100,4 @@ namespace Smallib
         public string classe_leitor { get; set; }
         public string status_leitor { get; set; }
     }
-
-
-
 }
