@@ -32,10 +32,11 @@ namespace Smallib
 
                 try
                 {
+                    conectar.Close();
                     conectar.Open();
-                    SqlCommand update_senha = new SqlCommand();
 
-                    update_senha.CommandText = ("UPDATE SenhaMaster set senha_master = '" + senha_master + "', alterada = 1 WHERE senha_master = 'master3ds'");
+                    SqlCommand update_senha = new SqlCommand();
+                    update_senha.CommandText = ("UPDATE Senha set senha_master = HASHBYTES('sha2_512', '" + senha_master + "'), alterada = 1 WHERE pk_id_senha = 1");
 
                     update_senha.Connection = conectar;
                     update_senha.ExecuteNonQuery();

@@ -109,10 +109,14 @@ namespace Smallib
             {
                 try
                 {
+                    conectar.Close();
+
                     conectar.Open(); //abrindo a conexão com o banco de dados
 
                     SqlCommand verificar = new SqlCommand("select * from Usuario where login_usuario = '" + login_usuario + "' AND senha_usuario = HASHBYTES('sha2_512', '" + senha_usuario + "')", conectar);
                     bool resultado = verificar.ExecuteReader().HasRows;
+
+                    conectar.Close();
 
                     if (resultado == true)
                     {

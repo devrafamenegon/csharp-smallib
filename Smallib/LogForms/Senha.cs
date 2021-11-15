@@ -48,7 +48,7 @@ namespace Smallib
                 conectar.Open();
 
                 //verifica se a senha digitada é igual à que está no banco de dados e retorna true ou false
-                SqlCommand verificarSenha = new SqlCommand("select * from SenhaMaster where senha_master = '" + metroTxtBoxSenha.Text + "'", conectar);
+                SqlCommand verificarSenha = new SqlCommand("select * from Senha where senha_master = HASHBYTES('sha2_512', '" + metroTxtBoxSenha.Text + "')", conectar);
                 bool resultadoSenha = verificarSenha.ExecuteReader().HasRows;
 
                 //fechando a conexão com o banco de dados
@@ -58,7 +58,7 @@ namespace Smallib
                 conectar.Open();
 
                 //verifica se a senha já foi alterada alguma vez e retorna true ou false
-                SqlCommand verificarAlteracao = new SqlCommand("select alterada from SenhaMaster where alterada = 0", conectar);
+                SqlCommand verificarAlteracao = new SqlCommand("select alterada from Senha where alterada = 0", conectar);
                 bool resultadoAlteracao = verificarAlteracao.ExecuteReader().HasRows;
 
                 //fechando a conexão com o banco de dados
