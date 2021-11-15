@@ -219,9 +219,9 @@
             this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(81)))), ((int)(((byte)(116)))));
             this.label4.Location = new System.Drawing.Point(102, 61);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(157, 25);
+            this.label4.Size = new System.Drawing.Size(108, 25);
             this.label4.TabIndex = 66;
-            this.label4.Text = "Criar novo livro";
+            this.label4.Text = "Novo livro";
             // 
             // panel7
             // 

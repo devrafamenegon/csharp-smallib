@@ -53,14 +53,14 @@
             this.MainTopPanel = new System.Windows.Forms.Panel();
             this.MainTopLabel = new System.Windows.Forms.Label();
             this.panel5 = new System.Windows.Forms.Panel();
+            this.btnRelatorio = new System.Windows.Forms.Button();
             this.metroTxtBoxPesquisar = new MetroFramework.Controls.MetroTextBox();
             this.radioAutorLivro = new System.Windows.Forms.RadioButton();
             this.radioGeneroLivro = new System.Windows.Forms.RadioButton();
             this.radioEditoraLivro = new System.Windows.Forms.RadioButton();
+            this.radioStatusLivro = new System.Windows.Forms.RadioButton();
             this.btnAtualizar = new System.Windows.Forms.Button();
             this.btnPesquisar = new System.Windows.Forms.Button();
-            this.radioStatusLivro = new System.Windows.Forms.RadioButton();
-            this.btnRelatorio = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvLivro)).BeginInit();
             this.MainTopPanel.SuspendLayout();
             this.panel5.SuspendLayout();
@@ -338,13 +338,13 @@
             // panel5
             // 
             this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(253)))), ((int)(((byte)(253)))));
+            this.panel5.Controls.Add(this.dgvLivro);
             this.panel5.Controls.Add(this.btnRelatorio);
             this.panel5.Controls.Add(this.metroTxtBoxPesquisar);
             this.panel5.Controls.Add(this.radioAutorLivro);
             this.panel5.Controls.Add(this.radioGeneroLivro);
             this.panel5.Controls.Add(this.radioEditoraLivro);
             this.panel5.Controls.Add(this.labelDgv);
-            this.panel5.Controls.Add(this.dgvLivro);
             this.panel5.Controls.Add(this.btnConsultar);
             this.panel5.Controls.Add(this.btnExcluir);
             this.panel5.Controls.Add(this.btnEditar);
@@ -361,6 +361,22 @@
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(1004, 631);
             this.panel5.TabIndex = 19;
+            // 
+            // btnRelatorio
+            // 
+            this.btnRelatorio.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(122)))), ((int)(((byte)(129)))), ((int)(((byte)(233)))));
+            this.btnRelatorio.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnRelatorio.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnRelatorio.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnRelatorio.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRelatorio.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(253)))), ((int)(((byte)(253)))));
+            this.btnRelatorio.Location = new System.Drawing.Point(833, 552);
+            this.btnRelatorio.Name = "btnRelatorio";
+            this.btnRelatorio.Size = new System.Drawing.Size(110, 40);
+            this.btnRelatorio.TabIndex = 48;
+            this.btnRelatorio.Text = "Relatório";
+            this.btnRelatorio.UseVisualStyleBackColor = false;
+            this.btnRelatorio.Click += new System.EventHandler(this.btnRelatorio_Click);
             // 
             // metroTxtBoxPesquisar
             // 
@@ -448,6 +464,23 @@
             this.radioEditoraLivro.UseVisualStyleBackColor = true;
             this.radioEditoraLivro.CheckedChanged += new System.EventHandler(this.radioEditoraLivro_CheckedChanged);
             // 
+            // radioStatusLivro
+            // 
+            this.radioStatusLivro.AutoSize = true;
+            this.radioStatusLivro.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.radioStatusLivro.FlatAppearance.BorderSize = 2;
+            this.radioStatusLivro.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.radioStatusLivro.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.5F);
+            this.radioStatusLivro.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(81)))), ((int)(((byte)(116)))));
+            this.radioStatusLivro.Location = new System.Drawing.Point(488, 131);
+            this.radioStatusLivro.Name = "radioStatusLivro";
+            this.radioStatusLivro.Size = new System.Drawing.Size(73, 24);
+            this.radioStatusLivro.TabIndex = 34;
+            this.radioStatusLivro.TabStop = true;
+            this.radioStatusLivro.Text = "Status";
+            this.radioStatusLivro.UseVisualStyleBackColor = true;
+            this.radioStatusLivro.CheckedChanged += new System.EventHandler(this.radioStatusLivro_CheckedChanged);
+            // 
             // btnAtualizar
             // 
             this.btnAtualizar.BackColor = System.Drawing.Color.Transparent;
@@ -483,39 +516,6 @@
             this.btnPesquisar.TabIndex = 20;
             this.btnPesquisar.UseVisualStyleBackColor = false;
             this.btnPesquisar.Click += new System.EventHandler(this.btnPesquisar_Click);
-            // 
-            // radioStatusLivro
-            // 
-            this.radioStatusLivro.AutoSize = true;
-            this.radioStatusLivro.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.radioStatusLivro.FlatAppearance.BorderSize = 2;
-            this.radioStatusLivro.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.radioStatusLivro.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.5F);
-            this.radioStatusLivro.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(81)))), ((int)(((byte)(116)))));
-            this.radioStatusLivro.Location = new System.Drawing.Point(488, 131);
-            this.radioStatusLivro.Name = "radioStatusLivro";
-            this.radioStatusLivro.Size = new System.Drawing.Size(73, 24);
-            this.radioStatusLivro.TabIndex = 34;
-            this.radioStatusLivro.TabStop = true;
-            this.radioStatusLivro.Text = "Status";
-            this.radioStatusLivro.UseVisualStyleBackColor = true;
-            this.radioStatusLivro.CheckedChanged += new System.EventHandler(this.radioStatusLivro_CheckedChanged);
-            // 
-            // btnRelatorio
-            // 
-            this.btnRelatorio.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(122)))), ((int)(((byte)(129)))), ((int)(((byte)(233)))));
-            this.btnRelatorio.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnRelatorio.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnRelatorio.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnRelatorio.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnRelatorio.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(253)))), ((int)(((byte)(253)))));
-            this.btnRelatorio.Location = new System.Drawing.Point(833, 552);
-            this.btnRelatorio.Name = "btnRelatorio";
-            this.btnRelatorio.Size = new System.Drawing.Size(110, 40);
-            this.btnRelatorio.TabIndex = 48;
-            this.btnRelatorio.Text = "Relatório";
-            this.btnRelatorio.UseVisualStyleBackColor = false;
-            this.btnRelatorio.Click += new System.EventHandler(this.btnRelatorio_Click);
             // 
             // LivroMenu
             // 
