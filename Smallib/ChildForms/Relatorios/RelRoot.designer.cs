@@ -1,7 +1,7 @@
 ﻿
 namespace Smallib.ChildForms
 {
-    partial class RelatoriosRoot
+    partial class RelRoot
     {
         /// <summary>
         /// Required designer variable.
@@ -34,7 +34,6 @@ namespace Smallib.ChildForms
             this.MainTopLabel = new System.Windows.Forms.Label();
             this.iconEstatisticos = new FontAwesome.Sharp.IconButton();
             this.iconAdministrativos = new FontAwesome.Sharp.IconButton();
-            this.iconCadastros = new FontAwesome.Sharp.IconButton();
             this.MainTopPanel.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -82,12 +81,12 @@ namespace Smallib.ChildForms
             this.iconEstatisticos.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconEstatisticos.IconSize = 42;
             this.iconEstatisticos.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconEstatisticos.Location = new System.Drawing.Point(375, 364);
+            this.iconEstatisticos.Location = new System.Drawing.Point(375, 323);
             this.iconEstatisticos.Name = "iconEstatisticos";
             this.iconEstatisticos.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
             this.iconEstatisticos.Size = new System.Drawing.Size(250, 60);
             this.iconEstatisticos.TabIndex = 28;
-            this.iconEstatisticos.Text = "Estátisticos";
+            this.iconEstatisticos.Text = "Estatisticos";
             this.iconEstatisticos.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.iconEstatisticos.UseVisualStyleBackColor = false;
             this.iconEstatisticos.Click += new System.EventHandler(this.iconEstatiscos_Click);
@@ -109,7 +108,7 @@ namespace Smallib.ChildForms
             this.iconAdministrativos.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconAdministrativos.IconSize = 42;
             this.iconAdministrativos.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconAdministrativos.Location = new System.Drawing.Point(375, 280);
+            this.iconAdministrativos.Location = new System.Drawing.Point(375, 239);
             this.iconAdministrativos.Name = "iconAdministrativos";
             this.iconAdministrativos.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
             this.iconAdministrativos.Size = new System.Drawing.Size(250, 60);
@@ -121,33 +120,7 @@ namespace Smallib.ChildForms
             this.iconAdministrativos.MouseEnter += new System.EventHandler(this.iconAdministrativos_MouseEnter);
             this.iconAdministrativos.MouseLeave += new System.EventHandler(this.iconAdministrativos_MouseLeave);
             // 
-            // iconCadastros
-            // 
-            this.iconCadastros.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(253)))), ((int)(((byte)(253)))));
-            this.iconCadastros.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.iconCadastros.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(136)))), ((int)(((byte)(217)))));
-            this.iconCadastros.FlatAppearance.BorderSize = 2;
-            this.iconCadastros.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(136)))), ((int)(((byte)(217)))));
-            this.iconCadastros.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iconCadastros.Font = new System.Drawing.Font("Roboto", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.iconCadastros.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(136)))), ((int)(((byte)(217)))));
-            this.iconCadastros.IconChar = FontAwesome.Sharp.IconChar.Clipboard;
-            this.iconCadastros.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(136)))), ((int)(((byte)(217)))));
-            this.iconCadastros.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconCadastros.IconSize = 42;
-            this.iconCadastros.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconCadastros.Location = new System.Drawing.Point(375, 197);
-            this.iconCadastros.Name = "iconCadastros";
-            this.iconCadastros.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
-            this.iconCadastros.Size = new System.Drawing.Size(250, 60);
-            this.iconCadastros.TabIndex = 26;
-            this.iconCadastros.Text = "Cadastros";
-            this.iconCadastros.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.iconCadastros.UseVisualStyleBackColor = false;
-            this.iconCadastros.MouseEnter += new System.EventHandler(this.iconCadastros_MouseEnter);
-            this.iconCadastros.MouseLeave += new System.EventHandler(this.iconCadastros_MouseLeave);
-            // 
-            // RelatoriosRoot
+            // RelRoot
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -155,11 +128,10 @@ namespace Smallib.ChildForms
             this.ClientSize = new System.Drawing.Size(1004, 631);
             this.Controls.Add(this.iconEstatisticos);
             this.Controls.Add(this.iconAdministrativos);
-            this.Controls.Add(this.iconCadastros);
             this.Controls.Add(this.panel7);
             this.Controls.Add(this.MainTopPanel);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "RelatoriosRoot";
+            this.Name = "RelRoot";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Relatórios";
             this.MainTopPanel.ResumeLayout(false);
@@ -173,7 +145,6 @@ namespace Smallib.ChildForms
         private System.Windows.Forms.Panel panel7;
         private System.Windows.Forms.Panel MainTopPanel;
         private System.Windows.Forms.Label MainTopLabel;
-        private FontAwesome.Sharp.IconButton iconCadastros;
         private FontAwesome.Sharp.IconButton iconAdministrativos;
         private FontAwesome.Sharp.IconButton iconEstatisticos;
     }
