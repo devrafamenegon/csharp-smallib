@@ -403,11 +403,41 @@
     <Compile Include="ChildForms\Devolucoes\Devolucao.designer.cs">
       <DependentUpon>Devolucao.cs</DependentUpon>
     </Compile>
-    <Compile Include="ChildForms\Emprestimos\Emprestimos.cs">
+    <Compile Include="ChildForms\Devolucoes\DevolucaoForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ChildForms\Emprestimos\Emprestimos.designer.cs">
-      <DependentUpon>Emprestimos.cs</DependentUpon>
+    <Compile Include="ChildForms\Devolucoes\DevolucaoForm.Designer.cs">
+      <DependentUpon>DevolucaoForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChildForms\Emprestimos\EmprestimoConsultar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChildForms\Emprestimos\EmprestimoConsultar.Designer.cs">
+      <DependentUpon>EmprestimoConsultar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChildForms\Emprestimos\EmprestimoEditar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChildForms\Emprestimos\EmprestimoEditar.Designer.cs">
+      <DependentUpon>EmprestimoEditar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChildForms\Emprestimos\EmprestimoExcluir.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChildForms\Emprestimos\EmprestimoExcluir.Designer.cs">
+      <DependentUpon>EmprestimoExcluir.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChildForms\Emprestimos\EmprestimoMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChildForms\Emprestimos\EmprestimoMenu.designer.cs">
+      <DependentUpon>EmprestimoMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChildForms\Emprestimos\EmprestimoNovo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChildForms\Emprestimos\EmprestimoNovo.Designer.cs">
+      <DependentUpon>EmprestimoNovo.cs</DependentUpon>
     </Compile>
     <Compile Include="ChildForms\Home\Home.cs">
       <SubType>Form</SubType>
@@ -421,11 +451,41 @@
     <Compile Include="ChildForms\Relatorios\RelatoriosAdministrativos\RelAdministrativosRoot.Designer.cs">
       <DependentUpon>RelAdministrativosRoot.cs</DependentUpon>
     </Compile>
-    <Compile Include="ChildForms\Relatorios\RelatoriosAdministrativos\RelLeitoresEmAtraso.cs">
+    <Compile Include="ChildForms\Relatorios\RelatoriosAdministrativos\RelHistoricoEmprestimos.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ChildForms\Relatorios\RelatoriosAdministrativos\RelLeitoresEmAtraso.Designer.cs">
-      <DependentUpon>RelLeitoresEmAtraso.cs</DependentUpon>
+    <Compile Include="ChildForms\Relatorios\RelatoriosAdministrativos\RelHistoricoEmprestimos.Designer.cs">
+      <DependentUpon>RelHistoricoEmprestimos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChildForms\Relatorios\RelatoriosAdministrativos\RelLeitoresDevPendentes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChildForms\Relatorios\RelatoriosAdministrativos\RelLeitoresDevPendentes.Designer.cs">
+      <DependentUpon>RelLeitoresDevPendentes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChildForms\Relatorios\RelatoriosAdministrativos\RelLivrosDevolvidos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChildForms\Relatorios\RelatoriosAdministrativos\RelLivrosDevolvidos.Designer.cs">
+      <DependentUpon>RelLivrosDevolvidos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChildForms\Relatorios\RelatoriosAdministrativos\RelLivrosEmprestados.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChildForms\Relatorios\RelatoriosAdministrativos\RelLivrosEmprestados.Designer.cs">
+      <DependentUpon>RelLivrosEmprestados.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChildForms\Relatorios\RelatoriosEstatisticos\RelGenerosMaisEmprestados.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChildForms\Relatorios\RelatoriosEstatisticos\RelGenerosMaisEmprestados.Designer.cs">
+      <DependentUpon>RelGenerosMaisEmprestados.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChildForms\Relatorios\RelatoriosEstatisticos\RelLivrosMaisEmprestados.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChildForms\Relatorios\RelatoriosEstatisticos\RelLivrosMaisEmprestados.Designer.cs">
+      <DependentUpon>RelLivrosMaisEmprestados.cs</DependentUpon>
     </Compile>
     <Compile Include="ChildForms\Relatorios\RelRoot.cs">
       <SubType>Form</SubType>
@@ -433,11 +493,11 @@
     <Compile Include="ChildForms\Relatorios\RelRoot.designer.cs">
       <DependentUpon>RelRoot.cs</DependentUpon>
     </Compile>
-    <Compile Include="ChildForms\Relatorios\RelEstatisticos.cs">
+    <Compile Include="ChildForms\Relatorios\RelatoriosEstatisticos\RelEstatisticosRoot.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ChildForms\Relatorios\RelEstatisticos.Designer.cs">
-      <DependentUpon>RelEstatisticos.cs</DependentUpon>
+    <Compile Include="ChildForms\Relatorios\RelatoriosEstatisticos\RelEstatisticosRoot.Designer.cs">
+      <DependentUpon>RelEstatisticosRoot.cs</DependentUpon>
     </Compile>
     <Compile Include="ChildForms\Cadastros\Usuario\UsuarioConsultar.cs">
       <SubType>Form</SubType>
@@ -475,6 +535,8 @@
     <Compile Include="ChildForms\Cadastros\Usuario\UsuarioSenhaMaster.Designer.cs">
       <DependentUpon>UsuarioSenhaMaster.cs</DependentUpon>
     </Compile>
+    <Compile Include="Classes\Devolucoes.cs" />
+    <Compile Include="Classes\Emprestimos.cs" />
     <Compile Include="LogForms\Cadastro.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -682,8 +744,23 @@
     <EmbeddedResource Include="ChildForms\Devolucoes\Devolucao.resx">
       <DependentUpon>Devolucao.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ChildForms\Emprestimos\Emprestimos.resx">
-      <DependentUpon>Emprestimos.cs</DependentUpon>
+    <EmbeddedResource Include="ChildForms\Devolucoes\DevolucaoForm.resx">
+      <DependentUpon>DevolucaoForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChildForms\Emprestimos\EmprestimoConsultar.resx">
+      <DependentUpon>EmprestimoConsultar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChildForms\Emprestimos\EmprestimoEditar.resx">
+      <DependentUpon>EmprestimoEditar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChildForms\Emprestimos\EmprestimoExcluir.resx">
+      <DependentUpon>EmprestimoExcluir.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChildForms\Emprestimos\EmprestimoMenu.resx">
+      <DependentUpon>EmprestimoMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChildForms\Emprestimos\EmprestimoNovo.resx">
+      <DependentUpon>EmprestimoNovo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ChildForms\Home\Home.resx">
       <DependentUpon>Home.cs</DependentUpon>
@@ -691,8 +768,23 @@
     <EmbeddedResource Include="ChildForms\Relatorios\RelatoriosAdministrativos\RelAdministrativosRoot.resx">
       <DependentUpon>RelAdministrativosRoot.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ChildForms\Relatorios\RelatoriosAdministrativos\RelLeitoresEmAtraso.resx">
-      <DependentUpon>RelLeitoresEmAtraso.cs</DependentUpon>
+    <EmbeddedResource Include="ChildForms\Relatorios\RelatoriosAdministrativos\RelHistoricoEmprestimos.resx">
+      <DependentUpon>RelHistoricoEmprestimos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChildForms\Relatorios\RelatoriosAdministrativos\RelLeitoresDevPendentes.resx">
+      <DependentUpon>RelLeitoresDevPendentes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChildForms\Relatorios\RelatoriosAdministrativos\RelLivrosDevolvidos.resx">
+      <DependentUpon>RelLivrosDevolvidos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChildForms\Relatorios\RelatoriosAdministrativos\RelLivrosEmprestados.resx">
+      <DependentUpon>RelLivrosEmprestados.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChildForms\Relatorios\RelatoriosEstatisticos\RelGenerosMaisEmprestados.resx">
+      <DependentUpon>RelGenerosMaisEmprestados.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChildForms\Relatorios\RelatoriosEstatisticos\RelLivrosMaisEmprestados.resx">
+      <DependentUpon>RelLivrosMaisEmprestados.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ChildForms\Relatorios\RelRoot.resx">
       <DependentUpon>RelRoot.cs</DependentUpon>
@@ -715,8 +807,8 @@
     <EmbeddedResource Include="ChildForms\Cadastros\Usuario\UsuarioSenhaMaster.resx">
       <DependentUpon>UsuarioSenhaMaster.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ChildForms\Relatorios\RelEstatisticos.resx">
-      <DependentUpon>RelEstatisticos.cs</DependentUpon>
+    <EmbeddedResource Include="ChildForms\Relatorios\RelatoriosEstatisticos\RelEstatisticosRoot.resx">
+      <DependentUpon>RelEstatisticosRoot.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="LogForms\Cadastro.resx">
       <DependentUpon>Cadastro.cs</DependentUpon>

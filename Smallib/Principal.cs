@@ -55,20 +55,7 @@ namespace Smallib
             ActivateButton(btnHome, RGBColors.azulEscuro);
         }
 
-        
-        //Structs
-        public struct RGBColors
-        {
-            public static Color azulEscuro = Color.FromArgb(46, 81, 116);
-            public static Color azulClaro = Color.FromArgb(122, 201, 245);
-            public static Color azul = Color.FromArgb(44, 136, 217);
-            public static Color verde = Color.FromArgb(26, 174, 159);
-            public static Color laranja = Color.FromArgb(232, 131, 58);
-            public static Color vermelho = Color.FromArgb(249, 88, 155);
-            public static Color cinzaEscuro = Color.FromArgb(249, 88, 155);
-            public static Color cinza = Color.FromArgb(197, 197, 197);
-            public static Color branco = Color.FromArgb(253, 253, 253);
-        }
+       
 
         //Methods
         private void ActivateButton(object senderBtn, Color color)
@@ -132,7 +119,7 @@ namespace Smallib
         private void btnEmprestimo_Click(object sender, EventArgs e)
         {
             ActivateButton(btnEmprestimo, RGBColors.azulEscuro);
-            OpenChildForm(new EmprestimoLivro(this));
+            OpenChildForm(new EmprestimoMenu(this));
         }
 
         private void btnDevolucao_Click(object sender, EventArgs e)
@@ -150,7 +137,7 @@ namespace Smallib
         private void btnRelatorios_Click(object sender, EventArgs e)
         {
             ActivateButton(btnRelatorios, RGBColors.azulEscuro);
-            OpenChildForm(new RelAdministrativosRoot(this));
+            OpenChildForm(new RelRoot(this));
         }
 
         private void btnConfiguracoes_Click(object sender, EventArgs e)
