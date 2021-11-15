@@ -173,9 +173,9 @@
             this.MainTopLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(81)))), ((int)(((byte)(116)))));
             this.MainTopLabel.Location = new System.Drawing.Point(46, 12);
             this.MainTopLabel.Name = "MainTopLabel";
-            this.MainTopLabel.Size = new System.Drawing.Size(200, 29);
+            this.MainTopLabel.Size = new System.Drawing.Size(301, 29);
             this.MainTopLabel.TabIndex = 75;
-            this.MainTopLabel.Text = "Cadastro de Tipo";
+            this.MainTopLabel.Text = "Cadastro de Tipo do Leitor";
             // 
             // panel2
             // 
