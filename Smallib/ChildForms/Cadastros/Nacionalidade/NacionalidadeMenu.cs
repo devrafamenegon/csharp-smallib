@@ -89,7 +89,6 @@ namespace Smallib.ChildForms.Cadastros.Nacionalidade
         {
             if (radioIdNacionalidade.Checked)
             {
-                SqlConnection conectar = new SqlConnection(@"Data Source=localhost\SQLEXPRESS;Initial Catalog = BIBLIOTECA; Integrated Security = True");
                 dados = new SqlDataAdapter("select pk_id_nacionalidade, nome_nacionalidade from Nacionalidade where pk_id_nacionalidade Like'%" + metroTxtBoxPesquisar.Text + "%' order by pk_id_nacionalidade", conectar);
                 datb = new DataTable();
                 dados.Fill(datb);
@@ -100,7 +99,6 @@ namespace Smallib.ChildForms.Cadastros.Nacionalidade
 
             else if (radioNomeNacionalidade.Checked)
             {
-                SqlConnection conectar = new SqlConnection(@"Data Source=localhost\SQLEXPRESS;Initial Catalog = BIBLIOTECA; Integrated Security = True");
                 dados = new SqlDataAdapter("select pk_id_nacionalidade, nome_nacionalidade from Nacionalidade where nome_nacionalidade Like'%" + metroTxtBoxPesquisar.Text + "%' order by pk_id_nacionalidade", conectar);
                 datb = new DataTable();
                 dados.Fill(datb);
@@ -112,7 +110,6 @@ namespace Smallib.ChildForms.Cadastros.Nacionalidade
 
         private void btnAtualizar_Click(object sender, EventArgs e)
         {
-            SqlConnection conectar = new SqlConnection(@"Data Source=localhost\SQLEXPRESS;Initial Catalog = BIBLIOTECA; Integrated Security = True");
             dados = new SqlDataAdapter("select pk_id_nacionalidade, nome_nacionalidade from Nacionalidade order by pk_id_nacionalidade", conectar);
             datb = new DataTable();
             dados.Fill(datb);
