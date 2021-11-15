@@ -10,7 +10,6 @@ using System.Windows.Forms;
 using System.Data.SqlClient;
 using static Smallib.Program;
 
-
 namespace Smallib.ChildForms.Cadastros.Autores
 {
     public partial class AutorEditar : Form
@@ -23,6 +22,7 @@ namespace Smallib.ChildForms.Cadastros.Autores
         public AutorEditar(Principal principal, Cadastro_Autor cadastro_autores_01)
         {
             InitializeComponent();
+            conectar.Close();
             _principal = principal;
 
             SqlDataAdapter Nacionalidade = new SqlDataAdapter("select pk_id_nacionalidade, nome_nacionalidade from Nacionalidade order by nome_nacionalidade", conectar);

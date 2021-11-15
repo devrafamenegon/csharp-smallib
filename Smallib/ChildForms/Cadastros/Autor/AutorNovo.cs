@@ -24,6 +24,7 @@ namespace Smallib.ChildForms.Cadastros.Autores
         public AutorNovo(Principal principal)
         {
             InitializeComponent();
+            conectar.Close();
             _principal = principal;
 
             try

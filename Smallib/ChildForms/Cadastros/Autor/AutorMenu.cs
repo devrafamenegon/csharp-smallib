@@ -39,7 +39,6 @@ namespace Smallib.ChildForms.Cadastros.Autores
         {
             try
             {
-                conectar = new SqlConnection(@"Data Source=localhost\SQLEXPRESS;Initial Catalog = BIBLIOTECA; Integrated Security = True");
                 dados = new SqlDataAdapter("select Autor.pk_id_autor, Autor.nome_autor, Nacionalidade.nome_nacionalidade from Autor inner join Nacionalidade on Autor.fk_id_nacionalidade_autor = Nacionalidade.pk_id_nacionalidade order by pk_id_autor", conectar);
                 datb = new DataTable();
                 dados.Fill(datb);
@@ -67,6 +66,7 @@ namespace Smallib.ChildForms.Cadastros.Autores
         public AutorMenu(Principal principal)
         {
             InitializeComponent();
+            conectar.Close();
             dadosAutores();
 
             _principal = principal;

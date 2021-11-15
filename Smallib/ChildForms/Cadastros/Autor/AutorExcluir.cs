@@ -22,6 +22,7 @@ namespace Smallib.ChildForms.Cadastros.Autores
         public AutorExcluir(Principal principal, Cadastro_Autor cadastro_autores_01)
         {
             InitializeComponent();
+            conectar.Close();
             _principal = principal;
 
             txtBoxIdAutor.Text = cadastro_autores_01.pk_id_autor.ToString();
