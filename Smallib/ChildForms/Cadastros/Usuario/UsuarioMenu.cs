@@ -35,11 +35,10 @@ namespace Smallib.ChildForms
         public UsuarioMenu(Principal principal)
         {
             InitializeComponent();
-            _principal = principal;
-        }
+            conectar.Close();
 
-        private void UsuarioMenu_Load(object sender, EventArgs e)
-        {
+            _principal = principal;
+
             dados = new SqlDataAdapter("SELECT pk_id_usuario, nome_usuario, login_usuario FROM Usuario ORDER BY pk_id_usuario asc", conectar);
             datb = new DataTable();
             dados.Fill(datb);

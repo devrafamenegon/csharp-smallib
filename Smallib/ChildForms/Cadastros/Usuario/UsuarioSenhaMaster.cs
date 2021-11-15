@@ -55,7 +55,7 @@ namespace Smallib.ChildForms
                 conectar.Open();
 
                 //verifica se a senha digitada é igual à que está no banco de dados e retorna true ou false
-                SqlCommand verificarSenha = new SqlCommand("select * from SenhaMaster where senha_master = '" + txtBoxSenha.Text + "'", conectar);
+                SqlCommand verificarSenha = new SqlCommand("select * from Senha where senha_master = HASHBYTES('sha2_512', '" + txtBoxSenha.Text + "')", conectar);
                 bool resultadoSenha = verificarSenha.ExecuteReader().HasRows;
 
                 if (resultadoSenha == true)
